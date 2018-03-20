@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+  form#vitalsform(method="post", action="/patients/#{patient.patient_id}/consultations")
+    label(for="weight") Weight(KG):
+    input#weight(type="text" name="weight")
+    br
+    br
+
+    label(for="bp") Blood Pressure:
+    input#bp(type="text" name="bloodPressure")
+    br
+    br
+
+    label(for="temp") Temperature(C):
+    input#temp(type="text" name="temperature")
+    br
+    br

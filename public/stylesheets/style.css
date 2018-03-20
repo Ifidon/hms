@@ -1,0 +1,44 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+label {
+  display: inline-block;
+  width: 250px
+}
+input {
+  margin: 5px;
+  width: 200px
+}
+
+#submit {
+  float:right;
+}
+
+fieldset {
+  margin: 15px
+
+}
+
+legend {
+  margin: 10px
+}
+
+.row {
+  margin: 20px
+}
+
+#vitalsButton {
+  margin: 20px
+  display: block
+
+}
+
+#updateButton {
+  margin: 20px
+}

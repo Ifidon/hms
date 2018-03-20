@@ -1,0 +1,10 @@
+div.container
+  div.row
+    img.col-xs-12.col-md-4(width='200' height='210')
+    div.col-xs-12.col-md-7.col-sm-offset-5
+      h1.col-xs-12= patient_details[0].firstname + ' ' + patient_details[0].lastname
+      p#address= "Address: " + patient_details[0].address
+      p#age.col-xs-12
+      p#id= "Hospital ID: " + patient_details[0].patient_id
+
+      p#dob(hidden)= patient_details[0].dob

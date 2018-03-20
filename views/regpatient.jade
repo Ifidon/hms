@@ -1,0 +1,73 @@
+extends layout
+
+block content
+    form(method="post", action='/patients/registration')
+      h3 Patients Registration Form
+      fieldset
+        legend Personal Details
+        br
+        br
+        label(for="patient_id") Hospital Number:
+        input#patient_id(type="text" name="patient_id")
+        br
+        br
+
+        label(for="passport") Passport Photograph:
+        input#passport(type="file" name="passport")
+        br
+        br
+        label(for="firstname") First Name:
+        input#firstname(type="string" name="firstname")
+        br
+        br
+        label(for="lastname") Last Name:
+        input#lastname(type="string" name="lastname")
+        br
+        br
+        label(for="dob") Date of Birth:
+        input#dob(type="date" name="dob")
+        br
+        br
+
+      fieldset
+        legend Contact Details
+        br
+        br
+        label(for="address") Contact Address:
+        textarea#address(name="address" rows="4" cols="27")
+        br
+        br
+
+        label(for="email") Email Address:
+        input#email(type="email" name="email")
+        br
+        br
+
+        label(for="phone") Phone Number:
+        input#phone(type="phone" name="phone")
+        br
+        br
+
+      fieldset
+        legend Next of Kin Details(Emergency Contact)
+
+        label(for="nokName") Name of Next of Kin:
+        input#nokName(type="float" name="nokName")
+        br
+        br
+
+        label(for="nokAddress") Address of Next of Kin:
+        input#nokAddress(type="" name="nokAddress")
+        br
+        br
+
+        label(for="nokPhone") Phone Number of Next of Kin:
+        input#nokPhone(type="bloodgroup" name="nokPhone")
+        br
+        br
+
+        label(for="nokRelationship") Relationship with Next of Kin:
+        input#nokRelationship(type="string" name="nokRelationship")
+        br
+        br
+      input#submit(type="submit" value="Register" name="submit")

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+  div.container
+  each patient in patientlist
+      div.row
+        img.col-xs-12.col-sm-3(height="200" width="200")
+        div.col-xs-12.col-sm-9
+          h1.col-xs-12= patient.firstname + ' ' + patient.lastname
+          p.col-xs-12= "Address: " + patient.address
+          p#id= "Hospital ID: " + patient.patient_id
+          form(method="get" action="/patients/#{patient.patient_id}")
+            button#deatils(type='submit') View Details
+
+          p#dob(hidden)= patient.dob
