@@ -16,8 +16,6 @@ block content
         hr
       form#vitalsButton(method"get", action="/consultation")
           input(type='button' value='Record Vitals' onClick="showVitalsForm()")
-      form#updateButton(method="get", action="/patients/#{patient_details[0].patient_id}/update")
-          input#vitalsButton(type='submit' value='Update Record')
     br
     br
 

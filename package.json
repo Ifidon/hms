@@ -13,13 +13,14 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.15.5",
+    "express-bootstrap-service": "^1.0.0",
     "jade": "~1.11.0",
     "jquery": "^3.3.1",
     "mongodb": "^3.0.4",
     "mongoose": "^5.0.9",
     "mongoose-type-email": "^1.0.5",
     "morgan": "~1.9.0",
-    "popper.js": "^1.12.9",
+    "popper.js": "^1.14.1",
     "serve-favicon": "~2.4.5"
   }
 }

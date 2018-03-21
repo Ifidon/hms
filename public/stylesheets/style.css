@@ -30,15 +30,16 @@ legend {
 }
 
 .row {
-  margin: 20px
+padding: 15px
 }
 
-#vitalsButton {
-  margin: 20px
-  display: block
+#viewform {
+  margin: 200px
+  display: inline-block
 
 }
 
-#updateButton {
+#updateform {
   margin: 20px
+  display: inline-block;
 }

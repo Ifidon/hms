@@ -3,3 +3,15 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  form
+    button(type="submit" formaction="/patients/registration") Register New Patient
+    br
+    br
+    button(type='submit' formaction="/patients") Display List of Existing Patients
+  br
+  br
+  h2 OR
+
+  form(method="post", action="/")
+    input(type="text" name="search" id='search')
+    button(type='submit') Search
