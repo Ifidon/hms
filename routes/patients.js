@@ -67,7 +67,7 @@ patientRouter.route('/:patient_id/consultations')
       .then((patient) => {
         patient.consultations.push(req.body)
         patient.save()
-        res.send(patient.consultations)
+        res.render('consultations', {patient})
       })
   })
 
