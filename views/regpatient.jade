@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  div.form-group.form-control
     form(method="post", action='/patients/registration')
       h3 Patients Registration Form
       fieldset
@@ -70,4 +71,4 @@ block content
         input#nokRelationship(type="string" name="nokRelationship")
         br
         br
-      input#submit(type="submit" value="Register" name="submit")
+      input#submit.btn.btn-primary(type="submit" value="Register" name="submit")

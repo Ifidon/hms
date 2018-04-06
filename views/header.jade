@@ -8,3 +8,46 @@ div.container
       p#id= "Hospital ID: " + patient_details[0].patient_id
 
       p#dob(hidden)= patient_details[0].dob
+
+
+
+
+
+      div.row
+        div.col-3
+          label(for"prescription")
+            strong Prescription:
+          br
+          textarea(cols=30)= consultation.prescription.drugs
+
+        div.col-3.col-offset-6
+          label(for"prescription")
+            strong Cost:
+          br
+          input(type"number")
+
+        div.col-3.col-offset-6
+          label(for"prescription")
+            strong Amount Paid:
+          br
+          input(type"number")
+
+
+
+
+          table
+            h2 Laboratory
+            br
+            br
+            tr
+              th Prescription
+              th Total Cost
+              th Amount Paid
+              th Balance
+            tr
+              td= consultation.labInvestigation.tests
+              td
+                input#cost(type="number" value)
+              td
+                input#amountPaid(type="number" value)
+              td

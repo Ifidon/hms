@@ -57,7 +57,7 @@ patientRouter.route('/:patient_id/consultations')
 .get((req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
-    res.send(patient)
+    res.render('consultations', {patient})
     console.log(res.header)
   })
   })
@@ -67,9 +67,73 @@ patientRouter.route('/:patient_id/consultations')
       .then((patient) => {
         patient.consultations.push(req.body)
         patient.save()
-        res.render('consultations', {patient})
+        res.redirect('/patients/' + patient.patient_id)
       })
+  });
+
+  patientRouter.route('/:patient_id/consultations/:consultation_id')
+  .get((req, res) => {
+    Patients.findOne({patient_id: req.params.patient_id})
+    .then((patient) => {
+      var consultation = patient.consultations.id(req.params.consultation_id)
+      console.log(consultation)
+      console.log(consultation)
+      res.render('consultation', {patient, consultation})
+    })
   })
+
+  .post((req, res) => {
+    Patients.findOne({patient_id: req.params.patient_id})
+    .then((patient) => {
+      console.log(patient.firstname)
+      var consultation = patient.consultations.id(req.params.consultation_id)
+      console.log(consultation)
+      consultation.doctorsNote = req.body.doctorsNote
+      consultation.prescription.drugs = req.body.drugs
+      consultation.labInvestigation.tests = req.body.tests
+      patient.save()
+      console.log(consultation.labInvestigation)
+      res.render('consultation', {patient, consultation})
+    })
+  });
+
+  patientRouter.route('/:patient_id/consultations/:consultation_id/pharmacy')
+  .get((req,res) => {
+    Patients.findOne({patient_id: req.params.patient_id})
+    .then((patient) => {
+      var consultation = patient.consultations.id(req.params.consultation_id)
+      console.log(consultation.prescription)
+      res.render('pharmacy', {patient, consultation})
+    })
+  })
+
+  .post((req, res) => {
+    Patients.findOne({patient_id: req.params.patient_id})
+    .then((patient) => {
+      console.log(patient.firstname)
+      var consultation = patient.consultations.id(req.params.consultation_id)
+      consultation.prescription.cost = req.body.prescriptionCost
+      consultation.prescription.amountPaid = req.body.prescriptionAmtPaid
+      consultation.prescription.balance = req.body.prescriptionBal
+      patient.save()
+      res.send("success!!")
+  })
+});
+
+patientRouter.route('/:patient_id/consultations/:consultation_id/lab')
+.post((req, res) => {
+  Patients.findOne({patient_id: req.params.patient_id})
+  .then((patient) => {
+    console.log(patient.firstname)
+    var consultation = patient.consultations.id(req.params.consultation_id)
+    consultation.labInvestigation.cost = req.body.labCost
+    consultation.labInvestigation.amountPaid = req.body.labAmtPaid
+    consultation.labInvestigation.balance = req.body.labBal
+    patient.save()
+    res.send("success!!")
+    console.log(req.body)
+})
+});
 
 
 module.exports = patientRouter;

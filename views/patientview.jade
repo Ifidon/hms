@@ -15,10 +15,11 @@ block content
         p#nok= "Next of Kin: " + patient_details[0].nokName
         hr
       form#vitalsButton(method"get", action="/consultation")
-          input(type='button' value='Record Vitals' onClick="showVitalsForm()")
+          input.btn.btn-primary(type='button' value='Record Vitals' onClick="showVitalsForm()")
     br
     br
 
+  div.form-group.form-control
     form#vitalsform(method="post", action="/patients/#{patient_details[0].patient_id}/consultations" hidden)
       label(for="weight") Weight(KG):
       input#weight(type="text" name="weight")
@@ -35,7 +36,12 @@ block content
       br
       br
 
-      input(type='submit' value='Save')
+      label(for="heartrate") Heart Rate:
+      input#temp(type="text" name="heartRate")
+      br
+      br
+
+      input.btn.btn-primary(type='submit' value='Save')
 
 
 

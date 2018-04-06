@@ -20,13 +20,12 @@ block content
       br
     each consultation in patient.consultations.reverse()
       div#consult.row
-        h5#consdate.col-12.col-md-5= consultation.createdAt
+        h5#consdate.col-12.col-md-5= consultation.createdAt.toString().slice(0, 15)
         br
-        form.col-12.col-md-3(method="get" action="/patients/#{patient.patient_id}/consultations/#{patient.createdAt}")
-          button(type="submit") Continue Consultation
+        form.col-12.col-md-3(method="get" action="/patients/#{patient.patient_id}/consultations/#{consultation.id}")
+          button#consButton.btn.btn-primary(type="submit") View / Edit
         br
+      hr
 
     script(src ='/javascripts/patientview.js')
-    script.
-      var p = new String (#{patient.consultations[1].createdAt}))
-      console.log(p)
+    script(src ='/javascripts/consultations.js')

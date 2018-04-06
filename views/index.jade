@@ -1,17 +1,20 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  form
-    button(type="submit" formaction="/patients/registration") Register New Patient
+  div.container
+    h1= title
+    p Welcome to #{title}
+    form
+      button.btn.btn-primary(type="submit" formaction="/patients/registration") Register New Patient
+      br
+      br
+      button.btn.btn-primary(type='submit' formaction="/patients") Display List of Existing Patients
     br
     br
-    button(type='submit' formaction="/patients") Display List of Existing Patients
-  br
-  br
-  h2 OR
+    h5 OR Search Using Last Name or Hospital Number
+    br
 
-  form(method="post", action="/")
-    input(type="text" name="search" id='search')
-    button(type='submit') Search
+    div.form-group
+      form(method="post", action="/")
+        input.form-control-sm(type="text" name="search" id='search' placeholder="Hospital No./Last Name")
+        button.btn.btn-primary(type='submit') Search

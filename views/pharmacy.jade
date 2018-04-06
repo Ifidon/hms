@@ -1,0 +1,73 @@
+extends layout
+
+block content
+
+  div.container
+    div.row
+      img(width='150' height='150')
+      div.col-12.col-md-7.col-sm-offset-5
+        h1.col-xs-12= patient.firstname + ' ' + patient.lastname
+        p#age.col-xs-12
+        p#dob(hidden)= patient.dob
+        p#id= "Hospital ID: " + patient.patient_id
+    hr
+    br
+    br
+
+  div#tablediv.content
+
+    table
+      h2 Pharmacy
+      br
+      br
+      tr
+        th Prescription
+        th Total Cost
+        th Amount Paid
+        th Balance
+      tr
+        td
+          textarea(cols=40 rows=10 disabled)= consultation.prescription.drugs
+        td
+          input#pcost(type="number" placeholder="Enter Cost" name="prescriptionCost")
+        td
+          input#pamountPaid(type="number" placeholder="Enter Amount Paid" name="prescriptionAmtPaid")
+        td
+          input#pbalance(type="number" onClick='getPrescriptionBalance()' placeholder="Click to get balance" name="prescriptionBal")
+    br
+    br
+
+    form(method="post" action="/patients/#{patient.patient_id}/consultations/#{consultation.id}/pharmacy")
+      button.btn.btn-primary(type="submit") Confirm Payment
+    br
+    br
+    br
+    br
+    hr
+
+    table
+      h2 Laboratory
+      br
+      br
+      tr
+        th Test/Scan
+        th Total Cost
+        th Amount Paid
+        th Balance
+      tr
+        td
+          textarea(cols=40 rows=10)= consultation.labInvestigation.tests
+        td
+          input#tcost(type="number" placeholder="Enter Cost" name="labCost")
+        td
+          input#tamountPaid(type="number" placeholder="Enter Amount Paid" name="labAmtPaid")
+        td
+          input#tbalance(type="number" onClick='getLabBalance()' placeholder="Click to get balance" name="labBal")
+    br
+    br
+
+    form(method="post" action="/patients/#{patient.patient_id}/consultations/#{consultation.id}/lab")
+      button.btn.btn-primary(type="submit") Confirm Payment
+
+
+  script(src ='/javascripts/conscost.js')

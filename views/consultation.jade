@@ -1,0 +1,63 @@
+extends layout
+
+block content
+
+  div.container
+    div.row
+      img.col-12.col-md-4(width='200' height='210')
+      div.col-12.col-md-7.col-sm-offset-5
+        h1.col-xs-12= patient.firstname + ' ' + patient.lastname
+        p#age.col-xs-12
+        p#dob(hidden)= patient.dob
+        p#id= "Hospital ID: " + patient.patient_id
+    hr
+    br
+    br
+
+    div.row
+      h2.col-12 Patient's Vitals
+      h6.col-12= "Weight: " + consultation.weight + " Kg"
+      br
+      br
+
+      h6.col-12= "Blood Pressure: " + consultation.bloodPressure + " mmHg"
+      br
+      br
+      h6.col-12= "Temperature: " + consultation.temperature +" "
+        | &degC
+      br
+      br
+
+      h6.col-12= "Heart Rate: " + consultation.heartRate + " bpm"
+    hr
+
+    div.row.form-group
+      form(method="post", action="/patients/#{patient.patient_id}/consultations/#{consultation.id}")
+        section#note
+          h2 Doctor's Note and Observations
+          br
+          br
+          textarea#drnote(name="doctorsNote" rows=10 cols=100)= consultation.doctorsNote
+          hr
+          br
+        section#prescription
+          h2 Prescription
+          br
+          br
+          textarea#drug(name="drugs" rows=10 cols=100)= consultation.prescription.drugs
+          hr
+          br
+
+        section#lab
+          h2 Laboratory Tests & Scans
+          br
+          br
+          textarea#test(name="tests" rows=10 cols=100)= consultation.labInvestigation.tests
+          hr
+        br
+        br
+        button.btn.btn-primary.col-2(type="button" onClick="goBack()") Back
+        button.btn.btn-primary.col-2.float-right(type="submit") Save
+
+
+    script(src ='/javascripts/consultation.js')

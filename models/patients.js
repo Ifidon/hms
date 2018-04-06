@@ -2,12 +2,37 @@ var mongoose = require('mongoose');
 require('mongoose-type-email');
 var Schema = mongoose.Schema;
 
-var consultation = new Schema ({
-  patient: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Patient'
+var prescriptionSchema = new Schema ({
+  drugs: {
+    type: String,
   },
+  cost: {
+    type: String
+  },
+  amountPaid: {
+    type: String
+  },
+  balance: {
+    type: String
+  }
+});
 
+var labSchema = new Schema ({
+  tests: {
+    type: String,
+  },
+  cost: {
+    type: String
+  },
+  amountPaid: {
+    type: String
+  },
+  balance: {
+    type: String
+  }
+});
+
+var consultation = new Schema ({
   weight: {
     type: String,
     required: true
@@ -27,17 +52,13 @@ var consultation = new Schema ({
     required: true
   },
 
-  doctorNote: {
+  doctorsNote: {
     type: String
   },
 
-  prescription: {
-    type: String
-  },
+  prescription: {prescriptionSchema},
 
-  labInvestigation:{
-    type: String
-  }
+  labInvestigation: {labSchema}
 }, {
   timestamps: true
 });
@@ -56,8 +77,8 @@ var PatientSchema = new Schema ({
 
   lastname: {
     type: String,
-    required: true
-    // uppercase: true
+    required: true,
+    uppercase: true
   },
 
   address: {
