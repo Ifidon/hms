@@ -9,5 +9,12 @@
 
 
   function showVitalsForm() {
-    document.getElementById('vitalsform').hidden = false
+    var vitals = document.getElementById('vitalsform')
+    if (vitals.hidden) {
+      document.getElementById('vitalsform').hidden = false
+    }
+    else if (!vitals.hidden) {
+      document.getElementById('vitalsform').hidden = true
+    }
+
   }

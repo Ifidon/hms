@@ -5,4 +5,17 @@ html
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    ul#myTab.nav.nav-tabs(role='tablist')
+      li.nav-item
+        a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Login
+      li.nav-item
+        a#frontdesk-tab.nav-link(data-toggle='tab', href='#', role='tab', aria-controls='profile', aria-selected='false') Front Desk
+      li.nav-item
+        a#nurses-tab.nav-link(data-toggle='tab', href='#', role='tab', aria-controls='contact', aria-selected='false') Nurses Station
+      li.nav-item
+        a#doctors-tab.nav-link(data-toggle='tab', href='#', role='tab', aria-controls='contact', aria-selected='false') Doctor's Office
+      li.nav-item
+        a#pharandlab-tab.nav-link(data-toggle='tab', href='#', role='tab', aria-controls='contact', aria-selected='false') Pharmacy and Laboratory
+    br
+    br
     block content

@@ -10,16 +10,15 @@ block content
         p#address= "Address: " + patient_details[0].address
         p#age.col-xs-12
         p#id= "Hospital ID: " + patient_details[0].patient_id
-        p#email= "Email Address: " + patient_details[0].email
         p#phone= "Phone Number: " + patient_details[0].phone
-        p#nok= "Next of Kin: " + patient_details[0].nokName
-        hr
+    div.container
       form#vitalsButton(method"get", action="/consultation")
           input.btn.btn-primary(type='button' value='Record Vitals' onClick="showVitalsForm()")
+    hr
     br
     br
 
-  div.form-group.form-control
+  div.form-group
     form#vitalsform(method="post", action="/patients/#{patient_details[0].patient_id}/consultations" hidden)
       label(for="weight") Weight(KG):
       input#weight(type="text" name="weight")

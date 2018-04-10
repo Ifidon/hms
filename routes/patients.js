@@ -22,7 +22,7 @@ patientRouter.route('/registration')
 .post((req, res) => {
   Patients.create(req.body)
   .then((patient) => {
-    console.log("New Patient Registered Successfully! ");
+    // console.log("New Patient Registered Successfully! ");
     res.redirect('/patients');
 })
 });
@@ -58,7 +58,7 @@ patientRouter.route('/:patient_id/consultations')
   Patients.findOne(req.params)
   .then((patient) => {
     res.render('consultations', {patient})
-    console.log(res.header)
+    // console.log(res.header)
   })
   })
 
@@ -93,7 +93,7 @@ patientRouter.route('/:patient_id/consultations')
       consultation.labInvestigation.tests = req.body.tests
       patient.save()
       // res.send(consultation)
-      console.log(consultation)
+      // console.log(consultation)
       res.render('consultation', {patient, consultation})
     })
   })
@@ -103,7 +103,7 @@ patientRouter.route('/:patient_id/consultations')
     Patients.findOne({patient_id: req.params.patient_id})
     .then((patient) => {
       var consultation = patient.consultations.id(req.params.consultation_id)
-      console.log(consultation.prescription)
+      // console.log(consultation.prescription)
       res.render('pharmacy', {patient, consultation})
     })
   })
@@ -111,7 +111,7 @@ patientRouter.route('/:patient_id/consultations')
   .post((req, res) => {
     Patients.findOne({patient_id: req.params.patient_id})
     .then((patient) => {
-      console.log(patient.firstname)
+      // console.log(patient.firstname)
       var consultation = patient.consultations.id(req.params.consultation_id)
       consultation.prescription.cost = req.body.prescriptionCost
       consultation.prescription.amountPaid = req.body.prescriptionAmtPaid
@@ -127,14 +127,15 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/lab')
 .post((req, res) => {
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    console.log(patient.firstname)
+    // console.log(patient.firstname)
     var consultation = patient.consultations.id(req.params.consultation_id)
     consultation.labInvestigation.cost = req.body.labCost
     consultation.labInvestigation.amountPaid = req.body.labAmtPaid
     consultation.labInvestigation.balance = req.body.labBal
     patient.save()
-    res.send("success!!")
-    console.log(consultation.labInvestigation)
+    res.render('pharmacy', {patient, consultation})
+    // res.send("success!!")
+    // console.log(consultation.labInvestigation)
 })
 });
 //
