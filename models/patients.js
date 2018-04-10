@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var prescriptionSchema = new Schema ({
   drugs: {
-    type: String,
+    type: String
   },
   cost: {
     type: String
@@ -19,7 +19,7 @@ var prescriptionSchema = new Schema ({
 
 var labSchema = new Schema ({
   tests: {
-    type: String,
+    type: String
   },
   cost: {
     type: String
@@ -56,9 +56,9 @@ var consultation = new Schema ({
     type: String
   },
 
-  prescription: {prescriptionSchema},
+  prescription:prescriptionSchema,
 
-  labInvestigation: {labSchema}
+  labInvestigation:labSchema
 }, {
   timestamps: true
 });
