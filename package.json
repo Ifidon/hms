@@ -14,6 +14,7 @@
     "debug": "~2.6.9",
     "express": "~4.15.5",
     "express-bootstrap-service": "^1.0.0",
+    "express-validator": "^5.1.2",
     "jade": "~1.11.0",
     "jquery": "^3.3.1",
     "mongodb": "^3.0.4",

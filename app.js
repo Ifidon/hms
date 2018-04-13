@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var bootstrap = require('express-bootstrap-service');
+var expressValidator = require('express-validator');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -12,6 +13,9 @@ var patientreg = require('./routes/patientreg');
 var patientRouter = require('./routes/patients');
 
 var Patients = require('./models/patients')
+
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
 
 var app = express();
 
@@ -39,7 +43,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(bootstrap.serve)
+app.use(expressValidator())
 
 app.use('/', index);
 app.use('/users', users);

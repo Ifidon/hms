@@ -4,13 +4,33 @@ block content
 
   div.container
   each patient in patientlist
-      div.row
-        img.col-12.col-sm-3(height="200" width="200")
-        div.col-12.col-sm-9
-          h1.col-12= patient.firstname + ' ' + patient.lastname
-          p.col-12= "Address: " + patient.address
-          p#id.col-12= "Hospital ID: " + patient.patient_id
-          div.row.form-group
-            form#viewform.col-5(method="get" action="/patients/#{patient.patient_id}")
-              button#viewDetails.btn.btn-primary(type='submit') View or Start Consultation
-      hr
+    div.row
+      img.col-2(width='200' height='210')
+      div.col-5
+        h1.col-xs-12= patient.firstname + ' ' + patient.lastname
+        p#address= "Address: " + patient.address
+        p#id= "Hospital ID: " + patient.patient_id
+        p#phone= "Phone Number: " + patient.phone
+
+      div.form-group.col-5
+        form#vitalsform(method="post", action="/patients/#{patient.patient_id}/consultations")
+          p.btn-success Record Vitals
+          div.col-12
+            label(for="weight") W:
+            input#weight(type="text" name="weight" placeholder="Weight(KG)")
+            label(for="blppdPressure") BP:
+            input#bp(type="text" name="bloodPressure" placeholder="Blood Pressure(mmHg)")
+
+          div.col-12
+            label(for="temperature") Temp:
+            input#temp(type="text" name="temperature" placeholder="Temperature(C)")
+
+            label(for="heartrate") HR:
+            input#temp(type="text" name="heartRate" placeholder="Heart Rate(BPM)")
+
+          input.col-12.btn.btn-primary(type='submit' value='Save')
+  br
+  hr
+
+
+  script(src ='/javascripts/patientview.js')

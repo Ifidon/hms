@@ -12,8 +12,8 @@ block content
         p#id= "Hospital ID: " + patient_details[0].patient_id
         p#phone= "Phone Number: " + patient_details[0].phone
     div.container
-      form#vitalsButton(method"get", action="/consultation")
-          input.btn.btn-primary(type='button' value='Record Vitals' onClick="showVitalsForm()")
+      form(method="post", action="/nurses_station")
+        input.btn.btn-primary(type='submit' value='Send to Doctor')
     hr
     br
     br

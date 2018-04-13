@@ -67,7 +67,7 @@ var PatientSchema = new Schema ({
   patient_id: {
     type: Number,
     required: true,
-    index: true
+    unique: true
   },
 
   firstname: {
@@ -86,7 +86,7 @@ var PatientSchema = new Schema ({
   },
 
   email: {
-    type: mongoose.SchemaTypes.Email
+    type: String
   },
 
   phone: {
