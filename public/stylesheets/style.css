@@ -76,7 +76,8 @@ table, th, td {
 
   #vitalsform > div > label {
     display: inline-block;
-    width: 40px
+    width: 100px;
+    margin-left: 10px
   }
   #vitalsform > div > input {
     margin: 10px;

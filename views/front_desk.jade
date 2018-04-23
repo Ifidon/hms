@@ -22,7 +22,7 @@ block content
       div.row
         h4.col-3= patient.patient_id
         h4.col-4= patient.firstname + " " + patient.lastname
-        form.col-4(method="delete", action="/front_desk")
+        form.col-4(method="post", action="/front_desk/#{patientlist.indexOf(patient)}")
           button#delButton.btn.btn-primary(type="submit") Remove from list
         br
         br

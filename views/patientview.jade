@@ -4,47 +4,35 @@ block content
 
   div.container
     div.row
-      img.col-xs-12.col-md-4(width='200' height='210')
-      div.col-xs-12.col-md-7.col-sm-offset-5
-        h1.col-xs-12= patient_details[0].firstname + ' ' + patient_details[0].lastname
-        p#address= "Address: " + patient_details[0].address
-        p#age.col-xs-12
-        p#id= "Hospital ID: " + patient_details[0].patient_id
-        p#phone= "Phone Number: " + patient_details[0].phone
-    div.container
-      form(method="post", action="/nurses_station")
-        input.btn.btn-primary(type='submit' value='Send to Doctor')
-    hr
+      div
+        h3.col-xs-12= patient_details[0].firstname + ' ' + patient_details[0].lastname
+          span.badge= " (Hospital ID: " + patient_details[0].patient_id + ")"
+          h5#age.col-xs-12
+          h5#phone= "Phone Number: " + patient_details[0].phone
+        br
+        br
+
+    div.row.form-group.col-12
+        form#vitalsform(method="post", action="/nurses_station")
+          p.btn-success Vitals Form
+          div
+            label(for="weight") Weight:
+            input#weight(type="text" name="weight" placeholder="Weight(KG)")
+            label(for="blppdPressure") Blood Pressure:
+            input#bp(type="text" name="bloodPressure" placeholder="Blood Pressure(mmHg)")
+            br
+            br
+            label(for="temperature") Temperature:
+            input#temp(type="text" name="temperature" placeholder="Temperature(C)")
+            label(for="heartrate") Heart Rate:
+            input#temp(type="text" name="heartRate" placeholder="Heart Rate(BPM)")
+          input.col-12.btn.btn-primary(type='submit' value='Save')
     br
     br
 
-  div.form-group
-    form#vitalsform(method="post", action="/patients/#{patient_details[0].patient_id}/consultations" hidden)
-      label(for="weight") Weight(KG):
-      input#weight(type="text" name="weight")
-      br
-      br
-
-      label(for="bp") Blood Pressure:
-      input#bp(type="text" name="bloodPressure")
-      br
-      br
-
-      label(for="temp") Temperature(C):
-      input#temp(type="text" name="temperature")
-      br
-      br
-
-      label(for="heartrate") Heart Rate:
-      input#temp(type="text" name="heartRate")
-      br
-      br
-
-      input.btn.btn-primary(type='submit' value='Save')
 
 
+    p#dob(hidden)= patient_details[0].dob
 
-      p#dob(hidden)= patient_details[0].dob
 
-
-      script(src ='/javascripts/patientview.js')
+    script(src ='/javascripts/patientview.js')

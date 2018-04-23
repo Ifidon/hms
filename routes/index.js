@@ -3,7 +3,7 @@ var router = express.Router();
 var patientRouter = require('./patients.js');
 var Patients = require('../models/patients');
 
-
+var front_office = [];
 var nurses_station = [];
 var doctors_office = [];
 
@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
   else {
       Patients.find({patient_id: req.body.search})
       .then((patient) => {
-          res.render('search_result', {data: patient})
+          res.render('search_result', {patientlist: patient})
       })
   }
 });
@@ -36,13 +36,21 @@ router.get('/front_desk', function(req, res) {
 });
 
 router.post('/front_desk', function(req, res) {
-  Patients.findOne({patient_id: req.body.search})
-  .then((patient) => {
-    nurses_station.push(patient)
-    console.log(nurses_station)
-    res.render('front_desk', {patientlist: nurses_station})
+  Patients.find({patient_id: req.body.search})
+  .then((result) => {
+    // nurses_station.push(patient)
+    // console.log(req.params)
+    res.render('search_result', {patientlist: result})
+    front_office = result
   })
 });
+
+router.post('/front_desk/:index', function(req, res) {
+  nurses_station.push(front_office[req.params.index])
+  // res.send(nurses_station)
+  res.render('front_desk', {patientlist: nurses_station})
+});
+
 
 
 router.route('/nurses_station')
@@ -51,7 +59,19 @@ router.route('/nurses_station')
 })
 
 .post((req, res) => {
-  console.log(req.params)
+  Patients.findOne(req.params)
+  .then((patient) => {
+    patient.consultations.push(req.body)
+    patient.save()
+    doctors_office.push(patient)
+    nurses_station.splice(patient)
+    res.render('consultationList', {patientlist: nurses_station})
+  })
+});
+
+router.route('/doctors_office')
+.get((req, res) => {
+  res.render('consultationList', {patientlist: doctors_office})
 })
 
 module.exports = router;
