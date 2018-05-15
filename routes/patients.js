@@ -96,14 +96,25 @@ patientRouter.route('/:patient_id/consultations')
     Patients.findOne({patient_id: req.params.patient_id})
     .then((patient) => {
       var consultation = patient.consultations.id(req.params.consultation_id)
+      consultation.doctorsNote = req.body.doctorsNote
       consultation.prescription = {}
       consultation.labInvestigation = {}
-      consultation.doctorsNote = req.body.doctorsNote
       consultation.prescription.drugs = req.body.drugs
       consultation.labInvestigation.tests = req.body.tests
+      // if (consultation.prescription && consultation.labInvestigation) {
+      //   consultation.prescription = new {}
+      //   consultation.labInvestigation = new {}
+      //   consultation.prescription.drugs = req.body.drugs
+      //   consultation.labInvestigation.tests = req.body.tests
+      // }
+      // else {
+      //   consultation.prescription.drugs = req.body.drugs
+      //   consultation.labInvestigation.tests = req.body.tests
+      // } 
+      
       patient.save()
       // res.send(consultation)
-      // console.log(consultation)
+      console.log(consultation)
       res.render('consultation', {patient, consultation})
     })
   })

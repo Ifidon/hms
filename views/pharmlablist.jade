@@ -10,7 +10,8 @@ block content
           div.col-12
             h5= patient.firstname + ' ' + patient.lastname
               span.badge= ' (Hospital ID:' + patient.patient_id + ')'
-            form(method="get", action="/doctors_office")
+            h6= patient.consultations[0].updatedAt
+            form(method="get", action="/patients/#{patient.patient_id}/consultations/#{patient.consultations[0]._id}/pharmacy")
               button.btn.btn-primary.float-right(type="submit") Display Consultation
 
   script(src ='/javascripts/patientview.js')

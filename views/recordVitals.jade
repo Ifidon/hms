@@ -11,8 +11,16 @@ block content
           h5#phone= "Phone Number: " + patient.phone
           h5#addres= "Contact Address: " + patient.address
           h5#nok= "Next of Kin (Name): " + patient.nokName
+          form(method="post", action="/nurses_station/send")
+               button.btn.btn-primary.float-right(type="submit") Send to Doctor's Office
         br
         br
+    hr
+
+    h6
+      em For new consultation record please patient's vitals
+    
+    br
 
     div.row.form-group.col-12
         form#vitalsform(method="post", action="/nurses_station")

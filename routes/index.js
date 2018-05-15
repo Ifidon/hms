@@ -70,6 +70,16 @@ router.route('/nurses_station')
   })
 });
 
+router.route('/nurses_station/send')
+.post((req, res) => {
+  Patients.findOne(req.params).
+  then((patient) => {
+    doctors_office.push(patient)
+    nurses_station.splice(patient)
+  })
+  res.render('consultationList', {patientlist: nurses_station})
+})
+
 router.route('/doctors_office')
 .get((req, res) => {
   res.render('doctorslist', {patientlist: doctors_office})
