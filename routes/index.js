@@ -9,7 +9,7 @@ var doctors_office = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'VDot HMS' });
+  res.render('index', { title: 'My HMS' });
 });
 
 router.post('/', (req, res) => {
@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
     Patients.find({lastname: searchTerm})
     .then((patients) => {
       console.log(patients)
-        res.render('search_result', {data: patients})
+        res.render('search_result', {patientlist: patients})
     })
   }
   else {
@@ -44,13 +44,6 @@ router.post('/front_desk', function(req, res) {
     front_office = result
   })
 });
-
-router.post('/front_desk/:index', function(req, res) {
-  nurses_station.push(front_office[req.params.index])
-  // res.send(nurses_station)
-  res.render('front_desk', {patientlist: nurses_station})
-});
-
 
 
 router.route('/nurses_station')
