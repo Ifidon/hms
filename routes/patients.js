@@ -53,6 +53,16 @@ patientRouter.route('/:patient_id/update')
 
 });
 
+patientRouter.route('/:patient_id/recordvitals')
+.get((req, res) => {
+  Patients.findOne(req.params)
+  .then((patient) => {
+    res.render('recordvitals', {patient})
+  })
+  
+})
+
+
 patientRouter.route('/:patient_id/consultations')
 .get((req, res) => {
   Patients.findOne(req.params)

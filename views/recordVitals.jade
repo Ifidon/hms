@@ -1,1 +1,33 @@
-include ./patientview.jade
+extends layout
+
+block content
+
+  div.container
+    div.row
+      div
+        h3.col-xs-12= patient.firstname + ' ' + patient.lastname
+          span.badge= " (Hospital ID: " + patient.patient_id + ")"
+          h5#age.col-xs-12
+          h5#phone= "Phone Number: " + patient.phone
+          h5#addres= "Contact Address: " + patient.address
+          h5#nok= "Next of Kin (Name): " + patient.nokName
+        br
+        br
+
+    div.row.form-group.col-12
+        form#vitalsform(method="post", action="/nurses_station")
+          p.btn-success Vitals Form
+          div
+            label(for="weight") Weight:
+            input#weight(type="text" name="weight" placeholder="Weight(KG)")
+            label(for="blppdPressure") Blood Pressure:
+            input#bp(type="text" name="bloodPressure" placeholder="Blood Pressure(mmHg)")
+            br
+            br
+            label(for="temperature") Temperature:
+            input#temp(type="text" name="temperature" placeholder="Temperature(C)")
+            label(for="heartrate") Heart Rate:
+            input#temp(type="text" name="heartRate" placeholder="Heart Rate(BPM)")
+          input.col-12.btn.btn-primary(type='submit' value="Save & Send to Doctor's Office")
+    br
+    br

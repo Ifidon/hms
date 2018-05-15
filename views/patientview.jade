@@ -9,10 +9,15 @@ block content
           span.badge= " (Hospital ID: " + patient_details[0].patient_id + ")"
           h5#age.col-xs-12
           h5#phone= "Phone Number: " + patient_details[0].phone
+          h5#addres= "Contact Address: " + patient_details[0].address
+          h5#nok= "Next of Kin (Name): " + patient_details[0].nokName
         br
         br
 
-    div.row.form-group.col-12
+        form(method="post", action="/front_desk/send")
+          button.btn.btn-primary(type="submit") Send to Nurses' Station
+
+    div.row.form-group.col-12(hidden)
         form#vitalsform(method="post", action="/nurses_station")
           p.btn-success Vitals Form
           div

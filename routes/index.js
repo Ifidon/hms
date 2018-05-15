@@ -6,6 +6,7 @@ var Patients = require('../models/patients');
 var front_office = [];
 var nurses_station = [];
 var doctors_office = [];
+var pharmlab = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -45,6 +46,13 @@ router.post('/front_desk', function(req, res) {
   })
 });
 
+router.post('/front_desk/send', function(req, res) {
+  Patients.findOne(req.params).
+  then((patient) => {
+    nurses_station.push(patient)
+  })
+  res.render('front_desk', {patientlist: nurses_station})
+});
 
 router.route('/nurses_station')
 .get((req, res) => {
@@ -64,7 +72,25 @@ router.route('/nurses_station')
 
 router.route('/doctors_office')
 .get((req, res) => {
-  res.render('consultationList', {patientlist: doctors_office})
+  res.render('doctorslist', {patientlist: doctors_office})
+})
+
+.post((req, res) => {
+  Patients.findOne(req.params.patient_id)
+  .then((patient) => {
+    var patientid = patient.patient_id
+    var firstname = patient.firstname
+    var lastname = patient.lastname
+    var cons = patient.consultations.id(req.params._id)
+    pharmlab.push(patient)
+    doctors_office.splice(patient)
+    res.render('doctorslist', {patientlist: doctors_office})
+  })
+});
+
+router.route('/pharmacyandlab')
+.get((req, res) => {
+  res.render('pharmlablist', {patientlist: pharmlab})
 })
 
 module.exports = router;

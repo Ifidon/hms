@@ -10,7 +10,7 @@ block content
           div.col-12
             h5= patient.firstname + ' ' + patient.lastname
               span.badge= ' (Hospital ID:' + patient.patient_id + ')'
-            form(method="get", action="/patients/#{patient.patient_id}/recordvitals")
-              button.btn.btn-primary.float-right(type="submit") Record Vitals
+            form(method="get", action="/patients/#{patient.patient_id}/consultations")
+              button.btn.btn-primary.float-right(type="submit") Display Consultations List
 
   script(src ='/javascripts/patientview.js')

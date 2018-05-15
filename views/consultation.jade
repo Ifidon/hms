@@ -58,6 +58,8 @@ block content
         br
         button.btn.btn-primary.col-2(type="button" onClick="goBack()") Back
         button.btn.btn-primary.col-2.float-right(type="submit") Save
+    form(method="post", action="/doctors_office")
+      button.btn.btn-primary(type="submit") Send to Pharmacy & Lab
 
 
     script(src ='/javascripts/consultation.js')
