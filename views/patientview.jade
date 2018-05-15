@@ -14,7 +14,7 @@ block content
         br
         br
 
-        form(method="post", action="/front_desk/send")
+        form(method="post", action="/front_desk/send/#{patient_details[0].patient_id}")
           button.btn.btn-primary(type="submit") Send to Nurses' Station
 
     div.row.form-group.col-12(hidden)

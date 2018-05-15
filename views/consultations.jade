@@ -18,7 +18,7 @@ block content
       h2 Consultations
       br
       br
-    each consultation in patient.consultations.reverse()
+    each consultation in patient.consultations
       div#consult.row
         h5#consdate.col-12.col-md-5= consultation.createdAt.toString().slice(0, 15)
         br

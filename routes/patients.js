@@ -57,6 +57,7 @@ patientRouter.route('/:patient_id/recordvitals')
 .get((req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
+    console.log(req.params)
     res.render('recordVitals', {patient})
   })
   
@@ -75,7 +76,7 @@ patientRouter.route('/:patient_id/consultations')
   .post((req, res) => {
       Patients.findOne(req.params)
       .then((patient) => {
-        patient.consultations.push(req.body)
+        patient.consultations.unshift(req.body)
         patient.save()
         res.redirect('/patients/' + patient.patient_id)
       })
@@ -85,10 +86,17 @@ patientRouter.route('/:patient_id/consultations')
   .get((req, res) => {
     Patients.findOne({patient_id: req.params.patient_id})
     .then((patient) => {
-      var consultation = patient.consultations.id(req.params.consultation_id)
-      consultation.prescription = new Object
-      consultation.labInvestigation = new Object
-      res.render('consultation', {patient, consultation})
+      if (patient.consultations.id(req.params.consultation_id).prescription) {
+        var consultation = patient.consultations.id(req.params.consultation_id)
+      }
+      else {
+        var consultation = patient.consultations.id(req.params.consultation_id)
+        consultation.prescription = Object;
+        consultation.labInvestigation = Object;
+      }
+        
+        console.log(consultation)
+        res.render('consultation', {patient, consultation})
     })
   })
 

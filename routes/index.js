@@ -46,12 +46,14 @@ router.post('/front_desk', function(req, res) {
   })
 });
 
-router.post('/front_desk/send', function(req, res) {
-  Patients.findOne(req.params).
-  then((patient) => {
+router.post('/front_desk/send/:patient_id', function(req, res) {
+  Patients.findOne(req.params)
+  .then((patient) => {
+    console.log(req.params)
     nurses_station.push(patient)
+    // res.render('front_desk', {patientlist: nurses_station})
+    res.redirect('/front_desk')
   })
-  res.render('front_desk', {patientlist: nurses_station})
 });
 
 router.route('/nurses_station')
@@ -62,22 +64,23 @@ router.route('/nurses_station')
 .post((req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
-    patient.consultations.push(req.body)
+    patient.consultations.unshift(req.body)
     patient.save()
     doctors_office.push(patient)
-    nurses_station.splice(patient)
+    nurses_station.splice(nurses_station.indexOf(patient), 1)
     res.render('consultationList', {patientlist: nurses_station})
   })
 });
 
-router.route('/nurses_station/send')
+router.route('/nurses_station/send/:patient_id')
 .post((req, res) => {
-  Patients.findOne(req.params).
-  then((patient) => {
+  Patients.findOne(req.params)
+  .then((patient) => {
+    console.log(req.params)
     doctors_office.push(patient)
-    nurses_station.splice(patient)
+    nurses_station.splice(nurses_station.indexOf(patient), 1)
+    res.redirect('/nurses_station')
   })
-  res.render('consultationList', {patientlist: nurses_station})
 })
 
 router.route('/doctors_office')
@@ -93,7 +96,7 @@ router.route('/doctors_office')
     var lastname = patient.lastname
     var cons = patient.consultations.id(req.params._id)
     pharmlab.push(patient)
-    doctors_office.splice(patient)
+    doctors_office.splice(doctors_office.indexOf(patient), 1)
     res.render('doctorslist', {patientlist: doctors_office})
   })
 });
