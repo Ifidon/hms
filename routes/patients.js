@@ -57,7 +57,7 @@ patientRouter.route('/:patient_id/recordvitals')
 .get((req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
-    res.render('recordvitals', {patient})
+    res.render('recordVitals', {patient})
   })
   
 })
