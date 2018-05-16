@@ -91,7 +91,7 @@ router.route('/doctors_office')
 
 router.route('/doctors_office/:patient_id')
 .post((req, res) => {
-  Patients.findOne(req.params.patient_id)
+  Patients.findOne(req.params)
   .then((patient) => {
     // var patientid = patient.patient_id
     // var firstname = patient.firstname
