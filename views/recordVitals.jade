@@ -23,7 +23,7 @@ block content
     br
 
     div.row.form-group.col-12
-        form#vitalsform(method="post", action="/nurses_station")
+        form#vitalsform(method="post", action="/nurses_station/#{patient.patient_id}")
           p.btn-success Vitals Form
           div
             label(for="weight") Weight:

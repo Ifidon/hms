@@ -59,8 +59,9 @@ router.post('/front_desk/send/:patient_id', function(req, res) {
 router.route('/nurses_station')
 .get((req, res) => {
   res.render('consultationList', {patientlist: nurses_station})
-})
+});
 
+router.route('/nurses_station/:patient_id')
 .post((req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
