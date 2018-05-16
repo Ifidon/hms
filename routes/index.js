@@ -87,18 +87,19 @@ router.route('/nurses_station/send/:patient_id')
 router.route('/doctors_office')
 .get((req, res) => {
   res.render('doctorslist', {patientlist: doctors_office})
-})
+});
 
+router.route('/doctors_office/:patient_id')
 .post((req, res) => {
   Patients.findOne(req.params.patient_id)
   .then((patient) => {
-    var patientid = patient.patient_id
-    var firstname = patient.firstname
-    var lastname = patient.lastname
-    var cons = patient.consultations.id(req.params._id)
+    // var patientid = patient.patient_id
+    // var firstname = patient.firstname
+    // var lastname = patient.lastname
+    // var cons = patient.consultations.id(req.params.consultation_id)
     pharmlab.push(patient)
     doctors_office.splice(doctors_office.indexOf(patient), 1)
-    res.render('doctorslist', {patientlist: doctors_office})
+    res.redirect('/doctors_office')
   })
 });
 
