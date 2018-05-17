@@ -9,7 +9,7 @@ block content
         br
         br
         label(for="patient_id") Hospital Number:
-        input#patient_id(type="text" name="patient_id")
+        input#patient_id(type="text" name="patient_id" required)
         br
         br
 
@@ -18,15 +18,15 @@ block content
         br
         br
         label(for="firstname") First Name:
-        input#firstname(type="string" name="firstname")
+        input#firstname(type="string" name="firstname" required)
         br
         br
         label(for="lastname") Last Name:
-        input#lastname(type="string" name="lastname")
+        input#lastname(type="string" name="lastname" required)
         br
         br
         label(for="dob") Date of Birth:
-        input#dob(type="date" name="dob")
+        input#dob(type="date" name="dob" required)
         span (DD/MM/YYY)
         br
         br
@@ -36,7 +36,7 @@ block content
         br
         br
         label(for="address") Contact Address:
-        textarea#address(name="address" rows="4" cols="27")
+        textarea#address(name="address" rows="4" cols="27" required)
         br
         br
 
@@ -54,7 +54,7 @@ block content
         legend Next of Kin Details(Emergency Contact)
 
         label(for="nokName") Name of Next of Kin:
-        input#nokName(type="float" name="nokName")
+        input#nokName(type="float" name="nokName" required)
         br
         br
 

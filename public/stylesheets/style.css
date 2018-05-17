@@ -81,4 +81,13 @@ table, th, td {
   }
   #vitalsform > div > input {
     margin: 10px;
-    width: 200px
+    width: 200px;
+  }
+
+ol > li > h4 {
+    display: inline;
+  }
+
+ol > li > form {
+    display: inline;
+  }

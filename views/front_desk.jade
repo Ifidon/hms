@@ -4,26 +4,33 @@ block content
 
   div.container
     div.row
-      form.form-group(method='post', action="/front_desk")
-        input(type="text" placeholder="Search with Hospital Number" name="search")
-        input.btn.btn-primary(type="submit" value="search")
-    hr
-    br
-    br
-    br
-
+      form
+        button.btn.btn-primary(type="submit" formaction="/patients/registration") Register New Patient
+        br
+        br
+        button.btn.btn-primary(type='submit' formaction="/patients") Display List of Existing Patients
+      br
+      br
     div.row
-      h4.col-3
-        strong Hospital Number
-      h4.col-4
-        strong Patient Name
+      h5 OR Search Using Last Name or Hospital Number
+      br
+
+      div.form-group
+        form(method="post", action="/")
+          input.form-control-sm(type="text" name="search" id='search' placeholder="Hospital No./Last Name")
+          button.btn.btn-primary(type='submit') Search
 
     each patient in patientlist
       div.row
-        h4.col-3= patient.patient_id
-        h4.col-4= patient.firstname + " " + patient.lastname
-        form.col-4(method="post", action="/front_desk/#{patientlist.indexOf(patient)}")
-          button#delButton.btn.btn-primary(type="submit") Remove from list
-        br
-        br
-        hr
+          ol.list-group.col-12
+            li
+              h4.col-3= patient.patient_id
+              h4.col-4= patient.firstname + " " + patient.lastname
+              form.col-4(method="post", action="/front_desk/#{patientlist.indexOf(patient)}")
+                button#delButton.btn.btn-primary(type="submit") Remove from list
+              br
+              br
+              hr
+
+
+    

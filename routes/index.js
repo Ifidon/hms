@@ -10,7 +10,7 @@ var pharmlab = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'My HMS' });
+  res.render('login', { title: 'My HMS' });
 });
 
 router.post('/', (req, res) => {
