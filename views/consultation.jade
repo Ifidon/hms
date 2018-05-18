@@ -37,14 +37,14 @@ block content
           h2 Doctor's Note and Observations
           br
           br
-          textarea#drnote(name="doctorsNote" rows=10 cols=100)= consultation.doctorsNote
+          textarea#drnote(name="doctorsNote" rows=10 cols=100 required)= consultation.doctorsNote
           hr
           br
         section#prescription
           h2 Prescription
           br
           br
-          textarea#drugs(name="drugs" rows=10 cols=100)= consultation.prescription.drugs
+          textarea#drugs(name="drugs" rows=10 cols=100 required)= consultation.prescription.drugs
           hr
           br
 
@@ -52,7 +52,7 @@ block content
           h2 Laboratory Tests & Scans
           br
           br
-          textarea#tests(name="tests" rows=10 cols=100)= consultation.labInvestigation.tests
+          textarea#tests(name="tests" rows=10 cols=100 required)= consultation.labInvestigation.tests
           hr
         br
         br

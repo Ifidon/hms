@@ -19,3 +19,29 @@ block content
       form(method="post", action="/")
         input.form-control-sm(type="text" name="search" id='search' placeholder="Hospital No./Last Name")
         button.btn.btn-primary(type='submit') Search
+
+
+
+
+
+
+
+
+
+
+
+div.container
+    div.row
+      form.form-group(method='post', action="/front_desk")
+        input(type="text" placeholder="Search with Hospital Number" name="search")
+        input.btn.btn-primary(type="submit" value="search")
+    hr
+    br
+    br
+    br
+
+    div.row
+      h4.col-3
+        strong Hospital Number
+      h4.col-4
+        strong Patient Name

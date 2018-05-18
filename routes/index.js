@@ -33,24 +33,25 @@ router.post('/', (req, res) => {
 });
 
 router.get('/front_desk', function(req, res) {
-  res.render('front_desk', {patientlist: nurses_station})
+  res.render('front_desk', {patientlist: front_office})
 });
 
-router.post('/front_desk', function(req, res) {
-  Patients.find({patient_id: req.body.search})
-  .then((result) => {
-    // nurses_station.push(patient)
-    // console.log(req.params)
-    res.render('search_result', {patientlist: result})
-    front_office = result
-  })
-});
+// router.post('/front_desk', function(req, res) {
+//   Patients.find({patient_id: req.body.search})
+//   .then((result) => {
+//     // nurses_station.push(patient)
+//     // console.log(req.params)
+//     res.render('search_result', {patientlist: result})
+//     front_office = result
+//   })
+// });
 
 router.post('/front_desk/send/:patient_id', function(req, res) {
   Patients.findOne(req.params)
   .then((patient) => {
     console.log(req.params)
     nurses_station.push(patient)
+    front_office.push(patient)
     // res.render('front_desk', {patientlist: nurses_station})
     res.redirect('/front_desk')
   })

@@ -27,15 +27,15 @@ block content
           p.btn-success Vitals Form
           div
             label(for="weight") Weight:
-            input#weight(type="text" name="weight" placeholder="Weight(KG)")
+            input#weight(type="text" name="weight" placeholder="Weight(KG)" required)
             label(for="blppdPressure") Blood Pressure:
-            input#bp(type="text" name="bloodPressure" placeholder="Blood Pressure(mmHg)")
+            input#bp(type="text" name="bloodPressure" placeholder="Blood Pressure(mmHg)" required)
             br
             br
             label(for="temperature") Temperature:
-            input#temp(type="text" name="temperature" placeholder="Temperature(C)")
+            input#temp(type="text" name="temperature" placeholder="Temperature(C)" required)
             label(for="heartrate") Heart Rate:
-            input#temp(type="text" name="heartRate" placeholder="Heart Rate(BPM)")
+            input#temp(type="text" name="heartRate" placeholder="Heart Rate(BPM)" required)
           input.col-12.btn.btn-primary(type='submit' value="Save & Send to Doctor's Office")
     br
     br

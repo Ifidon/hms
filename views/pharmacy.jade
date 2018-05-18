@@ -30,9 +30,9 @@ block content
           td
             textarea(cols=40 rows=10 disabled)= consultation.prescription.drugs
           td
-            input#pcost(type="number" placeholder="Enter Cost" name="prescriptionCost" value="#{consultation.prescription.cost}")
+            input#pcost(type="number" placeholder="Enter Cost" name="prescriptionCost" value="#{consultation.prescription.cost}" required)
           td
-            input#pamountPaid(type="number" placeholder="Enter Amount Paid" name="prescriptionAmtPaid" value="#{consultation.prescription.amountPaid}")
+            input#pamountPaid(type="number" placeholder="Enter Amount Paid" name="prescriptionAmtPaid" value="#{consultation.prescription.amountPaid}" required)
           td
             input#pbalance(type="number" onClick='getPrescriptionBalance()' placeholder="Click to get balance" name="prescriptionBal" value="#{consultation.prescription.balance}")
             br
@@ -58,9 +58,9 @@ block content
           td
             textarea(cols=40 rows=10 disabled)= consultation.labInvestigation.tests
           td
-            input#tcost(type="number" placeholder="Enter Cost" name="labCost" value="#{consultation.labInvestigation.cost}")
+            input#tcost(type="number" placeholder="Enter Cost" name="labCost" value="#{consultation.labInvestigation.cost}" required)
           td
-            input#tamountPaid(type="number" placeholder="Enter Amount Paid" name="labAmtPaid" value="#{consultation.labInvestigation.amountPaid}")
+            input#tamountPaid(type="number" placeholder="Enter Amount Paid" name="labAmtPaid" value="#{consultation.labInvestigation.amountPaid}" required)
           td
             input#tbalance(type="number" onClick='getLabBalance()' placeholder="Click to get balance" name="labBal" value="#{consultation.labInvestigation.balance}")
           br
