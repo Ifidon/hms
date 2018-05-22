@@ -2,8 +2,8 @@
   "name": "hms",
   "version": "0.0.0",
   "engines": {
-        "node": "6.11.2"
-    },
+    "node": "6.11.2"
+  },
   "private": true,
   "scripts": {
     "start": "node ./bin/www"

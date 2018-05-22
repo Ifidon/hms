@@ -1,21 +1,36 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    ul#myTab.nav.nav-tabs(role='tablist')
-      li.nav-item
-        a#home-tab.nav-link.active(data-toggle='tab', href='/', role='tab', aria-controls='home', aria-selected='true') Login
-      li.nav-item
-        a#frontdesk-tab.nav-link(data-toggle='tab', href='/front_desk', role='tab', aria-controls='profile', aria-selected='false') Front Desk
-      li.nav-item
-        a#nurses-tab.nav-link(data-toggle='tab', href='/nurses_station', role='tab', aria-controls='contact', aria-selected='false') Nurses Station
-      li.nav-item
-        a#doctors-tab.nav-link(data-toggle='tab', href='/doctors_office', role='tab', aria-controls='contact', aria-selected='false') Doctor's Office
-      li.nav-item
-        a#pharandlab-tab.nav-link(data-toggle='tab', href='/pharmacyandlab', role='tab', aria-controls='contact', aria-selected='false') Pharmacy and Laboratory
-    br
-    br
-    block content
+head
+	title= title
+	link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+	link(rel='stylesheet', href='/stylesheets/style.css')
+body
+	header
+		nav.navbar.navbar-default
+			div.container-fluid
+				div.navbar-navbar-header
+					div.nanbar-brand.pull-left
+						a.pull-left(href="/")
+							img(width= 150 height=150)
+				div#menu-list-div
+					ul.nav.nav-pills.nav-justified
+						li.nav-item
+							a.nav-link(href="/front_desk")
+								| Front Desk
+						li.nav-item
+							a.nav-link(href="/nurses_station")
+								| Nurses Station
+						li.nav-item
+							a.nav-link(href="/doctors_office")
+								| Doctor's Office
+						li.nav-item
+							a.nav-link(href="/pharmacyandlab")
+								| Pharmacy and Laboratory
+	br
+	br
+	
+	block content
+
+	br
+	br
+	footer
