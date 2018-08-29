@@ -1,40 +1,40 @@
 doctype html
 html
-head
-	title= title
-	link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-	link(rel='stylesheet', href='/stylesheets/style.css')
-body
-	header
-		p.welcome= welcomeMessage
-		nav.navbar.navbar-default
-			div.container-fluid
-				div.navbar-navbar-header
-					div.nanbar-brand.pull-left
-						a.pull-left(href="/")
-							img(width= 150 height=150)
-				div#menu-list-div
-					ul.nav.nav-pills.nav-justified
-						li.nav-item
-							a.nav-link(href="/front_desk")
-								| Front Desk
-						li.nav-item
-							a.nav-link(href="/nurses_station")
-								| Nurses Station
-						li.nav-item
-							a.nav-link(href="/doctors_office")
-								| Doctor's Office
-						li.nav-item
-							a.nav-link(href="/pharmacyandlab")
-								| Pharmacy and Laboratory
-	div.float-right
-		a.mr-1(href='/login') Login
-		a.mx-1(href='/users/new') Register
-	br
-	br
-	
-	block content
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		header
+			p.welcome= welcomeMessage
+			nav.navbar.navbar-default
+				div.container-fluid
+					div.navbar-navbar-header
+						div.nanbar-brand.pull-left
+							a.pull-left(href="/")
+								img(width= 150 height=150)
+					div#menu-list-div
+						ul.nav.nav-pills.nav-justified
+							li.nav-item
+								a.nav-link(href="/front_desk")
+									| Front Desk
+							li.nav-item
+								a.nav-link(href="/nurses_station")
+									| Nurses Station
+							li.nav-item
+								a.nav-link(href="/doctors_office")
+									| Doctor's Office
+							li.nav-item
+								a.nav-link(href="/pharmacyandlab")
+									| Pharmacy and Laboratory
+		div.float-right
+			a.mr-1(href='/login') Login
+			a.mx-1(href='/users/new') Register
+		br
+		br
+		
+		block content
 
-	br
-	br
-	footer
+		br
+		br
+		footer

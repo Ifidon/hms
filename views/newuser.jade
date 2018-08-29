@@ -23,20 +23,4 @@ block content
 				br
 				input.form-control.col-12.btn.btn-primary(type='submit' value='Create User')
 
-
-
-
-			script.
-				console.log('me')
-
-				var password = document.getElementById('passw');
-				var confirmp = document.getElementById('confpass');
-				var message = document.getElementById('message');
-
-				function checkpass() {
-					if (password.value != confirmp.value) {
-						confirmp.value = '';
-						message.hidden = false;
-						message.innerHTML = 'Password does not match! Try again';
-					}
-				}
+	script(src='/javascripts/newuser.js')

@@ -49,7 +49,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(expressValidator());
-app.use(session({secret: 'keynote'}));
+app.use(session({
+  secret: 'keynote',
+  saveUninitialized: false,
+  resave: false
+}));
 
 app.use(passport.initialize());
 app.use(passport.session());
