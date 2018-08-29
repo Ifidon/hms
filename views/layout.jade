@@ -6,6 +6,7 @@ head
 	link(rel='stylesheet', href='/stylesheets/style.css')
 body
 	header
+		p.welcome= welcomeMessage
 		nav.navbar.navbar-default
 			div.container-fluid
 				div.navbar-navbar-header
@@ -26,6 +27,9 @@ body
 						li.nav-item
 							a.nav-link(href="/pharmacyandlab")
 								| Pharmacy and Laboratory
+	div.float-right
+		a.mr-1(href='/login') Login
+		a.mx-1(href='/users/new') Register
 	br
 	br
 	

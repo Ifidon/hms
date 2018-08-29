@@ -29,6 +29,24 @@ var labSchema = new Schema ({
   },
   balance: {
     type: String
+  },
+  findings: {
+    type: String
+  }
+});
+
+var otherPaymentSchema = new Schema ({
+  description: {
+    type: String
+  },
+  cost: {
+    type: String
+  },
+  amountPaid: {
+    type: String
+  },
+  balance: {
+    type: String
   }
 });
 
@@ -58,7 +76,9 @@ var consultation = new Schema ({
 
   prescription:prescriptionSchema,
 
-  labInvestigation:labSchema
+  labInvestigation:labSchema,
+
+  otherPayment: otherPaymentSchema,
 }, {
   timestamps: true
 });

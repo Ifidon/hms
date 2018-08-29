@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	div
+		form(method='post' action='/users/new')
+			input(type='text' name='firstname' placeholder='firstname')
+			br
+			input(type='text' name='lastname' placeholder='lastname')
+			br
+			input(type='text' name='username' placeholder='username')
+			br
+			input(type='password' name='password' placeholder='password')
+			br
+			input(type='text' name=role placeholder='role')
+			br
+			input(type='submit' value='Create User')

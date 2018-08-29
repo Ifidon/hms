@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var patientRouter = require('./patients.js');
 var Patients = require('../models/patients');
+var passport = require('passport');
 
 var front_office = [];
 var nurses_station = [];
@@ -9,9 +10,10 @@ var doctors_office = [];
 var pharmlab = [];
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/login', function(req, res, next) {
   res.render('login', { title: 'My HMS' });
 });
+
 
 router.post('/', (req, res) => {
   if (isNaN(req.body.search)) {
@@ -31,6 +33,11 @@ router.post('/', (req, res) => {
       })
   }
 });
+
+router.post('/login', passport.authenticate('local'),
+  function(req, res) {
+    res.redirect('/registration')
+  });
 
 router.get('/front_desk', function(req, res) {
   res.render('front_desk', {patientlist: front_office})
