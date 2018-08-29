@@ -1,16 +1,42 @@
 extends layout
 
 block content
-	div
-		form(method='post' action='/users/new')
-			input(type='text' name='firstname' placeholder='firstname')
-			br
-			input(type='text' name='lastname' placeholder='lastname')
-			br
-			input(type='text' name='username' placeholder='username')
-			br
-			input(type='password' name='password' placeholder='password')
-			br
-			input(type='text' name=role placeholder='role')
-			br
-			input(type='submit' value='Create User')
+	div.form-group
+		form.form-control(method='post' action='/users/new')
+			fieldset
+				legend.text-center Register User
+				br
+				input.form-control.col-12(type='text' name='firstname' placeholder='First Name' required)
+				br
+				input.form-control.col-12(type='text' name='lastname' placeholder='Last Name' required)
+				br
+				input.form-control.col-12(type='email' name='email' placeholder='Email Address' required)
+				br
+				input.form-control.col-12(type='text' name='username' placeholder='Username' required)
+				br
+				input.form-control.col-12#passw(type='password' name='password' placeholder='Password' required)
+				br
+				span#message.alert.alert-danger(hidden)
+				input.form-control.col-12#confpass(type='password' name='password' placeholder='Confirm Password' onchange='checkpass()' required)
+				br
+				input.form-control.col-12(type='text' name=role placeholder='Role' required)
+				br
+				input.form-control.col-12.btn.btn-primary(type='submit' value='Create User')
+
+
+
+
+			script.
+				console.log('me')
+
+				var password = document.getElementById('passw');
+				var confirmp = document.getElementById('confpass');
+				var message = document.getElementById('message');
+
+				function checkpass() {
+					if (password.value != confirmp.value) {
+						confirmp.value = '';
+						message.hidden = false;
+						message.innerHTML = 'Password does not match! Try again';
+					}
+				}
