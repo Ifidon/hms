@@ -24,15 +24,34 @@ router.post('/new', function(req, res, next) {
 		next(err)
 	}
 	else {
-		User.register(new User({firstname: req.body.firstname, lastname: req.body.lastname, username: req.body.username, role: req.body.role}), 
+		User.register(new User({firstname: req.body.firstname, lastname: req.body.lastname, email: req.body.email, username: req.body.username, role: req.body.role}), 
 			req.body.password, function(err, user) {
 				if (err) {
 					next(err)
 				}
 				else {
-					passport.authenticate('local', {successFlash: 'Welcome', failureFlash: 'Registration failed'})(req, res, () => {
-						console.log(user)
-						res.redirect('/registration')
+					passport.authenticate('local')(req, res, () => {
+
+						var user = req.user
+						if(user.role == "Doctor") {
+							res.redirect('/doctors_office')
+						}
+						if(user.role == "Nurse") {
+							res.redirect('/nursess_office')
+						}
+						if(user.role == "Hospital Administrator") {
+							res.redirect('/front_desk')
+						}
+						if(user.role == "Pharmacist") {
+							res.redirect('/pharmacyandlab')
+						}
+						if(user.role == "Lab Technician") {
+							res.redirect('/pharmacyandlab')
+						}
+						if(user.role == "IT Administrator") {
+							res.redirect('/registration')
+						}						
+							// res.redirect('/registration')
 					})
 				}
 		})

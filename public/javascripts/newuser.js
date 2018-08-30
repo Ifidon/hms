@@ -8,4 +8,8 @@ function checkpass() {
 		message.hidden = false;
 		message.innerHTML = 'Password does not match! Try again';
 	}
+
+	if (password.value == confirmp.value) {
+		message.hidden = true
+	}
 }
