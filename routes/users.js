@@ -37,7 +37,7 @@ router.post('/new', function(req, res, next) {
 							res.redirect('/doctors_office')
 						}
 						if(user.role == "Nurse") {
-							res.redirect('/nursess_station')
+							res.redirect('/nurses_station')
 						}
 						if(user.role == "Hospital Administrator") {
 							res.redirect('/front_desk')
@@ -59,8 +59,27 @@ router.post('/new', function(req, res, next) {
 });
 
 router.post('/login', passport.authenticate('local'),
-  function(req, res) {
-    res.redirect('/registration')
+  function(req, res, next) {
+
+	var user = req.user
+	if(user.role == "Doctor") {
+		res.redirect('/doctors_office')
+	}
+	if(user.role == "Nurse") {
+		res.redirect('/nurses_station')
+	}
+	if(user.role == "Hospital Administrator") {
+		res.redirect('/front_desk')
+	}
+	if(user.role == "Pharmacist") {
+		res.redirect('/pharmacyandlab')
+	}
+	if(user.role == "Lab Technician") {
+		res.redirect('/pharmacyandlab')
+	}
+	if(user.role == "IT Administrator") {
+		res.redirect('/registration')
+	}
   });
 
   

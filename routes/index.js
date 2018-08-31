@@ -34,10 +34,10 @@ router.post('/', (req, res) => {
   }
 });
 
-router.post('/login', passport.authenticate('local'),
-  function(req, res) {
-    res.redirect('/registration')
-  });
+// router.post('/login', passport.authenticate('local'),
+//   function(req, res) {
+//     res.redirect('/registration')
+//   });
 
 router.get('/front_desk', function(req, res) {
   res.render('front_desk', {patientlist: front_office})
