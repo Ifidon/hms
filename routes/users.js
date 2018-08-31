@@ -37,7 +37,7 @@ router.post('/new', function(req, res, next) {
 							res.redirect('/doctors_office')
 						}
 						if(user.role == "Nurse") {
-							res.redirect('/nursess_office')
+							res.redirect('/nursess_station')
 						}
 						if(user.role == "Hospital Administrator") {
 							res.redirect('/front_desk')

@@ -5,9 +5,20 @@ var Patients =  require('../models/patients');
 
 var patientreg = express.Router();
 
+// function grantaccess (req, res, next) {
+// 	console.log(req.user)
+// 	if(req.user.role == "Hospital Admininstrator" || "IT Administrator") {
+// 		next()
+// 	}
+// 	else {
+// 		res.send('Not Authorized to view this page')
+// 	}
+// }
+
 
 patientreg.route('/')
 .get((req, res) => {
+	console.log(req.user)
   res.render('regpatient');
 })
 
