@@ -2,7 +2,7 @@ extends layout
 
 block content
   div#registrationform.form-group.form-control
-    form(method="post", action='/registration')
+    form(method="post", action='/patients/registration')
       h3 Patients Registration Form
       fieldset
         legend Personal Details
@@ -13,8 +13,8 @@ block content
         br
         br
 
-        label(for="image") Passport Photograph:
-        input#passport(type="file" name="image")
+        label(for="passport") Passport Photograph:
+        input#passport(type="file" name="passport")
         br
         br
         label(for="firstname") First Name:

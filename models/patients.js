@@ -84,11 +84,6 @@ var consultation = new Schema ({
 });
 
 var PatientSchema = new Schema ({
-  image: {
-    data: Buffer,
-    contentType: String
-  },
-
   patient_id: {
     type: Number,
     required: true,
