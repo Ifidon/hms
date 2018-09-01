@@ -9,7 +9,10 @@ var expressValidator = require('express-validator');
 var session = require('express-session');
 var FileStore = require('session-file-store');
 var passport = require('passport');
-var authenticate = require('./authenticate')
+var authenticate = require('./authenticate');
+
+var fs = require('fs');
+var multer = require('multer');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -51,6 +54,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(expressValidator());
+
 app.use(session({
   secret: 'keynote',
   saveUninitialized: false,

@@ -4,17 +4,18 @@ block content
 
   div.container
     div.row
+      img(src='#{patient_details.image.data}')
       div
-        h3.col-xs-12= patient_details[0].firstname + ' ' + patient_details[0].lastname
-          span.badge= " (Hospital ID: " + patient_details[0].patient_id + ")"
+        h3.col-xs-12= patient_details.firstname + ' ' + patient_details.lastname
+          span.badge= " (Hospital ID: " + patient_details.patient_id + ")"
           h5#age.col-xs-12
-          h5#phone= "Phone Number: " + patient_details[0].phone
-          h5#addres= "Contact Address: " + patient_details[0].address
-          h5#nok= "Next of Kin (Name): " + patient_details[0].nokName
+          h5#phone= "Phone Number: " + patient_details.phone
+          h5#addres= "Contact Address: " + patient_details.address
+          h5#nok= "Next of Kin (Name): " + patient_details.nokName
         br
         br
 
-        form(method="post", action="/front_desk/send/#{patient_details[0].patient_id}")
+        form(method="post", action="/front_desk/send/#{patient_details.patient_id}")
           button.btn.btn-primary(type="submit") Send to Nurses' Station
 
     div.row.form-group.col-12(hidden)
@@ -37,7 +38,7 @@ block content
 
 
 
-    p#dob(hidden)= patient_details[0].dob
+    p#dob(hidden)= patient_details.dob
 
 
     script(src ='/javascripts/patientview.js')
