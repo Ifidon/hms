@@ -5,6 +5,18 @@ var Patients =  require('../models/patients');
 
 var patientRouter = express.Router();
 
+function itadmaccess (req, res, next) {
+  console.log(req.user)
+  if(req.user.role == "IT Admininstrator") {
+    next()
+  }
+  else {
+    res.send('Not Authorized to view this page')
+  }
+}
+
+patientRouter.use(itadmaccess)
+
 
 patientRouter.route('/')
 .get((req, res) => {
