@@ -1,75 +1,69 @@
 extends layout
 
 block content
-  div#registrationform.form-group.form-control
-    form(method="post", action='/patients/registration')
-      h3 Patients Registration Form
-      fieldset
-        legend Personal Details
-        br
-        br
-        label(for="patient_id") Hospital Number:
-        input#patient_id(type="text" name="patient_id" required)
-        br
-        br
+    div.container
+        div.row
+            form.form-control(method="post", action='/patients/registration')
+              h3 Patients Registration Form
+              fieldset
+                legend Personal Details
+                br
 
-        label(for="passport") Passport Photograph:
-        input#passport(type="file" name="passport")
-        br
-        br
-        label(for="firstname") First Name:
-        input#firstname(type="string" name="firstname" required)
-        br
-        br
-        label(for="lastname") Last Name:
-        input#lastname(type="string" name="lastname" required)
-        br
-        br
-        label(for="dob") Date of Birth:
-        input#dob(type="date" name="dob" required)
-        span (DD/MM/YYY)
-        br
-        br
+                label(for="patient_id") Hospital Number:
+                input#patient_id.form-control(type="text" name="patient_id" required)
+                br
 
-      fieldset
-        legend Contact Details
-        br
-        br
-        label(for="address") Contact Address:
-        textarea#address(name="address" rows="4" cols="27" required)
-        br
-        br
+                label(for="passport") Passport Photograph:
+                input#passport.form-control(type="file" name="passport")
+                br
 
-        label(for="email") Email Address:
-        input#email(type="email" name="email")
-        br
-        br
+                label(for="firstname") First Name:
+                input#firstname.form-control(type="string" name="firstname" required)
+                br
 
-        label(for="phone") Phone Number:
-        input#phone(type="phone" name="phone")
-        br
-        br
+                label(for="lastname") Last Name:
+                input#lastname.form-control(type="string" name="lastname" required)
+                br
+                br
+                label(for="dob") Date of Birth (MM/DD/YYYY):
+                input#dob.form-control(type="date" name="dob" required)
+                br
 
-      fieldset
-        legend Next of Kin Details(Emergency Contact)
+              fieldset
+                legend Contact Details
+                br
 
-        label(for="nokName") Name of Next of Kin:
-        input#nokName(type="float" name="nokName" required)
-        br
-        br
+                label(for="address") Contact Address:
+                textarea#address.form-control(name="address" rows="4" cols="27" required)
+                br
 
-        label(for="nokAddress") Address of Next of Kin:
-        input#nokAddress(type="" name="nokAddress")
-        br
-        br
+                label(for="email") Email Address:
+                input#email.form-control(type="email" name="email")
+                br
 
-        label(for="nokPhone") Phone Number of Next of Kin:
-        input#nokPhone(type="bloodgroup" name="nokPhone")
-        br
-        br
+                label(for="phone") Phone Number:
+                input#phone.form-control(type="phone" name="phone")
+                br
+                br
 
-        label(for="nokRelationship") Relationship with Next of Kin:
-        input#nokRelationship(type="string" name="nokRelationship")
-        br
-        br
-      input#submit.btn.btn-primary(type="submit" value="Register" name="submit")
+              fieldset
+                legend Next of Kin Details (Emergency Contact)
+                br
+
+                label(for="nokName") Name of Next of Kin:
+                input#nokName.form-control(type="float" name="nokName" required)
+                br
+
+                label(for="nokAddress") Address of Next of Kin:
+                input#nokAddress.form-control(type="" name="nokAddress")
+                br
+
+                label(for="nokPhone") Phone Number of Next of Kin:
+                input#nokPhone.form-control(type="bloodgroup" name="nokPhone")
+                br
+
+                label(for="nokRelationship") Relationship with Next of Kin:
+                input#nokRelationship.form-control(type="string" name="nokRelationship")
+                br
+
+              input#submit.btn.btn-primary.form-control(type="submit" value="Register" name="submit")

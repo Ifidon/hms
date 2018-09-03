@@ -7,7 +7,7 @@ var patientRouter = express.Router();
 
 function itadmaccess (req, res, next) {
   console.log(req.user)
-  if(req.user.role == "IT Admininstrator") {
+  if(req.user.role == "IT Administrator") {
     next()
   }
   else {

@@ -6,8 +6,7 @@ var Patients =  require('../models/patients');
 var patientreg = express.Router();
 
 function grantaccess (req, res, next) {
-	console.log(req.user)
-	if(req.user.role == "Hospital Admininstrator" ||  req.user.role == "IT Admininstrator") {
+	if(req.user.role == "Hospital Administrator" ||  req.user.role == "IT Administrator") {
 		next()
 	}
 	else {
@@ -20,8 +19,9 @@ patientreg.use(grantaccess);
 
 patientreg.route('/')
 .get((req, res, next) => {
-	console.log(req.user)
-  res.render('regpatient');
+  var user = req.user
+	console.log(user)
+  res.render('regpatient', user);
 })
 
 .post((req, res, next) => {

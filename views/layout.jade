@@ -6,32 +6,34 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 	body
 		header
-			p.welcome= welcomeMessage
-			nav.navbar.navbar-default
-				div.container-fluid
-					div.navbar-navbar-header
-						div.nanbar-brand.pull-left
-							a.pull-left(href="/")
-								img(width= 150 height=150)
-					div#menu-list-div
-						ul.nav.nav-pills.nav-justified
-							li.nav-item
-								a.nav-link(href="/front_desk")
-									| Front Desk
-							li.nav-item
-								a.nav-link(href="/nurses_station")
-									| Nurses Station
-							li.nav-item
-								a.nav-link(href="/doctors_office")
-									| Doctor's Office
-							li.nav-item
-								a.nav-link(href="/pharmacyandlab")
-									| Pharmacy and Laboratory
+			div.container
+				div.row
+					nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.col-12
+						a.navbar-brand.col-3(href='/login')
+							img(src='/images/logo.jpg' alt='brand-image' width=100 height=100)
+						button.navbar-toggler(type='button' data-toggle='collapse' data-target='#menuDiv' aria-controls="menuDiv" aria-expanded="false" aria-label="Toggle navigation")
+							span.navbar-toggler-icon
+						div.collapse.navbar-collapse.col-9.h-100(id='menuDiv')
+							ul.navbar-nav.ml-auto.mt-auto
+								li.nav-item.mx-1
+									a.nav-link(href='/front_desk') Front Desk
+								li.nav-item.mx-1
+									a.nav-link(href='/nurses_station') Nurses' Station
+								li.nav-item.mx-1
+									a.nav-link(href='doctors_office') Doctor's Office
+								li.nav-item.mx-1
+									a.nav-link(href='/pharmacy') Pharmacy
+								li.nav-item.mx-1
+									a.nav-link(href='/lab') Laboratory
+					div.col-12.bg-light
+						h6#welcomeMessage Welcome #{user}
+						a.float-right#loginlink(href='/login') Login
+						
+
 		br
-		br
-		
 		block content
 
 		br
 		br
+		script(src='/javascripts/bootstrap.min.js')
 		footer
