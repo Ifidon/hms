@@ -2,24 +2,26 @@ var express = require('express');
 var mongoose = require('mongoose');
 var Patients =  require('../models/patients');
 
+var authorize = require('../authorize');
+
 
 var patientRouter = express.Router();
 
-function itadmaccess (req, res, next) {
-  console.log(req.user)
-  if(req.user.role == "IT Administrator") {
-    next()
-  }
-  else {
-    res.send('Not Authorized to view this page')
-  }
-}
+// function itadmaccess (req, res, next) {
+//   console.log(req.user)
+//   if(req.user.role == "IT Administrator") {
+//     next()
+//   }
+//   else {
+//     res.send('Not Authorized to view this page')
+//   }
+// }
 
-patientRouter.use(itadmaccess)
+// patientRouter.use(itadmaccess)
 
 
 patientRouter.route('/')
-.get((req, res) => {
+.get(authorize.fdaccess, (req, res) => {
   Patients.find()
   .then((patients) => {
     res.render('patientslist', {patientlist: patients.reverse()})
@@ -27,7 +29,7 @@ patientRouter.route('/')
 });
 
 patientRouter.route('/registration')
-.get((req, res) => {
+.get(authorize.fdaccess, (req, res) => {
   res.render('regpatient');
 })
 
@@ -40,7 +42,7 @@ patientRouter.route('/registration')
 });
 
 patientRouter.route('/:patient_id')
-.get((req, res) => {
+.get(authorize.fdaccess, (req, res) => {
   Patients.find({patient_id: req.params.patient_id})
   .then((patient) => {
     res.render('patientview', {patient_details: patient})
@@ -48,7 +50,7 @@ patientRouter.route('/:patient_id')
 });
 
 patientRouter.route('/:patient_id/update')
-.get((req, res) => {
+.get(authorize.fdaccess, (req, res) => {
   Patients.find({patient_id: req.params.patient_id})
   .then((patient) => {
     res.render('update', {patient_details: patient})
@@ -66,7 +68,7 @@ patientRouter.route('/:patient_id/update')
 });
 
 patientRouter.route('/:patient_id/recordvitals')
-.get((req, res) => {
+.get(authorize.nurseaccess, (req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
     console.log(req.params)
@@ -77,7 +79,7 @@ patientRouter.route('/:patient_id/recordvitals')
 
 
 patientRouter.route('/:patient_id/consultations')
-.get((req, res) => {
+.get(authorize.draccess, (req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
     res.render('consultations', {patient})
@@ -95,7 +97,7 @@ patientRouter.route('/:patient_id/consultations')
   });
 
   patientRouter.route('/:patient_id/consultations/:consultation_id')
-  .get((req, res) => {
+  .get(authorize.draccess, (req, res) => {
     Patients.findOne({patient_id: req.params.patient_id})
     .then((patient) => {
       if (patient.consultations.id(req.params.consultation_id).prescription) {
