@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-require('mongoose-type-email');
+// require('mongoose-type-email');
 var Schema = mongoose.Schema;
 
 var prescriptionSchema = new Schema ({
