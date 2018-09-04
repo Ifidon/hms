@@ -2,15 +2,15 @@ doctype html
 html
 	head
 		title= title
-		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
 	body
 		header
 			div.container
 				div.row
 					nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.col-12
-						a.navbar-brand.col-3(href='/login')
-							img(src='/images/logo.jpg' alt='brand-image' width=100 height=100)
+						a.navbar-brand.col-3(href='/')
+							img(src='/images/logo.jpg' alt='HealthMax Brand' width=100 height=100)
 						button.navbar-toggler(type='button' data-toggle='collapse' data-target='#menuDiv' aria-controls="menuDiv" aria-expanded="false" aria-label="Toggle navigation")
 							span.navbar-toggler-icon
 						div.collapse.navbar-collapse.col-9.h-100(id='menuDiv')
@@ -18,13 +18,13 @@ html
 								li.nav-item.mx-1
 									a.nav-link(href='/front_desk') Front Desk
 								li.nav-item.mx-1
-									a.nav-link(href='/nurses_station') Nurses' Station
+									a.nav-link.mx-2(href='/nurses_station') Nurses' Station
 								li.nav-item.mx-1
-									a.nav-link(href='doctors_office') Doctor's Office
+									a.nav-link.mx-2(href='doctors_office') Doctor's Office
 								li.nav-item.mx-1
-									a.nav-link(href='/pharmacy') Pharmacy
+									a.nav-link.mx-2(href='/pharmacy') Pharmacy
 								li.nav-item.mx-1
-									a.nav-link(href='/lab') Laboratory
+									a.nav-link.mx-2(href='/lab') Laboratory
 					
 					div.col-12.bg-secondary
 						a.float-right.text-white.mr-2#loginlink(href='/login') Login
@@ -34,6 +34,5 @@ html
 		block content
 
 		br
-		br
-		script(src='/javascripts/bootstrap.min.js')
-		footer
+		script(src='/jquery/jquery.min.js')
+		script(src='/bootstrap/dist/js/bootstrap.min.js')

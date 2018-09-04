@@ -1,0 +1,38 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			div.carousel.slide#carousel(data-ride='carousel')
+				ol.carousel-indicators
+					li.active(data-target='#carousel' data-slide-to='0')
+					li(data-target='#carousel' data-slide-to='1')
+					li(data-target='#carousel' data-slide-to='2')
+				div.carousel-inner
+					div.carousel-item.active
+						img.d-block.w-100(src='/images/carousel1.jpg' alt='first slide')
+						div.carousel-caption.d-none.d-md-block
+							h5 Fully Equipped
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis non lectus interdum ornare euismod non magna. Etiam egestas eros ac ante porta, quis tempor sapien volutpat. Phasellus elementum quam enim, a iaculis libero facilisis ut. Duis nec rhoncus lorem.
+					
+					div.carousel-item
+						img.d-block.w-100(src='/images/carousel2.jpg' alt='Second Slide')
+						div.carousel-caption.d-none.d-md-block
+							h5 Professional Staff
+							p Ut turpis ligula, fringilla vel laoreet eu, auctor at lacus. Vestibulum eleifend libero sollicitudin tempus pretium. Aliquam non est velit. Proin et tincidunt mauris, fringilla condimentum arcu. Vivamus vitae est leo.
+
+					div.carousel-item
+						img.d-block.w-100(src='/images/carousel3.jpg' alt='Third Slide')
+						div.carousel-caption.d-none.d-md-block
+							h5 Regular Specialist Clincs
+							p Praesent massa metus, ultricies ut enim in, facilisis molestie velit. Maecenas non magna augue. Mauris maximus, eros eget sollicitudin semper, enim eros pulvinar dui, nec aliquam mauris dolor a orci. Curabitur erat sem, pharetra sit amet risus nec, suscipit egestas mauris.
+
+					a.carousel-control-prev(href='#carousel' role='button' data-slide='prev')
+						span.carousel-control-prev-icon(aria-hidden='true')
+						span.sr-only Previous
+					a.carousel-control-next(href='#carousel' role='button' data-slide='next')
+						span.carousel-control-next-icon(aria-hidden='true')
+						span.sr-only Next
+		br
+		
+		footer

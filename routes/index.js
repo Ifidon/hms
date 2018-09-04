@@ -62,9 +62,11 @@ function pharmlabaccess (req, res, next) {
 };
 
 /* GET home page. */
-router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'My HMS' });
-});
+
+router.get('/', function(req, res, next) {
+  res.render('homepage', {title: 'HealthMax: Welcome'})
+})
+
 
 router.post('/', (req, res) => {
   if (isNaN(req.body.search)) {
@@ -85,13 +87,17 @@ router.post('/', (req, res) => {
   }
 });
 
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'HealthMax: Login' });
+});
+
 // router.post('/login', passport.authenticate('local'),
 //   function(req, res) {
 //     res.redirect('/registration')
 //   });
 
 router.get('/front_desk', fdaccess, function(req, res) {
-  res.render('front_desk', {patientlist: front_office})
+  res.render('front_desk', {patientlist: front_office, title: 'HealthMax: Front Desk'})
 });
 
 // router.post('/front_desk', function(req, res) {
@@ -117,7 +123,7 @@ router.post('/front_desk/send/:patient_id', function(req, res) {
 
 router.route('/nurses_station')
 .get(nurseaccess, (req, res) => {
-  res.render('consultationList', {patientlist: nurses_station})
+  res.render('consultationList', {patientlist: nurses_station, title: 'HealthMax: Nurses Station'})
 });
 
 router.route('/nurses_station/:patient_id')
@@ -145,26 +151,34 @@ router.route('/nurses_station/send/:patient_id')
 
 router.route('/doctors_office')
 .get(draccess, (req, res) => {
-  res.render('doctorslist', {patientlist: doctors_office})
+  res.render('doctorslist', {patientlist: doctors_office, title: "Doctor's Office"})
 });
 
 router.route('/doctors_office/:patient_id')
 .post((req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
-    // var patientid = patient.patient_id
-    // var firstname = patient.firstname
-    // var lastname = patient.lastname
-    // var cons = patient.consultations.id(req.params.consultation_id)
     pharmlab.push(patient)
     doctors_office.splice(doctors_office.indexOf(patient), 1)
     res.redirect('/doctors_office')
   })
 });
 
-router.route('/pharmacyandlab')
+router.route('/pharmacy')
 .get(pharmlabaccess, (req, res) => {
-  res.render('pharmlablist', {patientlist: pharmlab})
+  res.render('pharmlablist', {patientlist: pharmlab, title: 'HealthMax: Pharmacy'})
 })
+.post((req, res, next) => {
+
+});
+
+router.route('/Laboratory')
+.get(pharmlabaccess, (req, res) => {
+  res.render('pharmlablist', {patientlist: pharmlab, title: 'HealthMax: Laboratory'})
+})
+.post((req, res, next) => {
+
+});
+
 
 module.exports = router;
