@@ -9,57 +9,59 @@ var nurses_station = [];
 var doctors_office = [];
 var pharmlab = [];
 
-function fdaccess (req, res, next) {
-  if(!req.user) {
-    res.redirect('/login')
-  }
-  else if(req.user.role == "Hospital Administrator") {
-    next()
-  }
-  else {
-    res.send('Not Authorized to view this page')
-  }
-};
+var authorize = require('../authorize');
+
+// function fdaccess (req, res, next) {
+//   if(!req.user) {
+//     res.redirect('/login')
+//   }
+//   else if(req.user.role == "Hospital Administrator") {
+//     next()
+//   }
+//   else {
+//     res.send('Not Authorized to view this page')
+//   }
+// };
 
 
-function nurseaccess (req, res, next) {
-  // console.log(req.user)
-  if(!req.user) {
-    res.redirect('/login')
-  }
-  else if(req.user.role == "Nurse") {
-    next()
-  }
-  else {
-    res.send('Not Authorized to view this page')
-  }
-};
+// function nurseaccess (req, res, next) {
+//   // console.log(req.user)
+//   if(!req.user) {
+//     res.redirect('/login')
+//   }
+//   else if(req.user.role == "Nurse") {
+//     next()
+//   }
+//   else {
+//     res.send('Not Authorized to view this page')
+//   }
+// };
 
-function draccess (req, res, next) {
-  // console.log(req.user)
-  if(!req.user) {
-    res.redirect('/login')
-  }
-  else if(req.user.role == "Doctor") {
-    next()
-  }
-  else {
-    res.send('Not Authorized to view this page')
-  }
-};
+// function draccess (req, res, next) {
+//   // console.log(req.user)
+//   if(!req.user) {
+//     res.redirect('/login')
+//   }
+//   else if(req.user.role == "Doctor") {
+//     next()
+//   }
+//   else {
+//     res.send('Not Authorized to view this page')
+//   }
+// };
 
-function pharmlabaccess (req, res, next) {
-  // console.log(req.user)
-  if(!req.user) {
-    res.redirect('/login')
-  }
-  else if(req.user.role == "Pharmacist" ||  req.user.role == "Lab Technician") {
-    next()
-  }
-  else {
-    res.send('Not Authorized to view this page')
-  }
-};
+// function pharmlabaccess (req, res, next) {
+//   // console.log(req.user)
+//   if(!req.user) {
+//     res.redirect('/login')
+//   }
+//   else if(req.user.role == "Pharmacist" ||  req.user.role == "Lab Technician") {
+//     next()
+//   }
+//   else {
+//     res.send('Not Authorized to view this page')
+//   }
+// };
 
 /* GET home page. */
 
@@ -96,7 +98,13 @@ router.get('/login', function(req, res, next) {
 //     res.redirect('/registration')
 //   });
 
-router.get('/front_desk', fdaccess, function(req, res) {
+router.route('/unauthorized')
+.get((req, res, next) => {
+  var user = req.user;
+  res.render('unauthorized', {user, title: 'HealthMax: Access Denied'})
+})
+
+router.get('/front_desk', authorize.fdaccess, function(req, res) {
   res.render('front_desk', {patientlist: front_office, title: 'HealthMax: Front Desk'})
 });
 
@@ -122,7 +130,7 @@ router.post('/front_desk/send/:patient_id', function(req, res) {
 });
 
 router.route('/nurses_station')
-.get(nurseaccess, (req, res) => {
+.get(authorize.nurseaccess, (req, res) => {
   res.render('consultationList', {patientlist: nurses_station, title: 'HealthMax: Nurses Station'})
 });
 
@@ -150,7 +158,7 @@ router.route('/nurses_station/send/:patient_id')
 })
 
 router.route('/doctors_office')
-.get(draccess, (req, res) => {
+.get(authorize.draccess, (req, res) => {
   res.render('doctorslist', {patientlist: doctors_office, title: "Doctor's Office"})
 });
 
@@ -165,7 +173,7 @@ router.route('/doctors_office/:patient_id')
 });
 
 router.route('/pharmacy')
-.get(pharmlabaccess, (req, res) => {
+.get(authorize.pharmlabaccess, (req, res) => {
   res.render('pharmlablist', {patientlist: pharmlab, title: 'HealthMax: Pharmacy'})
 })
 .post((req, res, next) => {
@@ -173,7 +181,7 @@ router.route('/pharmacy')
 });
 
 router.route('/Laboratory')
-.get(pharmlabaccess, (req, res) => {
+.get(authorize.pharmlabaccess, (req, res) => {
   res.render('pharmlablist', {patientlist: pharmlab, title: 'HealthMax: Laboratory'})
 })
 .post((req, res, next) => {

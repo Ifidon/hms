@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	div.container
+		div.card
+			div.card-header Access Denied - Protected Resource
+			div.card-body
+				h5.card-title Unauthorized User
+				
+				p.card-text Hello #{user.username} , you are not authorized to view this resource. Please click on the menu item that corresponds to your role.
+
+				a.btn.btn-primary#linkbutton
+
+		br
+
+		footer
+
+		script.
+			var role = '#{user.role}'.toString()
+
+
+	script(src='/javascripts/unauthorized.js')

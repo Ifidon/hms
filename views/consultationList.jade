@@ -12,8 +12,8 @@ block content
                 span.badge= ' (Hospital ID:' + patient.patient_id + ')'
               form(method="get", action="/patients/#{patient.patient_id}/recordvitals")
                 button.btn.btn-primary.float-right(type="submit") Record Vitals
-  br
+    br
 
-  footer
+    footer
 
   script(src ='/javascripts/patientview.js')

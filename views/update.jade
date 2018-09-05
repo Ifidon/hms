@@ -1,85 +1,88 @@
 extends layout
 
 block content
+    div.container
+        div.form-group
 
-  div.form-group
+            form(method="post", action="/patients/#{patient_details[0].patient_id}/update")
+                h3 Patient Information Update Form
+                fieldset
+                    legend Personal Details
+                    br
+                    br
+                    label(for="patient_id") Hospital Number:
+                    input#patient_id(type="text" name="patient_id" value="#{patient_details[0].patient_id}")
+                    br
+                    br
 
-    form(method="post", action="/patients/#{patient_details[0].patient_id}/update")
-      h3 Patient Information Update Form
-      fieldset
-        legend Personal Details
-        br
-        br
-        label(for="patient_id") Hospital Number:
-        input#patient_id(type="text" name="patient_id" value="#{patient_details[0].patient_id}")
-        br
-        br
+                    label(for="passport") Passport Photograph:
+                    input#passport(type="file" name="passport")
+                    br
+                    br
+                    label(for="firstname") First Name:
+                    input#firstname(type="string" name="firstname" value="#{patient_details[0].firstname}")
+                    br
+                    br
+                    label(for="lastname") Last Name:
+                    input#lastname(type="string" name="lastname" value="#{patient_details[0].lastname}")
+                    br
+                    br
+                    label(for="dob") Date of Birth:
+                    input#dob(type="date" name="dob")
+                    br
+                    br
 
-        label(for="passport") Passport Photograph:
-        input#passport(type="file" name="passport")
-        br
-        br
-        label(for="firstname") First Name:
-        input#firstname(type="string" name="firstname" value="#{patient_details[0].firstname}")
-        br
-        br
-        label(for="lastname") Last Name:
-        input#lastname(type="string" name="lastname" value="#{patient_details[0].lastname}")
-        br
-        br
-        label(for="dob") Date of Birth:
-        input#dob(type="date" name="dob")
-        br
-        br
+                fieldset
+                    legend Contact Details
+                    br
+                    br
+                    label(for="address") Contact Address:
+                    textarea#address(name="address" rows="4" cols="27" innerHTML="#{patient_details[0].address}").innerHTML #{patient_details[0].address}
+                    br
+                    br
 
-      fieldset
-        legend Contact Details
-        br
-        br
-        label(for="address") Contact Address:
-        textarea#address(name="address" rows="4" cols="27" innerHTML="#{patient_details[0].address}").innerHTML #{patient_details[0].address}
-        br
-        br
+                    label(for="email") Email Address:
+                    input#email(type="email" name="email" value="#{patient_details[0].email}")
+                    br
+                    br
 
-        label(for="email") Email Address:
-        input#email(type="email" name="email" value="#{patient_details[0].email}")
-        br
-        br
+                    label(for="phone") Phone Number:
+                    input#phone(type="phone" name="phone" value="#{patient_details[0].phone}")
+                    br
+                    br
 
-        label(for="phone") Phone Number:
-        input#phone(type="phone" name="phone" value="#{patient_details[0].phone}")
-        br
-        br
+                fieldset
+                    legend Next of Kin Details(Emergency Contact)
 
-      fieldset
-        legend Next of Kin Details(Emergency Contact)
+                    label(for="nokName") Name of Next of Kin:
+                    input#nokName(type="float" name="nokName" value="#{patient_details[0].nokName}")
+                    br
+                    br
 
-        label(for="nokName") Name of Next of Kin:
-        input#nokName(type="float" name="nokName" value="#{patient_details[0].nokName}")
-        br
-        br
+                    label(for="nokAddress") Address of Next of Kin:
+                    input#nokAddress(type="" name="nokAddress" value="#{patient_details[0].nokAddress}")
+                    br
+                    br
 
-        label(for="nokAddress") Address of Next of Kin:
-        input#nokAddress(type="" name="nokAddress" value="#{patient_details[0].nokAddress}")
-        br
-        br
+                    label(for="nokPhone") Phone Number of Next of Kin:
+                    input#nokPhone(type="bloodgroup" name="nokPhone" value="#{patient_details[0].nokPhone}")
+                    br
+                    br
 
-        label(for="nokPhone") Phone Number of Next of Kin:
-        input#nokPhone(type="bloodgroup" name="nokPhone" value="#{patient_details[0].nokPhone}")
-        br
-        br
+                    label(for="nokRelationship") Relationship with Next of Kin:
+                    input#nokRelationship(type="string" name="nokRelationship" value="#{patient_details[0].nokRelationship}")
+                    br
+                    br
+                input#submit.btn.btn-primary(type="submit" value="Update" name="submit")
 
-        label(for="nokRelationship") Relationship with Next of Kin:
-        input#nokRelationship(type="string" name="nokRelationship" value="#{patient_details[0].nokRelationship}")
-        br
-        br
-      input#submit.btn.btn-primary(type="submit" value="Update" name="submit")
-
-      p#ddob(hidden)= patient_details[0].dob
+                p#ddob(hidden)= patient_details[0].dob
 
 
-      script(src ='/javascripts/update.js')
+                br
 
-    br
+                footer
 
-    footer
+
+
+
+        script(src ='/javascripts/update.js')

@@ -3,7 +3,6 @@ extends layout
 block content
 
     div.container
-
         div.row.m-auto.border
           span.alert.alert-primary.col-12.text-center Please login to proceed.
             br
@@ -14,13 +13,13 @@ block content
           form.form-signin.col-12(method='post' action='/users/login')
             h1.h3.mb-3.font-weight-normal
             label.sr-only(for='username') Username
-            input.form-control(type='text', placeholder='Username' name='username')
+            input.form-control(type='text', placeholder='Username' name='username' autofocus)
             br
             label.sr-only(for='inputPassword') Password
             input.form-control(type='password', placeholder='Password' name='password')
             br
             button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign In
-    br
+        br
     
-    footer
+        footer
 

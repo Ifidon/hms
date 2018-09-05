@@ -7,7 +7,7 @@ module.exports = {
       next()
     }
     else {
-      res.send('Not Authorized to view this page')
+      res.redirect('/unauthorized')
     }
   },
 
@@ -21,7 +21,7 @@ module.exports = {
       next()
     }
     else {
-      res.send('Not Authorized to view this page')
+      res.redirect('/unauthorized')
     }
   },
 
@@ -34,7 +34,7 @@ module.exports = {
       next()
     }
     else {
-      res.send('Not Authorized to view this page')
+      res.redirect('/unauthorized')
     }
   },
 
@@ -47,7 +47,7 @@ module.exports = {
       next()
     }
     else {
-      res.send('Not Authorized to view this page')
+      res.redirect('/unauthorized')
     }
   }
 }
