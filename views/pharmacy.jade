@@ -12,7 +12,7 @@ block content
 
 				h4.text-center Prescription
 
-			form(method="post" action="/patients/#{patient.patient_id}/consultations/#{consultation._id}/pharmacy")
+			form.w-100(method="post" action="/patients/#{patient.patient_id}/consultations/#{consultation._id}/pharmacy")
 				table.w-100
 					thead
 						th Prescription
