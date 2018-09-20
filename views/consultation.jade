@@ -4,7 +4,7 @@ block content
 
   div.container
     div.row
-      img.col-12.col-md-4(width='200' height='210')
+      img.img-responsive.col-12.col-lg-4( src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}")
       div.col-12.col-md-7.col-sm-offset-5
         h1.col-xs-12= patient.firstname + ' ' + patient.lastname
         p#age.col-xs-12

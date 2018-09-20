@@ -4,21 +4,29 @@ block content
 
   div.container
     div.row
-      div
+      div.col-12.col-lg-5
+        img.img-responsive(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height=200 width=200)
+
+      div.col-12.col-lg-5.offset-lg-2
         h3.col-xs-12= patient.firstname + ' ' + patient.lastname
-          span.badge= " (Hospital ID: " + patient.patient_id + ")"
+          span= " (Hospital ID: " + patient.patient_id + ")"
           h5#age.col-xs-12
           h5#phone= "Phone Number: " + patient.phone
           h5#addres= "Contact Address: " + patient.address
           h5#nok= "Next of Kin (Name): " + patient.nokName
-          form(method="post", action="/nurses_station/send/#{patient.patient_id}")
-               button.btn.btn-primary.float-right(type="submit") Send to Doctor's Office
-        br
-        br
+    br
+    br
+
+    form.col-12(method="post", action="/nurses_station/send/#{patient.patient_id}")
+      button.btn.btn-primary(type="submit") Send to Doctor's Office
     hr
 
     h6
-      em For new consultation record please patient's vitals
+      em Send to Doctor for follow-up consultation.
+      br
+      br
+
+      em For new consultation please record patient's vitals
     
     br
 

@@ -6,7 +6,7 @@ block content
     div.row
     each patient in patientlist
         div.row
-          img.col-12.col-sm-3(height="200" width="200")
+          img.col-12.col-sm-3.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
           div.col-12.col-sm-9
             h1.col-12= patient.firstname + ' ' + patient.lastname
             p.col-12= "Address: " + patient.address

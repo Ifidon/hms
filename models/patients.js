@@ -87,7 +87,18 @@ var PatientSchema = new Schema ({
   patient_id: {
     type: Number,
     required: true,
-    unique: true
+    unique: true,
+    minlength: 6,
+  },
+
+  photourl: {
+    type: String,
+    default: '/images/'
+  },
+
+  picture: {
+    data: Buffer,
+    contentType: String
   },
 
   firstname: {

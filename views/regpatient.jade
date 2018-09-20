@@ -3,14 +3,17 @@ extends layout
 block content
     div.container
         div.row
-            form.form-control(method="post", action='/patients/registration')
-              h3 Patients Registration Form
+            form.form-control.bg-light(method="post", action='/patients/registration' enctype='multipart/form-data')
+              h3.text-center Patient Registration Form
+              br
+              br
+
               fieldset
-                legend Personal Details
+                legend.text-center Personal Details
                 br
 
                 label(for="patient_id") Hospital Number:
-                input#patient_id.form-control(type="text" name="patient_id" required)
+                input#patient_id.form-control.col-3(type="text" name="patient_id" required)
                 br
 
                 label(for="passport") Passport Photograph:
@@ -30,11 +33,11 @@ block content
                 br
 
               fieldset
-                legend Contact Details
+                legend.text-center Contact Details
                 br
 
                 label(for="address") Contact Address:
-                textarea#address.form-control(name="address" rows="4" cols="27" required)
+                textarea#address.form-control.col-5(name="address" rows="5" cols="27" required)
                 br
 
                 label(for="email") Email Address:
@@ -46,16 +49,16 @@ block content
                 br
                 br
 
-              fieldset
-                legend Next of Kin Details (Emergency Contact)
+              fieldset.bg-light
+                legend.text-center Next of Kin Details (Emergency Contact)
                 br
 
-                label(for="nokName") Name of Next of Kin:
+                label(for="nokName") Full Name of Next of Kin:
                 input#nokName.form-control(type="float" name="nokName" required)
                 br
 
                 label(for="nokAddress") Address of Next of Kin:
-                input#nokAddress.form-control(type="" name="nokAddress")
+                textarea#nokAddress.form-control.col-5(name="nokAddress" rows=5)
                 br
 
                 label(for="nokPhone") Phone Number of Next of Kin:

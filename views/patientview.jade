@@ -4,18 +4,20 @@ block content
 
   div.container
     div.row
-      div
-        h3.col-xs-12= patient_details[0].firstname + ' ' + patient_details[0].lastname
-          span.badge= " (Hospital ID: " + patient_details[0].patient_id + ")"
+      div.col-12.col-lg-5
+        h3.col-xs-12= patient.firstname + ' ' + patient.lastname
+          span= " (Hospital ID: " + patient.patient_id + ")"
           h5#age.col-xs-12
-          h5#phone= "Phone Number: " + patient_details[0].phone
-          h5#addres= "Contact Address: " + patient_details[0].address
-          h5#nok= "Next of Kin (Name): " + patient_details[0].nokName
-        br
-        br
+          h5#phone= "Phone Number: " + patient.phone
+          h5#addres= "Contact Address: " + patient.address
+          h5#nok= "Next of Kin (Name): " + patient.nokName
+      div.col-12.col-lg-5.offset-lg-2.order
+        img.img-responsive.float-lg-right(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height=200 width=200)
+      br
+      br
 
-        form(method="post", action="/front_desk/send/#{patient_details[0].patient_id}")
-          button.btn.btn-primary(type="submit") Send to Nurses' Station
+    form.col-12(method="post", action="/front_desk/send/#{patient.patient_id}")
+      button.btn.btn-primary(type="submit") Send to Nurses' Station
 
     div.row.form-group.col-12(hidden)
         form#vitalsform(method="post", action="/nurses_station")
@@ -37,7 +39,7 @@ block content
 
 
 
-    p#dob(hidden)= patient_details[0].dob
+    p#dob(hidden)= patient.dob
 
     br
 

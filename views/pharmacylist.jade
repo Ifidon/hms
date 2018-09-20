@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+  div.container
+    div.row
+      section.col-12.list-group
+        ol
+        each patient in patients
+          li.list-group-item
+            h4= patient.firstname + " " + patient.lastname
+              sup
+                span.badge.badge-primary.mx-1 Hospital ID: #{patient.patient_id}
+            - var date = patient.consultations[0].updatedAt
+            form(method='get', action="/patients/#{patient.patient_id}/consultations/#{patient.consultations[0]._id}/pharmacy")
+              button.btn.btn-primary(type='submit' onclick='endpoint()').float-right= date.toISOString().substr(0, 10)

@@ -7,6 +7,37 @@ var authorize = require('../authorize');
 
 var patientRouter = express.Router();
 
+
+var fs = require('fs');
+
+
+var multer = require('multer');
+
+var storage = multer.diskStorage({
+  destination: (rea, file, cb) => {
+    cb(null, 'public/images/patients');
+  },
+
+  // filename: (req, file, cb) => {
+  //  cb(null, file.originalname)
+  // }
+});
+
+var imageFileFilter = (req, file, cb, err) => {
+  if(!file.originalname.match(/\.(jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF)$/)) {
+    return cb(new Error('Only Image files allowed!'))
+    next(err)
+    
+  }
+  cb(null, true)
+};
+
+var upload = multer({
+  storage: storage,
+  fileFilter: imageFileFilter
+});
+
+
 // function itadmaccess (req, res, next) {
 //   console.log(req.user)
 //   if(req.user.role == "IT Administrator") {
@@ -33,9 +64,22 @@ patientRouter.route('/registration')
   res.render('regpatient');
 })
 
-.post((req, res) => {
+.post(upload.single('passport'), (req, res, next) => {
   Patients.create(req.body)
   .then((patient) => {
+    if (req.file) {
+      patient.set({photourl: req.file.path.slice(6), picture: {
+        data: fs.readFileSync(req.file.path),
+        contentType: 'image/jpg'
+      }})
+      patient.save()
+      console.log(patient)
+    }
+    else {
+      patient.set({photourl: '/images/userdefault.png'})
+      patient.save()
+      console.log(patient)
+    }
     // console.log("New Patient Registered Successfully! ");
     res.redirect('/patients');
 })
@@ -43,17 +87,17 @@ patientRouter.route('/registration')
 
 patientRouter.route('/:patient_id')
 .get(authorize.fdaccess, (req, res) => {
-  Patients.find({patient_id: req.params.patient_id})
+  Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    res.render('patientview', {patient_details: patient})
+    res.render('patientview', {patient})
   })
 });
 
 patientRouter.route('/:patient_id/update')
 .get(authorize.fdaccess, (req, res) => {
-  Patients.find({patient_id: req.params.patient_id})
+  Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    res.render('update', {patient_details: patient})
+    res.render('update', {patient})
     console.log(patient)
   })
 })
@@ -156,9 +200,9 @@ patientRouter.route('/:patient_id/consultations')
     .then((patient) => {
       // console.log(patient.firstname)
       var consultation = patient.consultations.id(req.params.consultation_id)
-      consultation.prescription.cost = req.body.prescriptionCost
-      consultation.prescription.amountPaid = req.body.prescriptionAmtPaid
-      consultation.prescription.balance = req.body.prescriptionBal
+      consultation.prescription.cost = req.body.cost
+      consultation.prescription.amountPaid = req.body.amountPaid
+      consultation.prescription.balance = req.body.balance
       patient.save()
       res.render('pharmacy', {patient, consultation})
       // res.send(req.body)
@@ -166,21 +210,42 @@ patientRouter.route('/:patient_id/consultations')
   })
 });
 //
-patientRouter.route('/:patient_id/consultations/:consultation_id/lab')
+patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
+.get((req, res, next) => {
+  Patients.findOne({patient_id: req.params.patient_id})
+    .then((patient) => {
+      var consultation = patient.consultations.id(req.params.consultation_id)
+      // console.log(consultation.prescription)
+      res.render('medlab', {patient, consultation})
+    })
+})
 .post((req, res) => {
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
     // console.log(patient.firstname)
     var consultation = patient.consultations.id(req.params.consultation_id)
-    consultation.labInvestigation.cost = req.body.labCost
-    consultation.labInvestigation.amountPaid = req.body.labAmtPaid
-    consultation.labInvestigation.balance = req.body.labBal
+    consultation.labInvestigation.cost = req.body.cost
+    consultation.labInvestigation.amountPaid = req.body.amountPaid
+    consultation.labInvestigation.balance = req.body.balance
     patient.save()
-    res.render('pharmacy', {patient, consultation})
+    // console.log(req.body)
+    res.render('medlab', {patient, consultation})
     // res.send("success!!")
     // console.log(consultation.labInvestigation)
 })
 });
+
+patientRouter.post('/dailyhistory', function(req, res, next) {
+  var today = Date()
+  var day  = today.getDate()
+  var month = today.getMonth()
+  var year = today.getFullYear()
+  console.log()
+  Patients.find({consultations: {updatedAt: today}})
+  .then((todayspatients) => {
+    res.send(todayspatients)
+  })
+})
 //
 //
 module.exports = patientRouter;

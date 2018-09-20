@@ -4,14 +4,14 @@ block content
     div.container
         div.form-group
 
-            form(method="post", action="/patients/#{patient_details[0].patient_id}/update")
+            form(method="post", action="/patients/#{patient.patient_id}/update")
                 h3 Patient Information Update Form
                 fieldset
                     legend Personal Details
                     br
                     br
                     label(for="patient_id") Hospital Number:
-                    input#patient_id(type="text" name="patient_id" value="#{patient_details[0].patient_id}")
+                    input#patient_id(type="text" name="patient_id" value="#{patient.patient_id}")
                     br
                     br
 
@@ -20,11 +20,11 @@ block content
                     br
                     br
                     label(for="firstname") First Name:
-                    input#firstname(type="string" name="firstname" value="#{patient_details[0].firstname}")
+                    input#firstname(type="string" name="firstname" value="#{patient.firstname}")
                     br
                     br
                     label(for="lastname") Last Name:
-                    input#lastname(type="string" name="lastname" value="#{patient_details[0].lastname}")
+                    input#lastname(type="string" name="lastname" value="#{patient.lastname}")
                     br
                     br
                     label(for="dob") Date of Birth:
@@ -37,17 +37,17 @@ block content
                     br
                     br
                     label(for="address") Contact Address:
-                    textarea#address(name="address" rows="4" cols="27" innerHTML="#{patient_details[0].address}").innerHTML #{patient_details[0].address}
+                    textarea#address(name="address" rows="4" cols="27" innerHTML="#{patient.address}").innerHTML #{patient.address}
                     br
                     br
 
                     label(for="email") Email Address:
-                    input#email(type="email" name="email" value="#{patient_details[0].email}")
+                    input#email(type="email" name="email" value="#{patient.email}")
                     br
                     br
 
                     label(for="phone") Phone Number:
-                    input#phone(type="phone" name="phone" value="#{patient_details[0].phone}")
+                    input#phone(type="phone" name="phone" value="#{patient.phone}")
                     br
                     br
 
@@ -55,32 +55,32 @@ block content
                     legend Next of Kin Details(Emergency Contact)
 
                     label(for="nokName") Name of Next of Kin:
-                    input#nokName(type="float" name="nokName" value="#{patient_details[0].nokName}")
+                    input#nokName(type="float" name="nokName" value="#{patient.nokName}")
                     br
                     br
 
                     label(for="nokAddress") Address of Next of Kin:
-                    input#nokAddress(type="" name="nokAddress" value="#{patient_details[0].nokAddress}")
+                    input#nokAddress(type="" name="nokAddress" value="#{patient.nokAddress}")
                     br
                     br
 
                     label(for="nokPhone") Phone Number of Next of Kin:
-                    input#nokPhone(type="bloodgroup" name="nokPhone" value="#{patient_details[0].nokPhone}")
+                    input#nokPhone(type="bloodgroup" name="nokPhone" value="#{patient.nokPhone}")
                     br
                     br
 
                     label(for="nokRelationship") Relationship with Next of Kin:
-                    input#nokRelationship(type="string" name="nokRelationship" value="#{patient_details[0].nokRelationship}")
+                    input#nokRelationship(type="string" name="nokRelationship" value="#{patient.nokRelationship}")
                     br
                     br
                 input#submit.btn.btn-primary(type="submit" value="Update" name="submit")
 
-                p#ddob(hidden)= patient_details[0].dob
-
-
+                p#ddob(hidden)= patient.dob
                 br
+        br
+        br
 
-                footer
+        footer
 
 
 

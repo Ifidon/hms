@@ -26,6 +26,10 @@ block content
     br
     hr
 
+    div.form-group
+      form(method='post' action='/patients/dailyhistory')
+        button(type='submit') Show History
+
     div.row
       p= message
       ol.list-group.col-12

@@ -173,16 +173,16 @@ router.route('/doctors_office/:patient_id')
 });
 
 router.route('/pharmacy')
-.get(authorize.pharmlabaccess, (req, res) => {
-  res.render('pharmlablist', {patientlist: pharmlab, title: 'HealthMax: Pharmacy'})
+.get(authorize.pharmacyaccess, (req, res) => {
+  res.render('pharmacylist', {patients: pharmlab, title: 'HealthMax: Pharmacy', user: req.user})
 })
 .post((req, res, next) => {
 
 });
 
 router.route('/Laboratory')
-.get(authorize.pharmlabaccess, (req, res) => {
-  res.render('pharmlablist', {patientlist: pharmlab, title: 'HealthMax: Laboratory'})
+.get(authorize.labaccess, (req, res) => {
+  res.render('lablist', {patients: pharmlab, title: 'HealthMax: Laboratory', user: req.user})
 })
 .post((req, res, next) => {
 

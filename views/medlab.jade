@@ -1,0 +1,41 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			div.col-12
+				h2.text-center= patient.firstname + " " + patient.lastname
+			div.col-12.row
+
+			div.col-12.text-white.bg-secondary
+				h4.text-center= "Date: " + consultation.updatedAt.toString().slice(0, 15)
+
+				h4.text-center Laboratory Investigations
+
+			form(method="post" action="/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory")
+				table.w-100
+					thead
+						th Test/Scan
+						th Total Payment Due (Naira)
+						th Amount Paid (Naira)
+						th Balance (Naira)
+					tbody
+						tr
+							form()
+								td
+									textarea(rows=7 cols=50)= consultation.labInvestigation.tests
+								td
+									input.m-auto.form-control#cost(type='number' name="cost" value="#{consultation.labInvestigation.cost}") 
+								td
+									input.m-auto.form-control#amtpaid(type='number' name='amountPaid' value="#{consultation.labInvestigation.amountPaid}")
+								td
+									input.m-auto.form-control#balance(type='number' name='balance' onfocus="getBalance()" value="#{consultation.labInvestigation.balance}")
+				br
+				br
+
+				input.btn.btn-primary.float-right(type='submit' value="Save")
+				input.btn.btn-primary(type="button" value="Back" onclick="history.back()")
+
+
+	script(src='/javascripts/script.js')
+

@@ -4,8 +4,8 @@ block content
 
   div.container
     div.row
-      img.col-12.col-md-4(width='200' height='210')
-      div.col-12.col-md-7.col-sm-offset-5
+      img.img-responsive.col-12.col-lg-3(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')} ")
+      div.col-12.col-lg-5
         h1.col-xs-12= patient.firstname + ' ' + patient.lastname
         p#age.col-xs-12
         p#dob(hidden)= patient.dob
@@ -20,9 +20,9 @@ block content
       br
     each consultation in patient.consultations
       div#consult.row
-        h5#consdate.col-12.col-md-5= consultation.createdAt.toString().slice(0, 15)
+        h5#consdate.col-12.col-lg-5= consultation.createdAt.toString().slice(0, 15)
         br
-        form.col-12.col-md-3(method="get" action="/patients/#{patient.patient_id}/consultations/#{consultation.id}")
+        form.col-12.col-lg-3(method="get" action="/patients/#{patient.patient_id}/consultations/#{consultation.id}")
           button#consButton.btn.btn-primary(type="submit") View / Edit
         br
       hr
