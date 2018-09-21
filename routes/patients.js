@@ -73,16 +73,19 @@ patientRouter.route('/registration')
         contentType: 'image/jpg'
       }})
       patient.save()
-      console.log(patient)
+      // console.log(patient)
     }
     else {
-      patient.set({photourl: '/images/userdefault.png'})
+      patient.set({photourl: './public/images/defaultuser.jpg', picture: {
+        data: fs.readFileSync('./public/images/defaultuser.jpg'),
+        contentType: 'image/jpg'
+      }})
       patient.save()
       console.log(patient)
     }
     // console.log("New Patient Registered Successfully! ");
     res.redirect('/patients');
-})
+  })
 });
 
 patientRouter.route('/:patient_id')

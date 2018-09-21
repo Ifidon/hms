@@ -93,7 +93,7 @@ var PatientSchema = new Schema ({
 
   photourl: {
     type: String,
-    default: '/images/'
+    default: './public/images/defaultuser.jpg'
   },
 
   picture: {
