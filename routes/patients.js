@@ -37,20 +37,6 @@ var upload = multer({
   fileFilter: imageFileFilter
 });
 
-
-// function itadmaccess (req, res, next) {
-//   console.log(req.user)
-//   if(req.user.role == "IT Administrator") {
-//     next()
-//   }
-//   else {
-//     res.send('Not Authorized to view this page')
-//   }
-// }
-
-// patientRouter.use(itadmaccess)
-
-
 patientRouter.route('/')
 .get(authorize.fdaccess, (req, res) => {
   Patients.find()
@@ -81,7 +67,7 @@ patientRouter.route('/registration')
         contentType: 'image/jpg'
       }})
       patient.save()
-      console.log(patient)
+      // console.log(patient)
     }
     // console.log("New Patient Registered Successfully! ");
     res.redirect('/patients');
@@ -92,7 +78,7 @@ patientRouter.route('/:patient_id')
 .get(authorize.fdaccess, (req, res) => {
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    res.render('patientview', {patient})
+    res.render('patientview', {patient, message: " "})
   })
 });
 
@@ -101,14 +87,14 @@ patientRouter.route('/:patient_id/update')
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
     res.render('update', {patient})
-    console.log(patient)
+    // console.log(patient)
   })
 })
 
 .post((req, res) => {
   Patients.updateOne({patient_id: req.params.patient_id}, {$set: req.body})
   .then((patient) => {
-    console.log(patient)
+    // console.log(patient)
     res.redirect('/patients')
   })
 
@@ -118,7 +104,7 @@ patientRouter.route('/:patient_id/recordvitals')
 .get(authorize.nurseaccess, (req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
-    console.log(req.params)
+    // console.log(req.params)
     res.render('recordVitals', {patient})
   })
   
@@ -156,7 +142,7 @@ patientRouter.route('/:patient_id/consultations')
         consultation.labInvestigation = Object;
       }
         
-        console.log(consultation)
+        // console.log(consultation)
         res.render('consultation', {patient, consultation})
     })
   })
@@ -169,21 +155,9 @@ patientRouter.route('/:patient_id/consultations')
       consultation.prescription = {}
       consultation.labInvestigation = {}
       consultation.prescription.drugs = req.body.drugs
-      consultation.labInvestigation.tests = req.body.tests
-      // if (consultation.prescription && consultation.labInvestigation) {
-      //   consultation.prescription = new {}
-      //   consultation.labInvestigation = new {}
-      //   consultation.prescription.drugs = req.body.drugs
-      //   consultation.labInvestigation.tests = req.body.tests
-      // }
-      // else {
-      //   consultation.prescription.drugs = req.body.drugs
-      //   consultation.labInvestigation.tests = req.body.tests
-      // } 
-      
+      consultation.labInvestigation.tests = req.body.tests      
       patient.save()
-      // res.send(consultation)
-      console.log(consultation)
+      // console.log(consultation)
       res.render('consultation', {patient, consultation})
     })
   })
@@ -208,7 +182,6 @@ patientRouter.route('/:patient_id/consultations')
       consultation.prescription.balance = req.body.balance
       patient.save()
       res.render('pharmacy', {patient, consultation})
-      // res.send(req.body)
       // console.log(consultation)
   })
 });
@@ -233,22 +206,24 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
     patient.save()
     // console.log(req.body)
     res.render('medlab', {patient, consultation})
-    // res.send("success!!")
     // console.log(consultation.labInvestigation)
 })
 });
 
 patientRouter.post('/dailyhistory', function(req, res, next) {
-  var today = Date()
-  var day  = today.getDate()
-  var month = today.getMonth()
-  var year = today.getFullYear()
-  console.log()
-  Patients.find({consultations: {updatedAt: today}})
+  var today = new Date();
+  var day  = today.getDate();
+  var nextday = day + 1
+  var month = today.getMonth()+1;
+  var year = today.getFullYear();
+  var date = year + '-' + month + '-' + day;
+  var nextday = year + '-' + month + '-' + nextday ;
+  console.log(new Date(date))
+  Patients.find({'consultations.updatedAt': {$gte: date, $lte: nextday}}, {firstname: 1, lastname: 1, patient_id: 1, consultations: 1})
   .then((todayspatients) => {
     res.send(todayspatients)
   })
 })
-//
-//
+
+
 module.exports = patientRouter;

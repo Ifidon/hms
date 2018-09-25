@@ -2,16 +2,19 @@ extends layout
 
 block content
 
-  div.container.list-group
-    ol
-      each patient in patientlist
-        li.list-group-item.col-9.offset-1
-          div.row
-            div.col-12
-              h5= patient.firstname + ' ' + patient.lastname
-                span.badge= ' (Hospital ID:' + patient.patient_id + ')'
-              form(method="get", action="/patients/#{patient.patient_id}/recordvitals")
-                button.btn.btn-primary.float-right(type="submit") Record Vitals
+  div.container
+    h5.col-12.text-danger
+        em= message
+    div.list-group
+      ol
+        each patient in patientlist
+          li.list-group-item.col-9.offset-1
+            div.row
+              div.col-12
+                h5= patient.firstname + ' ' + patient.lastname
+                  span.badge= ' (Hospital ID:' + patient.patient_id + ')'
+                form(method="get", action="/patients/#{patient.patient_id}/recordvitals")
+                  button.btn.btn-primary.float-right(type="submit") Record Vitals
     br
 
     footer

@@ -35,7 +35,23 @@ block content
 
 				input.btn.btn-primary.float-right(type='submit' value="Save")
 				input.btn.btn-primary(type="button" value="Back" onclick="history.back()")
+		br
+		br
+
+		div.form-group.d-none
+			h2.col-12.text-center Laboratory Findings
+			form.form-control(method='post' action='#' enctype='multipart/form-data')
+				label.m-2(for='findings') Enter Lab findings below:
+				textarea.form-control(rows=15)
+				br
+				labrl.m-2(for'attachments') Upload attachments (if any).
+				input.form-control(type='file' name='attachments')
+				br
+				br
+				input.btn.btn-primary(type='submit' value='Save Findings')
+
+
+
 
 
 	script(src='/javascripts/script.js')
-

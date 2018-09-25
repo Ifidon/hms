@@ -7,61 +7,12 @@ var passport = require('passport');
 var front_office = [];
 var nurses_station = [];
 var doctors_office = [];
-var pharmlab = [];
+var pharmacy_list = [];
+var laboratory_list = [];
 
 var authorize = require('../authorize');
+var codes = require('../codes');
 
-// function fdaccess (req, res, next) {
-//   if(!req.user) {
-//     res.redirect('/login')
-//   }
-//   else if(req.user.role == "Hospital Administrator") {
-//     next()
-//   }
-//   else {
-//     res.send('Not Authorized to view this page')
-//   }
-// };
-
-
-// function nurseaccess (req, res, next) {
-//   // console.log(req.user)
-//   if(!req.user) {
-//     res.redirect('/login')
-//   }
-//   else if(req.user.role == "Nurse") {
-//     next()
-//   }
-//   else {
-//     res.send('Not Authorized to view this page')
-//   }
-// };
-
-// function draccess (req, res, next) {
-//   // console.log(req.user)
-//   if(!req.user) {
-//     res.redirect('/login')
-//   }
-//   else if(req.user.role == "Doctor") {
-//     next()
-//   }
-//   else {
-//     res.send('Not Authorized to view this page')
-//   }
-// };
-
-// function pharmlabaccess (req, res, next) {
-//   // console.log(req.user)
-//   if(!req.user) {
-//     res.redirect('/login')
-//   }
-//   else if(req.user.role == "Pharmacist" ||  req.user.role == "Lab Technician") {
-//     next()
-//   }
-//   else {
-//     res.send('Not Authorized to view this page')
-//   }
-// };
 
 /* GET home page. */
 
@@ -93,11 +44,6 @@ router.get('/login', function(req, res, next) {
   res.render('login', { title: 'HealthMax: Login' });
 });
 
-// router.post('/login', passport.authenticate('local'),
-//   function(req, res) {
-//     res.redirect('/registration')
-//   });
-
 router.route('/unauthorized')
 .get((req, res, next) => {
   var user = req.user;
@@ -108,52 +54,70 @@ router.get('/front_desk', authorize.fdaccess, function(req, res) {
   res.render('front_desk', {patientlist: front_office, title: 'HealthMax: Front Desk'})
 });
 
-// router.post('/front_desk', function(req, res) {
-//   Patients.find({patient_id: req.body.search})
-//   .then((result) => {
-//     // nurses_station.push(patient)
-//     // console.log(req.params)
-//     res.render('search_result', {patientlist: result})
-//     front_office = result
-//   })
-// });
-
-router.post('/front_desk/send/:patient_id', function(req, res) {
+router.post('/front_desk/send/:patient_id', function(req, res, next) {
   Patients.findOne(req.params)
   .then((patient) => {
-    console.log(req.params)
-    nurses_station.push(patient)
-    front_office.push(patient)
-    // res.render('front_desk', {patientlist: nurses_station})
-    res.redirect('/front_desk')
+      if (codes.check(nurses_station, patient)) {
+        res.render('patientview', {patient, message: "Patient already sent to Nurses' Station"})
+      }
+      else {
+        nurses_station.push(patient)
+        front_office.push(patient)
+        res.redirect('/front_desk')
+      }    
   })
 });
 
 router.route('/nurses_station')
 .get(authorize.nurseaccess, (req, res) => {
-  res.render('consultationList', {patientlist: nurses_station, title: 'HealthMax: Nurses Station'})
+  var message = ""
+  res.render('consultationList', {patientlist: nurses_station, title: 'HealthMax: Nurses Station', message: req.message})
 });
 
 router.route('/nurses_station/:patient_id')
-.post((req, res) => {
+.post((req, res, next) => {
+  var message = ""
   Patients.findOne(req.params)
   .then((patient) => {
-    patient.consultations.unshift(req.body)
-    patient.save()
-    doctors_office.push(patient)
-    nurses_station.splice(nurses_station.indexOf(patient), 1)
-    res.render('consultationList', {patientlist: nurses_station})
+    if ((codes.consultlimit(patient.consultations)) && (codes.check(doctors_office, patient))) {
+      nurses_station.splice(nurses_station.indexOf(patient), 1)
+      res.render('consultationList', {patientlist: nurses_station, message: "Entry already exixts"})
+    }
+    if ((codes.consultlimit(patient.consultations)) && (!codes.check(doctors_office, patient))) {
+      doctors_office.push(patient)
+      nurses_station.splice(nurses_station.indexOf(patient), 1)
+      res.render('consultationList', {patientlist: nurses_station, message: "Existing entry has been sent to the Doctor's Office"})
+    }
+    else {
+      patient.consultations.unshift(req.body)
+      patient.save()
+      doctors_office.push(patient)
+      nurses_station.splice(nurses_station.indexOf(patient), 1)
+      res.render('consultationList', {patientlist: nurses_station, message: "Entry created and sent to the Doctor"})
+    }
+  })
+  .catch((error) => {
+    next(error)
   })
 });
 
 router.route('/nurses_station/send/:patient_id')
-.post((req, res) => {
+.post((req, res, next) => {
   Patients.findOne(req.params)
   .then((patient) => {
-    console.log(req.params)
-    doctors_office.push(patient)
-    nurses_station.splice(nurses_station.indexOf(patient), 1)
-    res.redirect('/nurses_station')
+    if(codes.check(doctors_office, patient)) {
+      nurses_station.splice(nurses_station.indexOf(patient), 1)
+      res.redirect('/nurses_station')
+    }
+    else {
+      doctors_office.push(patient)
+      nurses_station.splice(nurses_station.indexOf(patient), 1)
+      console.log(res)
+      res.redirect('/nurses_station')
+    }
+  })
+  .catch((error) => {
+    next(error)
   })
 })
 
@@ -166,15 +130,16 @@ router.route('/doctors_office/:patient_id')
 .post((req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
-    pharmlab.push(patient)
-    doctors_office.splice(doctors_office.indexOf(patient), 1)
-    res.redirect('/doctors_office')
+    pharmacy_list.push(patient);
+    laboratory_list.push(patient);
+    doctors_office.splice(doctors_office.indexOf(patient), 1);
+    res.redirect('/doctors_office');
   })
 });
 
 router.route('/pharmacy')
 .get(authorize.pharmacyaccess, (req, res) => {
-  res.render('pharmacylist', {patients: pharmlab, title: 'HealthMax: Pharmacy', user: req.user})
+  res.render('pharmacylist', {patients: pharmacy_list, title: 'HealthMax: Pharmacy', user: req.user})
 })
 .post((req, res, next) => {
 
@@ -182,7 +147,7 @@ router.route('/pharmacy')
 
 router.route('/Laboratory')
 .get(authorize.labaccess, (req, res) => {
-  res.render('lablist', {patients: pharmlab, title: 'HealthMax: Laboratory', user: req.user})
+  res.render('lablist', {patients: laboratory_list, title: 'HealthMax: Laboratory', user: req.user})
 })
 .post((req, res, next) => {
 
