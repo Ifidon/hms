@@ -9,7 +9,9 @@ var expressValidator = require('express-validator');
 var session = require('express-session');
 var FileStore = require('session-file-store');
 var passport = require('passport');
-var authenticate = require('./authenticate')
+var authenticate = require('./authenticate');
+
+var config = require('./config');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -29,14 +31,19 @@ var app = express();
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 
-var url = process.env.MONGO_URI || 'mongodb://e_fidon:truand11ape@cluster0-shard-00-00-3rkmw.mongodb.net:27017,cluster0-shard-00-01-3rkmw.mongodb.net:27017,cluster0-shard-00-02-3rkmw.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true'
+// var url = process.env.MONGO_URI || 'mongodb://e_fidon:truand11ape@cluster0-shard-00-00-3rkmw.mongodb.net:27017,cluster0-shard-00-01-3rkmw.mongodb.net:27017,cluster0-shard-00-02-3rkmw.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true'
+
+var url = config.config()
+
+// console.log(MONGO_URI)
+console.log(config.config())
 
 var connect = mongoose.connect(url, {
 
 });
 
 connect.then((db) => {
-  console.log('Connect Successful')
+  console.log('Connect Successful in ' + process.env.NODE_ENV)
 });
 
 // view engine setup
