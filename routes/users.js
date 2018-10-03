@@ -58,9 +58,10 @@ router.post('/new', function(req, res, next) {
 	}
 });
 
-router.post('/login', passport.authenticate('local'),
+router.post('/login', passport.authenticate('local', {
+	failureRedirect: '/authentication_failed'
+}),
   function(req, res, next) {
-
 	var user = req.user
 	if(user.role == "Doctor") {
 		res.redirect('/doctors_office')

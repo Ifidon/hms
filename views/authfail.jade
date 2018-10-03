@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			div.m-auto.card.col-7
+				div.card-header
+					h3.col-12.text-center.text-danger Authentication Failed!
+				div.card-body
+					h5.text-center.text-warning Username or passowrd incorrect.
+					p.text-center Please click 
+						span
+							a(href='/login') here 
+						|to try again
+					p.text-center If problem persists contact your system admininstrator 

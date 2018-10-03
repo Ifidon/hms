@@ -50,6 +50,10 @@ router.route('/unauthorized')
   res.render('unauthorized', {user, title: 'HealthMax: Access Denied'})
 })
 
+router.get('/authentication_failed', (req, res, next) => {
+  res.render('authfail')
+});
+
 router.get('/front_desk', authorize.fdaccess, function(req, res) {
   res.render('front_desk', {patientlist: front_office, title: 'HealthMax: Front Desk'})
 });
