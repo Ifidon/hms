@@ -41,13 +41,13 @@ patientRouter.route('/')
 .get(authorize.fdaccess, (req, res) => {
   Patients.find()
   .then((patients) => {
-    res.render('patientslist', {patientlist: patients.reverse()})
+    res.render('patientslist', {patientlist: patients.reverse(), title: 'All Patients - HealthMax'})
   })
 });
 
 patientRouter.route('/registration')
 .get(authorize.fdaccess, (req, res) => {
-  res.render('regpatient');
+  res.render('regpatient', {title: 'Patient Registration - HealthMax'});
 })
 
 .post(upload.single('passport'), (req, res, next) => {
@@ -78,7 +78,7 @@ patientRouter.route('/:patient_id')
 .get(authorize.fdaccess, (req, res) => {
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    res.render('patientview', {patient, message: " "})
+    res.render('patientview', {patient, message: " ", title: patient.firstname + " " + patient.lastname + ' - HealthMax'})
   })
 });
 
@@ -86,7 +86,7 @@ patientRouter.route('/:patient_id/update')
 .get(authorize.fdaccess, (req, res) => {
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    res.render('update', {patient})
+    res.render('update', {patient, title: 'Update Patient Details - HealthMax'})
     // console.log(patient)
   })
 })
@@ -105,7 +105,7 @@ patientRouter.route('/:patient_id/recordvitals')
   Patients.findOne(req.params)
   .then((patient) => {
     // console.log(req.params)
-    res.render('recordVitals', {patient})
+    res.render('recordVitals', {patient, title: 'Record Vitals - HealthMax'})
   })
   
 })
@@ -115,7 +115,7 @@ patientRouter.route('/:patient_id/consultations')
 .get(authorize.draccess, (req, res) => {
   Patients.findOne(req.params)
   .then((patient) => {
-    res.render('consultations', {patient})
+    res.render('consultations', {patient, title: 'View/Edit Consultations - HealthMax'})
     // console.log(res.header)
   })
   })
@@ -143,7 +143,7 @@ patientRouter.route('/:patient_id/consultations')
       }
         
         // console.log(consultation)
-        res.render('consultation', {patient, consultation})
+        res.render('consultation', {patient, consultation, title: 'Consultation - HealthMax'})
     })
   })
 
@@ -168,7 +168,7 @@ patientRouter.route('/:patient_id/consultations')
     .then((patient) => {
       var consultation = patient.consultations.id(req.params.consultation_id)
       // console.log(consultation.prescription)
-      res.render('pharmacy', {patient, consultation})
+      res.render('pharmacy', {patient, consultation, title: 'Pharmacy Entries - HealthMax'})
     })
   })
 //
@@ -181,7 +181,7 @@ patientRouter.route('/:patient_id/consultations')
       consultation.prescription.amountPaid = req.body.amountPaid
       consultation.prescription.balance = req.body.balance
       patient.save()
-      res.render('pharmacy', {patient, consultation})
+      res.render('pharmacy', {patient, consultation, title: 'Pharmacy Entries - HealthMax'})
       // console.log(consultation)
   })
 });
@@ -192,7 +192,7 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
     .then((patient) => {
       var consultation = patient.consultations.id(req.params.consultation_id)
       // console.log(consultation.prescription)
-      res.render('medlab', {patient, consultation})
+      res.render('medlab', {patient, consultation, title: 'Laboratory Entries - HealthMax'})
     })
 })
 .post((req, res) => {
@@ -205,7 +205,7 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
     consultation.labInvestigation.balance = req.body.balance
     patient.save()
     // console.log(req.body)
-    res.render('medlab', {patient, consultation})
+    res.render('medlab', {patient, consultation, title: 'Laboratory Entries - HealthMax'})
     // console.log(consultation.labInvestigation)
 })
 });
