@@ -7,10 +7,10 @@ block content
       h5.col-12.text-danger
         em= message
 
-      div.col-12.col-lg-5.offset-lg-2
-        img.img-thumbnail.float-lg-right(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height=200 width=200)
+      div.col-3
+        img.img-thumbnail.d-none.d-md-block(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height=200 width=200)
 
-      div.col-12.col-lg-5
+      div.col-12.col-lg-7
         h3.col-xs-12= patient.firstname + ' ' + patient.lastname
           span= " (Hospital ID: " + patient.patient_id + ")"
           h5#age.col-xs-12

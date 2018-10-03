@@ -29,7 +29,7 @@ router.post('/', (req, res) => {
     Patients.find({lastname: searchTerm})
     .then((patients) => {
       console.log(patients)
-        res.render('search_result', {patientlist: patients, title: 'Search Results'})
+        res.render('search_result', {patientlist: patients, title: 'Search Results - ' + searchTerm})
     })
     .catch((error) => {
       next(error)
