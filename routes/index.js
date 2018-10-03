@@ -17,7 +17,7 @@ var codes = require('../codes');
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  res.render('homepage', {title: 'HealthMax: Welcome'})
+  res.render('homepage', {title: 'Welcome - HealthMax'})
 })
 
 
@@ -29,33 +29,39 @@ router.post('/', (req, res) => {
     Patients.find({lastname: searchTerm})
     .then((patients) => {
       console.log(patients)
-        res.render('search_result', {patientlist: patients})
+        res.render('search_result', {patientlist: patients, title: 'Search Results'})
+    })
+    .catch((error) => {
+      next(error)
     })
   }
   else {
       Patients.find({patient_id: req.body.search})
       .then((patient) => {
-          res.render('search_result', {patientlist: patient})
+          res.render('search_result', {patientlist: patient, title: 'Search Results'})
+      })
+      .catch((error) => {
+        next(error)
       })
   }
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'HealthMax: Login' });
+  res.render('login', { title: 'Login - HealthMax' });
 });
 
 router.route('/unauthorized')
 .get((req, res, next) => {
   var user = req.user;
-  res.render('unauthorized', {user, title: 'HealthMax: Access Denied'})
+  res.render('unauthorized', {user, title: 'Access Denied - HealthMax'})
 })
 
 router.get('/authentication_failed', (req, res, next) => {
-  res.render('authfail')
+  res.render('authfail', {title: 'Authentication Failed - HealthMax'})
 });
 
 router.get('/front_desk', authorize.fdaccess, function(req, res) {
-  res.render('front_desk', {patientlist: front_office, title: 'HealthMax: Front Desk'})
+  res.render('front_desk', {patientlist: front_office, title: 'Front Desk - HealthMax'})
 });
 
 router.post('/front_desk/send/:patient_id', function(req, res, next) {
@@ -70,12 +76,15 @@ router.post('/front_desk/send/:patient_id', function(req, res, next) {
         res.redirect('/front_desk')
       }    
   })
+  .catch((error) => {
+    next(error)
+  })
 });
 
 router.route('/nurses_station')
 .get(authorize.nurseaccess, (req, res) => {
   var message = ""
-  res.render('consultationList', {patientlist: nurses_station, title: 'HealthMax: Nurses Station', message: req.message})
+  res.render('consultationList', {patientlist: nurses_station, title: 'Nurses Station - HealthMax', message: req.message})
 });
 
 router.route('/nurses_station/:patient_id')
@@ -127,7 +136,7 @@ router.route('/nurses_station/send/:patient_id')
 
 router.route('/doctors_office')
 .get(authorize.draccess, (req, res) => {
-  res.render('doctorslist', {patientlist: doctors_office, title: "Doctor's Office"})
+  res.render('doctorslist', {patientlist: doctors_office, title: "Doctor's Office - HealthMax"})
 });
 
 router.route('/doctors_office/:patient_id')
@@ -139,11 +148,14 @@ router.route('/doctors_office/:patient_id')
     doctors_office.splice(doctors_office.indexOf(patient), 1);
     res.redirect('/doctors_office');
   })
+  .catch((error) => {
+    next(error)
+  })
 });
 
 router.route('/pharmacy')
 .get(authorize.pharmacyaccess, (req, res) => {
-  res.render('pharmacylist', {patients: pharmacy_list, title: 'HealthMax: Pharmacy', user: req.user})
+  res.render('pharmacylist', {patients: pharmacy_list, title: 'Pharmacy - HealthMax', user: req.user})
 })
 .post((req, res, next) => {
 
@@ -151,7 +163,7 @@ router.route('/pharmacy')
 
 router.route('/Laboratory')
 .get(authorize.labaccess, (req, res) => {
-  res.render('lablist', {patients: laboratory_list, title: 'HealthMax: Laboratory', user: req.user})
+  res.render('lablist', {patients: laboratory_list, title: 'Laboratory - HealthMax', user: req.user})
 })
 .post((req, res, next) => {
 
