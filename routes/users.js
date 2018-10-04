@@ -1,7 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../models/users');
-var passport = require('passport')
+var passport = require('passport');
+
+var mailer = require('nodemailer');
+var codes = require('../codes');
+
+var transport = mailer.createTransport(codes.opts);
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -30,6 +35,23 @@ router.post('/new', function(req, res, next) {
 					next(err)
 				}
 				else {
+
+					var mailOptions = {
+						from: 'neftilsngl@gmail.com',
+						to: user.email,
+						subject: 'Registration Successful - HealthMax',
+						text: 'Your HeathMax Account has ben successfully created'
+					};
+
+					transport.sendMail(mailOptions, function(err, info) {
+						if(err) {
+							next(err)
+						}
+						else {
+							// console.log('Email Sent: ' + info.response)
+							next()
+						}
+					})
 					passport.authenticate('local')(req, res, () => {
 
 						var user = req.user
@@ -43,10 +65,10 @@ router.post('/new', function(req, res, next) {
 							res.redirect('/front_desk')
 						}
 						if(user.role == "Pharmacist") {
-							res.redirect('/pharmacyandlab')
+							res.redirect('/pharmacy')
 						}
 						if(user.role == "Lab Technician") {
-							res.redirect('/pharmacyandlab')
+							res.redirect('/laboratory')
 						}
 						if(user.role == "IT Administrator") {
 							res.redirect('/registration')

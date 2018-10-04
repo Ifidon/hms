@@ -27,6 +27,13 @@ module.exports = {
 	        return false
 	      }
 	    }
-	}
+	},
 
+	opts: {
+	service: 'gmail',
+	auth: {
+		user: 'neftilsngl@gmail.com',
+		pass: 'neft@gmail'
+	}
+}
 };
