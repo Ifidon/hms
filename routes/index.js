@@ -154,7 +154,7 @@ router.route('/doctors_office/:patient_id')
 });
 
 router.route('/pharmacy')
-.get(authorize.pharmacyaccess, (req, res) => {
+.get(authorize.pharmacyaccess, (req, res, next) => {
   res.render('pharmacylist', {patients: pharmacy_list, title: 'Pharmacy - HealthMax', user: req.user})
 })
 .post((req, res, next) => {
@@ -162,7 +162,7 @@ router.route('/pharmacy')
 });
 
 router.route('/Laboratory')
-.get(authorize.labaccess, (req, res) => {
+.get(authorize.labaccess, (req, res, next) => {
   res.render('lablist', {patients: laboratory_list, title: 'Laboratory - HealthMax', user: req.user})
 })
 .post((req, res, next) => {

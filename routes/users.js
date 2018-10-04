@@ -35,24 +35,17 @@ router.post('/new', function(req, res, next) {
 					next(err)
 				}
 				else {
-
-					var mailOptions = {
-						from: 'neftilsngl@gmail.com',
-						to: user.email,
-						subject: 'Registration Successful - HealthMax',
-						text: 'Your HeathMax Account has ben successfully created'
-					};
-
-					transport.sendMail(mailOptions, function(err, info) {
-						if(err) {
-							next(err)
-						}
-						else {
-							// console.log('Email Sent: ' + info.response)
-							next()
-						}
-					})
 					passport.authenticate('local')(req, res, () => {
+
+						var mailOptions = {
+							from: 'neftilsngl@gmail.com',
+							to: req.user.email,
+							subject: 'Registration Successful - HealthMax',
+							text: 'Hello ' + req.user.username + ' , your HeathMax Account has ben successfully created'
+						};
+
+						transport.sendMail(mailOptions);
+
 
 						var user = req.user
 						if(user.role == "Doctor") {
