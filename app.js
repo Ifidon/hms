@@ -43,7 +43,7 @@ mongoose.Promise = require('bluebird');
 var url = process.env.MONGO_URI || config.config()
 
 // console.log(MONGO_URI)
-console.log(config.config())
+log.info(config.config())
 
 var connect = mongoose.connect(url, {
 
@@ -51,6 +51,7 @@ var connect = mongoose.connect(url, {
 
 connect.then((db) => {
   console.log('Connect Successful in ' + process.env.NODE_ENV)
+  log.info('Connect Successful in ' + process.env.NODE_ENV)
 });
 
 // view engine setup

@@ -3,6 +3,8 @@ var router = express.Router();
 var User = require('../models/users');
 var passport = require('passport');
 
+var log = require('simple-node-logger').createSimpleLogger('hmslog.log');
+
 var mailer = require('nodemailer');
 var codes = require('../codes');
 
@@ -46,6 +48,8 @@ router.post('/new', function(req, res, next) {
 
 						transport.sendMail(mailOptions);
 
+						log.info('User @' + req.user.username + 'successfully created and logged In')
+
 
 						var user = req.user
 						if(user.role == "Doctor") {
@@ -65,7 +69,7 @@ router.post('/new', function(req, res, next) {
 						}
 						if(user.role == "IT Administrator") {
 							res.redirect('/registration')
-						}						
+						}					
 							// res.redirect('/registration')
 					})
 				}
@@ -77,6 +81,7 @@ router.post('/login', passport.authenticate('local', {
 	failureRedirect: '/authentication_failed'
 }),
   function(req, res, next) {
+  	log.info('User @' + req.user.username + ' successfully logged in')
 	var user = req.user
 	if(user.role == "Doctor") {
 		res.redirect('/doctors_office')
