@@ -14,6 +14,8 @@ var authenticate = require('./authenticate');
 var compression = require('compression');
 var helmet = require('helmet');
 
+var log = require('simple-node-logger').createSimpleLogger('hmslog.log');
+
 var config = require('./config');
 
 var index = require('./routes/index');
