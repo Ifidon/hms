@@ -61,7 +61,11 @@ router.get('/authentication_failed', (req, res, next) => {
 });
 
 router.get('/front_desk', authorize.fdaccess, function(req, res) {
-  res.render('front_desk', {patientlist: front_office, title: 'Front Desk - HealthMax'})
+  res.render('front_desk', {title: 'Front Desk - HealthMax'})
+});
+
+router.get('/front_desk/patientadmin', authorize.fdaccess, function(req, res, next) {
+  res.render('patientadmin', {patientlist: front_office, title: 'Patient Administration - HealthMax'})
 });
 
 router.post('/front_desk/send/:patient_id', function(req, res, next) {

@@ -1,8 +1,12 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
-
-  footer
+	div.container
+		div.row
+			div.card.m-auto
+				h3.card-header.text-warning Oops! Something Went Wrong...
+				h5.card-body.text-center Please try again.
+					|If the problem persists, please contact your system administrator
+	h1= message
+	h2= error.status
+	pre #{error.stack}

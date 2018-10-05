@@ -11,6 +11,9 @@ var FileStore = require('session-file-store');
 var passport = require('passport');
 var authenticate = require('./authenticate');
 
+var compression = require('compression');
+var helmet = require('helmet');
+
 var config = require('./config');
 
 var index = require('./routes/index');
@@ -26,6 +29,8 @@ const { sanitizeBody } = require('express-validator/filter');
 // var url = 'mongodb://localhost:27017/hms'
 
 var app = express();
+
+app.use(helmet());
 
 
 var mongoose = require('mongoose');

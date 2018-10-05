@@ -4,47 +4,41 @@ block content
 
   div.container
     div.row
-      form
-        button.btn.btn-primary(type="submit" formaction="/patients/registration") Register New Patient
-        br
-        br
-        button.btn.btn-primary(type='submit' formaction="/patients") Display List of Existing Patients
-    br
-    br
-    hr
-    div.row
-      h6.col-12 
-        em Search for patient using Last Name or Hospital Number
-      br
-      br
-
-      div.form-group
-        form(method="post", action="/")
-          input.form-control-sm(type="text" name="search" id='search' placeholder="Hospital No./Last Name" required)
-          button.btn.btn-primary(type='submit') Search
-    br
+      div.col-5.mx-auto.card
+        h4.card-header Patient Administration
+        h6.card-body 
+          ul.list-group
+            li.list-group-item Register Patient
+            li.list-group-item Edit/Update Patient Details
+            li.list-group-item Start patient consultation process
+          a.btn.btn-primary.my-2(href='/front_desk/patientadmin') Open
+      div.col-5.mx-auto.card
+        h4.card-header Reporting
+        h6.card-body 
+          ul.list-group
+            li.list-group-item Generate Periodc Payment Reports
+            li.list-group-item Generate Patient Specific Reports
+            li.list-group-item Save and Print Reports
+          a.btn.btn-primary.my-2(href='/front_desk/reporting') Open
     br
     hr
-
-    div.form-group
-      form(method='post' action='/patients/dailyhistory')
-        button(type='submit') Show History
-
-    div.row
-      p= message
-      ol.list-group.col-12
-        each patient in patientlist
-          li
-            h4.col-3= patient.patient_id
-            h4.col-4.offset-1= patient.firstname + " " + patient.lastname
-            form.col-4.float-right(method="post", action="/front_desk/#{patientlist.indexOf(patient)}")
-              button#delButton.btn.btn-primary(type="submit") Remove from list
-            br
-            br
-            hr
     br
 
-    footer
-
-
-    
+    div.row
+      div.col-5.mx-auto.card
+        h4.card-header User Administration
+        h6.card-body 
+          ul.list-group
+            li.list-group-item Register New User
+            li.list-group-item Edit/Update User Details
+            li.list-group-item Delete Users/User information
+          a.btn.btn-primary.my-2(href='/front_desk/userAdmin') Open
+      div.col-5.mx-auto.card
+        h4.card-header New Functionality Group
+        h6.card-body 
+          ul.list-group
+            li.list-group-item Functionality
+            li.list-group-item Functionality
+            li.list-group-item Functionality
+          a.btn.btn-primary.my-2(href='#') Open
+  br
