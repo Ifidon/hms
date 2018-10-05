@@ -106,7 +106,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error', {title: 'Error - HealthMax'});
 });
 
 module.exports = app;
