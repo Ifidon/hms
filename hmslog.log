@@ -267,3 +267,848 @@ Error: Not Found
 16:18:24.732 INFO  User @james successfully logged in 
 16:19:48.613 INFO  mongodb://localhost:27017/hms 
 16:19:49.762 INFO  Connect Successful in development 
+09:20:46.879 INFO  mongodb://localhost:27017/hms 
+09:20:47.980 INFO  Connect Successful in development 
+09:22:28.114 INFO  User @dolly successfully logged in 
+09:25:49.815 INFO  mongodb://localhost:27017/hms 
+09:25:50.905 INFO  Connect Successful in development 
+09:26:22.795 INFO  mongodb://localhost:27017/hms 
+09:26:23.908 INFO  Connect Successful in development 
+09:26:53.662 INFO  mongodb://localhost:27017/hms 
+09:26:54.766 INFO  Connect Successful in development 
+09:27:03.859 INFO  mongodb://localhost:27017/hms 
+09:27:04.974 INFO  Connect Successful in development 
+09:27:15.530 INFO  User @dolly successfully logged in 
+09:28:05.938 INFO  mongodb://localhost:27017/hms 
+09:28:07.029 INFO  Connect Successful in development 
+09:28:21.813 INFO  mongodb://localhost:27017/hms 
+09:28:22.917 INFO  Connect Successful in development 
+09:28:24.125 INFO  mongodb://localhost:27017/hms 
+09:28:25.256 INFO  Connect Successful in development 
+09:28:30.066 INFO  User @dolly successfully logged in 
+09:29:06.969 INFO  mongodb://localhost:27017/hms 
+09:29:08.080 INFO  Connect Successful in development 
+09:29:21.860 INFO  User @dolly successfully logged in 
+09:30:55.941 INFO  mongodb://localhost:27017/hms 
+09:30:57.032 INFO  Connect Successful in development 
+09:31:05.647 INFO  User @dolly successfully logged in 
+09:33:00.481 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|         div.row
+  > 9|           img.col-12.col-sm-3.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|           div.col-12.col-sm-9
+    11|             h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|             p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|         div.row
+  > 9|           img.col-12.col-sm-3.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|           div.col-12.col-sm-9
+    11|             h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|             p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:211:116)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:364:4)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:407:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.find.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:44:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+09:39:33.092 INFO  mongodb://localhost:27017/hms 
+09:39:34.191 INFO  Connect Successful in development 
+09:39:41.238 INFO  User @dolly successfully logged in 
+09:39:48.587 ERROR ids.values is not a function
+TypeError: ids.values is not a function
+    at Patients.find.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:53:21)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5)
+From previous event:
+    at model.Query.Query.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\mongoose\lib\query.js:3037:22)
+    at patientRouter.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:51:4)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at fdaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\authorize.js:7:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:86:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10) 
+09:40:50.149 INFO  mongodb://localhost:27017/hms 
+09:40:51.248 INFO  Connect Successful in development 
+09:40:54.913 INFO  mongodb://localhost:27017/hms 
+09:40:56.056 INFO  Connect Successful in development 
+09:41:03.170 INFO  User @dolly successfully logged in 
+09:42:35.892 INFO  mongodb://localhost:27017/hms 
+09:42:36.988 INFO  Connect Successful in development 
+09:42:41.895 INFO  mongodb://localhost:27017/hms 
+09:42:42.996 INFO  Connect Successful in development 
+09:42:55.865 INFO  User @dolly successfully logged in 
+09:43:28.731 INFO  mongodb://localhost:27017/hms 
+09:43:29.818 INFO  Connect Successful in development 
+09:43:38.447 INFO  User @dolly successfully logged in 
+10:12:25.226 INFO  mongodb://localhost:27017/hms 
+10:12:26.630 INFO  Connect Successful in development 
+10:13:13.011 INFO  User @dolly successfully logged in 
+10:13:13.270 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:77
+    75|     script.
+    76|         var last = #{ids[ids.length - 1]};
+  > 77|         console.log(last);
+    78|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:77
+    75|     script.
+    76|         var last = #{ids[ids.length - 1]};
+  > 77|         console.log(last);
+    78|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:477:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:526:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:18:58.870 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|         div.row
+  > 9|           img.col-12.col-sm-3.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|           div.col-12.col-sm-9
+    11|             h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|             p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|         div.row
+  > 9|           img.col-12.col-sm-3.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|           div.col-12.col-sm-9
+    11|             h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|             p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:211:116)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:364:4)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:407:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.find.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:44:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+10:21:54.957 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|     var ids = #{ids}
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+unexpected text ;
+   
+Error: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|     var ids = #{ids}
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+unexpected text ;
+   
+    at Lexer.fail (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:887:11)
+    at Lexer.next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:947:15)
+    at Lexer.lookahead (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:113:46)
+    at Parser.lookahead (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:102:23)
+    at Parser.peek (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:79:17)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:773:22)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.parseBlock (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:535:14)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:215:21)
+    at Parser.parse (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:122:25)
+    at parse (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:104:21)
+    at Object.exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:205:16)
+    at handleTemplateCache (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:174:25)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:10)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11) 
+10:22:03.450 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|     var ids = #{ids}
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+unexpected text ;
+   
+Error: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|     var ids = #{ids}
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+unexpected text ;
+   
+    at Lexer.fail (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:887:11)
+    at Lexer.next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:947:15)
+    at Lexer.lookahead (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:113:46)
+    at Parser.lookahead (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:102:23)
+    at Parser.peek (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:79:17)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:773:22)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.parseBlock (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:535:14)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:215:21)
+    at Parser.parse (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:122:25)
+    at parse (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:104:21)
+    at Object.exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:205:16)
+    at handleTemplateCache (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:174:25)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:10)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11) 
+10:23:27.378 INFO  mongodb://localhost:27017/hms 
+10:23:28.534 INFO  Connect Successful in development 
+10:23:45.253 INFO  mongodb://localhost:27017/hms 
+10:23:46.367 INFO  Connect Successful in development 
+10:23:49.809 INFO  mongodb://localhost:27017/hms 
+10:23:50.919 INFO  Connect Successful in development 
+10:23:54.790 INFO  User @dolly successfully logged in 
+10:23:54.960 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|         var ids = #{ids}
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|         var ids = #{ids}
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:481:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:530:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:24:27.413 INFO  mongodb://localhost:27017/hms 
+10:24:28.519 INFO  Connect Successful in development 
+10:24:38.853 INFO  mongodb://localhost:27017/hms 
+10:24:39.992 INFO  Connect Successful in development 
+10:24:43.619 INFO  User @dolly successfully logged in 
+10:24:43.790 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|         var ids = #{ids}
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|         var ids = #{ids}
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:481:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:530:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:25:21.468 INFO  mongodb://localhost:27017/hms 
+10:25:22.581 INFO  Connect Successful in development 
+10:25:26.293 INFO  User @dolly successfully logged in 
+10:25:26.488 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|         var ids = #{ids}
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|         var ids = #{ids}
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:481:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:530:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:26:42.230 INFO  mongodb://localhost:27017/hms 
+10:26:43.330 INFO  Connect Successful in development 
+10:26:51.556 INFO  User @dolly successfully logged in 
+10:26:51.839 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         console.log(ids)
+    78|         var last = #{ids[ids.length - 1]};
+  > 79|         console.log(last);
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         console.log(ids)
+    78|         var last = #{ids[ids.length - 1]};
+  > 79|         console.log(last);
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:485:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:534:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:28:23.336 INFO  mongodb://localhost:27017/hms 
+10:28:24.468 INFO  Connect Successful in development 
+10:29:03.631 INFO  mongodb://localhost:27017/hms 
+10:29:04.745 INFO  Connect Successful in development 
+10:29:08.599 INFO  User @dolly successfully logged in 
+10:29:08.776 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|     script.
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|     script.
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:477:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:526:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:29:43.636 INFO  mongodb://localhost:27017/hms 
+10:29:44.749 INFO  Connect Successful in development 
+10:29:51.748 INFO  User @dolly successfully logged in 
+10:29:51.950 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|     script.
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|     script.
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         console.log(last);
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:477:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:526:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:30:25.021 INFO  mongodb://localhost:27017/hms 
+10:30:26.142 INFO  Connect Successful in development 
+10:32:12.536 INFO  mongodb://localhost:27017/hms 
+10:32:13.625 INFO  Connect Successful in development 
+10:32:23.650 INFO  mongodb://localhost:27017/hms 
+10:32:24.749 INFO  Connect Successful in development 
+10:32:29.758 INFO  mongodb://localhost:27017/hms 
+10:32:31.905 INFO  mongodb://localhost:27017/hms 
+10:32:33.011 INFO  Connect Successful in development 
+10:32:35.574 INFO  User @dolly successfully logged in 
+10:32:36.065 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|     script.
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         var k = #{ids[0]}
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:78
+    76|     script.
+    77|         var last = #{ids[ids.length - 1]};
+  > 78|         var k = #{ids[0]}
+    79|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:477:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:526:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:35:25.413 INFO  mongodb://localhost:27017/hms 
+10:35:26.505 INFO  Connect Successful in development 
+10:35:48.943 INFO  User @dolly successfully logged in 
+10:35:49.096 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         var last = #{ids[ids.length - 1]};
+    78|         var k = #{ids[0]}
+  > 79|     
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         var last = #{ids[ids.length - 1]};
+    78|         var k = #{ids[0]}
+  > 79|     
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:477:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:530:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:37:24.004 INFO  mongodb://localhost:27017/hms 
+10:37:25.094 INFO  Connect Successful in development 
+10:37:37.777 INFO  mongodb://localhost:27017/hms 
+10:37:38.869 INFO  Connect Successful in development 
+10:37:50.891 INFO  User @dolly successfully logged in 
+10:37:51.095 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         var last = #{ids[ids.length - 1]};
+    78|         var k = #{ids[0]}
+  > 79|     
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         var last = #{ids[ids.length - 1]};
+    78|         var k = #{ids[0]}
+  > 79|     
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:477:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:530:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:39:10.786 INFO  mongodb://localhost:27017/hms 
+10:39:11.936 INFO  Connect Successful in development 
+10:39:18.317 INFO  User @dolly successfully logged in 
+10:39:18.506 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         var last = #{ids[ids.length - 1]};
+    78|         var k = #{ids[0]}
+  > 79|     
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         var last = #{ids[ids.length - 1]};
+    78|         var k = #{ids[0]}
+  > 79|     
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:477:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:530:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:40:00.692 INFO  mongodb://localhost:27017/hms 
+10:40:01.797 INFO  Connect Successful in development 
+10:40:53.472 INFO  mongodb://localhost:27017/hms 
+10:40:54.558 INFO  Connect Successful in development 
+10:41:00.049 INFO  User @dolly successfully logged in 
+10:41:00.221 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         var last = #{ids[ids.length - 1]};
+    78|         var k = #{ids[0]}
+  > 79|     
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         var last = #{ids[ids.length - 1]};
+    78|         var k = #{ids[0]}
+  > 79|     
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:477:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:530:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:41:09.161 INFO  mongodb://localhost:27017/hms 
+10:41:10.259 INFO  Connect Successful in development 
+10:41:21.736 INFO  User @dolly successfully logged in 
+10:41:21.928 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         var last = #{ids[ids.length - 1]};
+    78|         var k = #{ids[0]}
+  > 79|     
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\regpatient.jade:79
+    77|         var last = #{ids[ids.length - 1]};
+    78|         var k = #{ids[0]}
+  > 79|     
+    80|     script(src='/javascripts/registration.js')
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:477:62)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:530:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at patientreg.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:24:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at grantaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patientreg.js:10:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+10:41:36.789 INFO  mongodb://localhost:27017/hms 
+10:41:37.881 INFO  Connect Successful in development 
+10:41:41.760 INFO  User @dolly successfully logged in 
+10:42:59.247 INFO  mongodb://localhost:27017/hms 
+10:43:00.353 INFO  Connect Successful in development 
+10:43:12.879 INFO  mongodb://localhost:27017/hms 
+10:43:13.978 INFO  Connect Successful in development 
+10:43:18.686 INFO  User @dolly successfully logged in 
+10:44:17.294 INFO  mongodb://localhost:27017/hms 
+10:44:18.385 INFO  Connect Successful in development 
+10:44:22.856 INFO  mongodb://localhost:27017/hms 
+10:44:23.938 INFO  Connect Successful in development 
+10:45:14.744 INFO  mongodb://localhost:27017/hms 
+10:45:15.839 INFO  Connect Successful in development 
+10:45:49.859 INFO  mongodb://localhost:27017/hms 
+10:45:50.959 INFO  Connect Successful in development 
+10:46:20.722 INFO  mongodb://localhost:27017/hms 
+10:46:21.817 INFO  Connect Successful in development 
+10:46:38.127 INFO  mongodb://localhost:27017/hms 
+10:46:39.213 INFO  Connect Successful in development 
+10:46:59.518 INFO  mongodb://localhost:27017/hms 
+10:47:00.612 INFO  Connect Successful in development 
+10:47:11.669 INFO  mongodb://localhost:27017/hms 
+10:47:12.767 INFO  Connect Successful in development 
+10:47:27.899 INFO  mongodb://localhost:27017/hms 
+10:47:28.994 INFO  Connect Successful in development 
+10:47:30.184 INFO  mongodb://localhost:27017/hms 
+10:47:31.278 INFO  Connect Successful in development 
+10:47:38.766 INFO  mongodb://localhost:27017/hms 
+10:47:39.858 INFO  Connect Successful in development 
+10:47:43.491 INFO  mongodb://localhost:27017/hms 
+10:47:44.589 INFO  Connect Successful in development 
+10:47:55.545 INFO  mongodb://localhost:27017/hms 
+10:47:56.640 INFO  Connect Successful in development 
+10:48:10.140 INFO  mongodb://localhost:27017/hms 
+10:48:11.235 INFO  Connect Successful in development 
+10:48:17.959 INFO  mongodb://localhost:27017/hms 
+10:48:19.060 INFO  Connect Successful in development 
+10:48:29.395 INFO  mongodb://localhost:27017/hms 
+10:48:30.492 INFO  Connect Successful in development 
+10:48:48.943 INFO  mongodb://localhost:27017/hms 
+10:48:50.035 INFO  Connect Successful in development 
+10:48:57.581 INFO  mongodb://localhost:27017/hms 
+10:48:58.682 INFO  Connect Successful in development 
+10:49:04.727 INFO  mongodb://localhost:27017/hms 
+10:49:05.826 INFO  Connect Successful in development 
+10:49:20.665 INFO  mongodb://localhost:27017/hms 
+10:49:21.762 INFO  Connect Successful in development 
+10:49:35.765 INFO  mongodb://localhost:27017/hms 
+10:49:36.880 INFO  Connect Successful in development 
+10:50:09.258 INFO  mongodb://localhost:27017/hms 
+10:50:10.355 INFO  Connect Successful in development 
+10:50:16.457 INFO  mongodb://localhost:27017/hms 
+10:50:17.548 INFO  Connect Successful in development 
+10:50:19.477 INFO  mongodb://localhost:27017/hms 
+10:50:20.613 INFO  Connect Successful in development 
+10:50:26.295 INFO  mongodb://localhost:27017/hms 
+10:50:27.389 INFO  Connect Successful in development 
+10:50:36.439 INFO  mongodb://localhost:27017/hms 
+10:50:37.532 INFO  Connect Successful in development 
+10:50:41.113 INFO  mongodb://localhost:27017/hms 
+10:50:42.209 INFO  Connect Successful in development 
+10:50:46.196 INFO  mongodb://localhost:27017/hms 
+10:50:47.295 INFO  Connect Successful in development 
+10:50:51.859 INFO  mongodb://localhost:27017/hms 
+10:50:52.956 INFO  Connect Successful in development 
+10:51:00.390 INFO  mongodb://localhost:27017/hms 
+10:51:01.494 INFO  Connect Successful in development 
+10:51:06.517 INFO  mongodb://localhost:27017/hms 
+10:51:07.609 INFO  Connect Successful in development 
+10:51:22.653 INFO  mongodb://localhost:27017/hms 
+10:51:23.794 INFO  Connect Successful in development 
+10:51:26.732 INFO  mongodb://localhost:27017/hms 
+10:51:27.830 INFO  Connect Successful in development 
+10:51:53.776 INFO  mongodb://localhost:27017/hms 
+10:51:54.865 INFO  Connect Successful in development 
+10:52:30.574 INFO  mongodb://localhost:27017/hms 
+10:52:31.673 INFO  Connect Successful in development 
+10:52:36.463 INFO  mongodb://localhost:27017/hms 
+10:52:37.554 INFO  Connect Successful in development 
+10:52:47.739 INFO  mongodb://localhost:27017/hms 
+10:52:48.841 INFO  Connect Successful in development 
+10:52:50.701 INFO  mongodb://localhost:27017/hms 
+10:52:51.799 INFO  Connect Successful in development 
+10:53:07.728 INFO  mongodb://localhost:27017/hms 
+10:53:08.827 INFO  Connect Successful in development 
+10:54:08.760 INFO  mongodb://localhost:27017/hms 
+10:54:09.855 INFO  Connect Successful in development 
+10:54:25.036 INFO  mongodb://localhost:27017/hms 
+10:54:26.133 INFO  Connect Successful in development 

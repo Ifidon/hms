@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 })
 
 
-router.post('/', (req, res) => {
+router.post('/', (req, res, next) => {
   if (isNaN(req.body.search)) {
     var searchTerm = req.body.search;
     searchTerm = searchTerm.toUpperCase()
@@ -144,7 +144,7 @@ router.route('/doctors_office')
 });
 
 router.route('/doctors_office/:patient_id')
-.post((req, res) => {
+.post((req, res, next) => {
   Patients.findOne(req.params)
   .then((patient) => {
     pharmacy_list.push(patient);
@@ -161,17 +161,17 @@ router.route('/pharmacy')
 .get(authorize.pharmacyaccess, (req, res, next) => {
   res.render('pharmacylist', {patients: pharmacy_list, title: 'Pharmacy - HealthMax', user: req.user})
 })
-.post((req, res, next) => {
+// .post((req, res, next) => {
 
-});
+// });
 
 router.route('/Laboratory')
 .get(authorize.labaccess, (req, res, next) => {
   res.render('lablist', {patients: laboratory_list, title: 'Laboratory - HealthMax', user: req.user})
 })
-.post((req, res, next) => {
+// .post((req, res, next) => {
 
-});
+// });
 
 
 module.exports = router;

@@ -85,7 +85,7 @@ var consultation = new Schema ({
 
 var PatientSchema = new Schema ({
   patient_id: {
-    type: Number,
+    type: String,
     required: true,
     unique: true,
     minlength: 6,

@@ -68,7 +68,7 @@ router.post('/new', function(req, res, next) {
 							res.redirect('/laboratory')
 						}
 						if(user.role == "IT Administrator") {
-							res.redirect('/registration')
+							res.redirect('/front_desk')
 						}					
 							// res.redirect('/registration')
 					})
@@ -99,7 +99,7 @@ router.post('/login', passport.authenticate('local', {
 		res.redirect('/pharmacyandlab')
 	}
 	if(user.role == "IT Administrator") {
-		res.redirect('/registration')
+		res.redirect('/front_desk')
 	}
   });
 

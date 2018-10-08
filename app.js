@@ -20,7 +20,6 @@ var config = require('./config');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var patientreg = require('./routes/patientreg');
 var patientRouter = require('./routes/patients');
 
 var Patients = require('./models/patients')
@@ -90,7 +89,6 @@ function auth(req, res, next) {
 app.use(auth);
 
 app.use('/patients', patientRouter);
-app.use('/registration', patientreg);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
