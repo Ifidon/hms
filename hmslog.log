@@ -1,0 +1,160 @@
+13:32:14.006 INFO  mongodb://localhost:27017/hms 
+13:34:39.383 INFO  mongodb://localhost:27017/hms 
+13:34:40.567 INFO  Connect Successful in development 
+13:40:25.358 INFO  mongodb://localhost:27017/hms 
+13:40:26.449 INFO  Connect Successful in development 
+13:43:13.982 INFO  mongodb://localhost:27017/hms 
+13:43:15.069 INFO  Connect Successful in development 
+14:08:26.334 INFO  mongodb://localhost:27017/hms 
+14:08:27.766 INFO  Connect Successful in development 
+14:28:27.216 INFO  User @dolly successfully logged in 
+14:28:28.002 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:95:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:85:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+14:32:56.123 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|         div.row
+  > 9|           img.col-12.col-sm-3.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|           div.col-12.col-sm-9
+    11|             h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|             p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|         div.row
+  > 9|           img.col-12.col-sm-3.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|           div.col-12.col-sm-9
+    11|             h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|             p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:211:116)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:364:4)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:407:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.find.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:44:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+14:38:06.776 INFO  mongodb://localhost:27017/hms 
+14:38:07.988 INFO  Connect Successful in development 
+14:38:20.139 INFO  User @dolly successfully logged in 
+14:39:01.810 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\medlab.jade:7
+    5| 		div.row
+    6| 			div.col-12
+  > 7| 				h2.text-center= patient.firstname + " " + patient.lastname
+    8| 			div.col-12.row
+    9| 
+    10| 			div.col-12.text-white.bg-secondary
+
+Cannot read property 'firstname' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\medlab.jade:7
+    5| 		div.row
+    6| 			div.col-12
+  > 7| 				h2.text-center= patient.firstname + " " + patient.lastname
+    8| 			div.col-12.row
+    9| 
+    10| 			div.col-12.text-white.bg-secondary
+
+Cannot read property 'firstname' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:198:85)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:468:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at router.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:170:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at labaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\authorize.js:60:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3) 
+14:39:04.581 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\medlab.jade:7
+    5| 		div.row
+    6| 			div.col-12
+  > 7| 				h2.text-center= patient.firstname + " " + patient.lastname
+    8| 			div.col-12.row
+    9| 
+    10| 			div.col-12.text-white.bg-secondary
+
+Cannot read property 'firstname' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\medlab.jade:7
+    5| 		div.row
+    6| 			div.col-12
+  > 7| 				h2.text-center= patient.firstname + " " + patient.lastname
+    8| 			div.col-12.row
+    9| 
+    10| 			div.col-12.text-white.bg-secondary
+
+Cannot read property 'firstname' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:198:85)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:468:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at router.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:170:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at labaccess (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\authorize.js:60:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3) 
+14:40:40.460 INFO  mongodb://localhost:27017/hms 
+14:40:41.575 INFO  Connect Successful in development 
+14:41:34.096 INFO  User @dolly successfully logged in 

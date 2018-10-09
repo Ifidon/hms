@@ -22,7 +22,7 @@ block content
 					tbody
 						tr
 							td
-								textarea(rows=7 cols=50)= consultation.prescription.drugs
+								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
 							td
 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
 							td

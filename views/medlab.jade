@@ -23,7 +23,7 @@ block content
 						tr
 							form()
 								td
-									textarea(rows=7 cols=50)= consultation.labInvestigation.tests
+									textarea(rows=7 cols=50 disabled)= consultation.labInvestigation.tests
 								td
 									input.m-auto.form-control#cost(type='number' name="cost" value="#{consultation.labInvestigation.cost}") 
 								td
@@ -38,11 +38,11 @@ block content
 		br
 		br
 
-		div.form-group.d-none
+		div.form-group
 			h2.col-12.text-center Laboratory Findings
 			form.form-control(method='post' action='#' enctype='multipart/form-data')
 				label.m-2(for='findings') Enter Lab findings below:
-				textarea.form-control(rows=15)
+				textarea.form-control(rows=15 name='findings')
 				br
 				labrl.m-2(for'attachments') Upload attachments (if any).
 				input.form-control(type='file' name='attachments')
