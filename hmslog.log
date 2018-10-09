@@ -158,3 +158,186 @@ Cannot read property 'firstname' of undefined
 14:40:40.460 INFO  mongodb://localhost:27017/hms 
 14:40:41.575 INFO  Connect Successful in development 
 14:41:34.096 INFO  User @dolly successfully logged in 
+15:15:10.168 INFO  mongodb://localhost:27017/hms 
+15:15:11.591 INFO  Connect Successful in development 
+15:17:14.881 INFO  User @dolly successfully logged in 
+15:17:16.121 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:95:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:85:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+15:18:23.004 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:95:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:85:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+15:19:18.230 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:95:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:85:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+15:19:24.311 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:95:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:85:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+15:19:29.519 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:95:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:85:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+15:19:53.901 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:95:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:85:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+15:20:35.136 INFO  mongodb://localhost:27017/hms 
+15:20:36.350 INFO  Connect Successful in development 
+15:20:42.121 INFO  User @dolly successfully logged in 
+15:21:35.108 ERROR Patient is not defined
+ReferenceError: Patient is not defined
+    at router.route.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:167:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\authenticator.js:349:7)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\mongoose\lib\model.js:3930:16 
+15:22:47.653 INFO  mongodb://localhost:27017/hms 
+15:22:48.768 INFO  Connect Successful in development 
+15:22:56.620 INFO  User @dolly successfully logged in 
+15:24:58.785 INFO  mongodb://localhost:27017/hms 
+15:24:59.895 INFO  Connect Successful in development 
+15:25:15.087 INFO  mongodb://localhost:27017/hms 
+15:25:16.210 INFO  Connect Successful in development 
+15:25:44.833 INFO  mongodb://localhost:27017/hms 
+15:25:45.960 INFO  Connect Successful in development 

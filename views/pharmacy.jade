@@ -33,7 +33,7 @@ block content
 				br
 				br
 
-				input.btn.btn-primary(type="button" value="Back" onclick="history.back()")
+				input.btn.btn-primary(type="submit" value="Exit" formaction='/pharmacy/#{patient.patient_id}', formmethod='post')
 				input.btn.btn-primary.float-right(type='submit' value="Save")
 
 	script.

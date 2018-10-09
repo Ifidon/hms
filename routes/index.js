@@ -160,18 +160,30 @@ router.route('/doctors_office/:patient_id')
 router.route('/pharmacy')
 .get(authorize.pharmacyaccess, (req, res, next) => {
   res.render('pharmacylist', {patients: pharmacy_list, title: 'Pharmacy - HealthMax', user: req.user})
-})
-// .post((req, res, next) => {
+});
 
-// });
+router.route('/pharmacy/:patient_id')
+.post((req, res, next) => {
+  Patients.findOne(req.params)
+  .then((patient) => {
+    pharmacy_list.splice(pharmacy_list.indexOf(patient), 1)
+    res.redirect('/pharmacy')
+  })
+});
 
 router.route('/Laboratory')
 .get(authorize.labaccess, (req, res, next) => {
   res.render('lablist', {patients: laboratory_list, title: 'Laboratory - HealthMax', user: req.user})
-})
-// .post((req, res, next) => {
+});
 
-// });
+router.route('/laboratory/:patient_id')
+.post((req, res, next) => {
+  Patients.findOne(req.params)
+  .then((patient) => {
+    laboratory_list.splice(pharmacy_list.indexOf(patient), 1)
+    res.redirect('/laboratory')
+  })
+});
 
 
 module.exports = router;
