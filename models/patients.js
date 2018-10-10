@@ -32,6 +32,9 @@ var labSchema = new Schema ({
   },
   findings: {
     type: String
+  },
+  attachemnt: {
+    type: String
   }
 });
 

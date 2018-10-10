@@ -17,10 +17,15 @@ var storage = multer.diskStorage({
   destination: (rea, file, cb) => {
     cb(null, 'public/images/patients');
   },
-
   // filename: (req, file, cb) => {
   //  cb(null, file.originalname)
   // }
+});
+
+var docstore = multer.diskStorage({
+  destination: (rea, file, cb) => {
+    cb(null, 'attachments');
+  }
 });
 
 var imageFileFilter = (req, file, cb, err) => {
@@ -32,9 +37,23 @@ var imageFileFilter = (req, file, cb, err) => {
   cb(null, true)
 };
 
+var docFileFilter = (req, file, cb, err) => {
+  if(!file.originalname.match(/\.(doc|docx|pdf|jpeg|jpg|JPG|JPEG|PDF|DOCX|DOC)$/)) {
+    return cb(new Error('Only Image files allowed!'))
+    next(err)
+    
+  }
+  cb(null, true)
+};
+
 var upload = multer({
   storage: storage,
   fileFilter: imageFileFilter
+});
+
+var savefile = multer({
+  storage: docstore,
+  fileFilter: docFileFilter
 });
 
 patientRouter.route('/')
@@ -246,6 +265,34 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
     patient.save()
     // console.log(req.body)
     res.render('medlab', {patient, consultation, title: 'Laboratory Entries - HealthMax'})
+    // console.log(consultation.labInvestigation)
+  })
+  .catch((error) => {
+      next(error)
+  })
+});
+
+patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/findings')
+.get( (req, res, next) => {
+  Patients.findOne({patient_id: req.params.patient_id})
+  .then((patient) => {
+    var consultation = patient.consultations.id(req.params.consultation_id)
+    res.render('findings', {patient, consultation, title: 'Enter Lab Results - HealthMax'})
+  })
+  .catch((error) => {
+    next(error)
+  })
+})
+
+.post(savefile.single('attachment'), (req, res, next) => {
+  Patients.findOne({patient_id: req.params.patient_id})
+  .then((patient) => {
+    var consultation = patient.consultations.id(req.params.consultation_id)
+    consultation.labInvestigation.attachment = req.file.path
+    consultation.labInvestigation.findings = req.body.findings
+    patient.save()
+    // console.log(req.body)
+    res.render('findings', {patient, consultation, title: 'Enter Lab Results - HealthMax'})
     // console.log(consultation.labInvestigation)
   })
   .catch((error) => {

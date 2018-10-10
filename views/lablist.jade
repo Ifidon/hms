@@ -4,7 +4,7 @@ block content
 
   div.container
     div.row
-      section.col-12.list-group
+      section.col-7.list-group
         ol
         each patient in patients
           li.list-group-item
@@ -13,4 +13,15 @@ block content
                 span.badge.badge-primary.mx-1 Hospital ID: #{patient.patient_id}
             - var date = patient.consultations[0].updatedAt
             form(method='get', action="/patients/#{patient.patient_id}/consultations/#{patient.consultations[0]._id}/laboratory")
-              button.btn.btn-primary(type='submit' onclick='endpoint()').float-right= date.toISOString().substr(0, 10)
+              button.btn.btn-primary(type='submit' onclick='endpoint()').float-right= date.toISOString().substr(0, 10)    
+
+      div.card.col-4.m-auto
+        div.card-header
+          h5.col-12.text-center Pending Test Results
+        div.card-body
+          ol.list-group
+          each patient in pending
+            li.list-group-item.m-1
+              h6= "Name: " + patient.firstname + " " + patient.lastname + "( " + patient.patient_id + ")" 
+              p= "Date: " + patient.consultations[0].createdAt.toString().substr(0, 16)
+              a.btn(href="/patients/#{patient.patient_id}/consultations/#{patient.consultations[0]._id}/laboratory/findings") Add Results

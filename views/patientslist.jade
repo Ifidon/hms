@@ -5,17 +5,17 @@ block content
   div.container
     div.row
     each patient in patientlist
-        div.row
-          img.col-12.col-sm-3.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
-          div.col-12.col-sm-9
-            h1.col-12= patient.firstname + ' ' + patient.lastname
-            p.col-12= "Address: " + patient.address
-            p#id.col-12= "Hospital ID: " + patient.patient_id
-            div.row.form-group
-              form#viewform.col-5(method="get" action="/patients/#{patient.patient_id}")
-                button#viewDetails.btn.btn-primary(type='submit') View Details
-              form#editform.col-5(method="get", action="/patients/#{patient.patient_id}/update")
-                button#editDetails.btn.btn-primary(type='submit') Edit Details
+      div.col-3
+          img.col-12.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+      div.col-9
+        h1.col-12= patient.firstname + ' ' + patient.lastname
+        p.col-12= "Address: " + patient.address
+        p#id.col-12= "Hospital ID: " + patient.patient_id
+        div.row.form-group
+          form#viewform.col-5(method="get" action="/patients/#{patient.patient_id}")
+            button#viewDetails.btn.btn-primary(type='submit') View Details
+          form#editform.col-5(method="get", action="/patients/#{patient.patient_id}/update")
+            button#editDetails.btn.btn-primary(type='submit') Edit Details
         hr
 
     br

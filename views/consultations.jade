@@ -4,7 +4,8 @@ block content
 
   div.container
     div.row
-      img.img-responsive.col-12.col-lg-3(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')} ")
+      div.col-3
+        img.img-thumbnail.col-12(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')} " height='250' width='250')
       div.col-12.col-lg-5
         h1.col-xs-12= patient.firstname + ' ' + patient.lastname
         p#age.col-xs-12
@@ -28,8 +29,6 @@ block content
       hr
 
     br
-
-    footer
 
     script(src ='/javascripts/patientview.js')
     script(src ='/javascripts/consultations.js')

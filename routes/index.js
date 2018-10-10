@@ -9,6 +9,7 @@ var nurses_station = [];
 var doctors_office = [];
 var pharmacy_list = [];
 var laboratory_list = [];
+var pending = [];
 
 var authorize = require('../authorize');
 var codes = require('../codes');
@@ -143,13 +144,18 @@ router.route('/doctors_office')
   res.render('doctorslist', {patientlist: doctors_office, title: "Doctor's Office - HealthMax"})
 });
 
-router.route('/doctors_office/:patient_id')
+router.route('/doctors_office/:patient_id/:consultation_id')
 .post((req, res, next) => {
-  Patients.findOne(req.params)
+  Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
   .then((patient) => {
+    var visit  = patient.consultations.id(req.params.consultation_id);
+    // var person = new Object()
+    // patient.info = person
+    // patient.visit = visit
     pharmacy_list.push(patient);
     laboratory_list.push(patient);
-    doctors_office.splice(doctors_office.indexOf(patient), 1);
+    doctors_office.splice(pharmacy_list.indexOf(patient), 1)
+    console.log(patient)
     res.redirect('/doctors_office');
   })
   .catch((error) => {
@@ -173,17 +179,29 @@ router.route('/pharmacy/:patient_id')
 
 router.route('/Laboratory')
 .get(authorize.labaccess, (req, res, next) => {
-  res.render('lablist', {patients: laboratory_list, title: 'Laboratory - HealthMax', user: req.user})
+  res.render('lablist', {patients: laboratory_list, pending, title: 'Laboratory - HealthMax', user: req.user})
 });
 
 router.route('/laboratory/:patient_id')
 .post((req, res, next) => {
   Patients.findOne(req.params)
   .then((patient) => {
+    pending.push(patient)
     laboratory_list.splice(pharmacy_list.indexOf(patient), 1)
     res.redirect('/laboratory')
   })
 });
+
+router.route('/laboratory/:patient_id/findings')
+.post((req, res, next) => {
+  Patients.findOne(req.params)
+  .then((patient) => {
+    pending.splice(pharmacy_list.indexOf(patient), 1)
+    res.redirect('/laboratory')
+  })
+});
+
+
 
 
 module.exports = router;

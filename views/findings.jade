@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	div.container
+		div.form-group
+			h2.col-12.text-center Laboratory Findings
+			form.form-control(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings' enctype='multipart/form-data')
+				label.m-2(for='findings') Enter Lab findings below:
+				textarea.form-control(rows=15 name='findings' placeholder='#{consultation.labInvestigation.findings}')
+				br
+				labrl.m-2(for'attachments') Upload attachments (if any)
+				p.text-warning#alert.m-2 Attachement already exits!
+				input.form-control(type='file' name='attachment')
+				br
+				br
+				input.btn.btn-primary(type='submit' value='Save Findings')
+
+		script.
+			var att = #{consultation.labInvestigation.attachment}
+			var alert = document.getElementById('alert');
+			if(!att) {
+			alert.hidden = true
+			}
+			if(att) {
+			alert.hidden = false
+			}

@@ -4,7 +4,8 @@ block content
 
   div.container
     div.row
-      img.img-responsive.col-12.col-lg-4( src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}")
+      div.col-3
+        img.img-thumbnail.col-12(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height='250' width='250')
       div.col-12.col-md-7.col-sm-offset-5
         h1.col-xs-12= patient.firstname + ' ' + patient.lastname
         p#age.col-xs-12
@@ -58,7 +59,7 @@ block content
         br
         button.btn.btn-primary.col-2(type="button" onClick="goBack()") Back
         button.btn.btn-primary.col-2.float-right(type="submit") Save
-    form(method="post", action="/doctors_office/#{patient.patient_id}")
+    form(method="post", action="/doctors_office/#{patient.patient_id}/#{consultation._id}")
       button.btn.btn-primary(type="submit") Send to Pharmacy & Lab
     
     br
