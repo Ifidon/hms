@@ -4,10 +4,10 @@ block content
 
   div.container
     div.row
-      div.col-12.col-lg-5
+      div.col-3
         img.img-thumbnail.d-block(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height=200 width=200)
 
-      div.col-12.col-lg-5.offset-lg-2
+      div.col-12.col-md-5.offset-md-2
         h3.col-xs-12= patient.firstname + ' ' + patient.lastname
           span= " (Hospital ID: " + patient.patient_id + ")"
           h5#age.col-xs-12

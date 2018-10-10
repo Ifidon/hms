@@ -182,9 +182,9 @@ router.route('/Laboratory')
   res.render('lablist', {patients: laboratory_list, pending, title: 'Laboratory - HealthMax', user: req.user})
 });
 
-router.route('/laboratory/:patient_id')
+router.route('/laboratory/:patient_id/:consultation_id')
 .post((req, res, next) => {
-  Patients.findOne(req.params)
+  Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
   .then((patient) => {
     pending.push(patient)
     laboratory_list.splice(pharmacy_list.indexOf(patient), 1)
