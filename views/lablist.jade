@@ -25,3 +25,7 @@ block content
               h6= "Name: " + patient.firstname + " " + patient.lastname + "( " + patient.patient_id + ")" 
               p= "Date: " + patient.consultations[0].createdAt.toString().substr(0, 16)
               a.btn(href="/patients/#{patient.patient_id}/consultations/#{patient.consultations[0]._id}/laboratory/findings") Add Results
+
+  script.
+      var use = '#{user.username}'.toString()
+  script(src='/javascripts/login.js')

@@ -62,5 +62,17 @@ module.exports = {
     else {
       res.redirect('/unauthorized')
     }
+  },
+
+  genaccess: function(req, res, next) {
+    if(!req.user) {
+      res.redirect('/login')
+    }
+    else if(req.user) {
+      next()
+    }
+    else {
+      res.redirect('/unauthorized')
+    }
   }
 }

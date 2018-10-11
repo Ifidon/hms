@@ -32,7 +32,7 @@ block content
             li.list-group-item Register New User
             li.list-group-item Edit/Update User Details
             li.list-group-item Delete Users/User information
-          a.btn.btn-primary.my-2(href='/front_desk/userAdmin') Open
+          a.btn.btn-primary.my-2(href='/front_desk/useradmin') Open
       div.col-5.mx-auto.card.invisible
         h4.card-header New Functionality Group
         h6.card-body 
@@ -42,3 +42,8 @@ block content
             li.list-group-item Functionality
           a.btn.btn-primary.my-2(href='#') Open
   br
+
+  script.
+    var use = '#{user.username}'.toString()
+  script(src='/javascripts/login.js')
+    

@@ -7,9 +7,9 @@ block content
 				fieldset
 					legend.text-center Register User
 					br
-					input.form-control.col-12(type='text' name='firstname' placeholder='First Name')
+					input.form-control.col-12(type='text' name='firstname' placeholder='First Name' required)
 					br
-					input.form-control.col-12(type='text' name='lastname' placeholder='Last Name')
+					input.form-control.col-12(type='text' name='lastname' placeholder='Last Name' required)
 					br
 					input.form-control.col-12(type='email' name='email' placeholder='Email Address')
 					br
@@ -33,4 +33,7 @@ block content
 
 		br
 
+	script.
+		var use = '#{user.username}'.toString()
+	script(src='/javascripts/login.js')
 	script(src='/javascripts/newuser.js')

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			div.col-12
+				ol.list-group
+					each patient in patientlist
+						li.list-group-item
+							h6.col-3= patient.firstname + " " + patient.lastname
+							h6.col-3= patient.patient_id
+								form
+									button.btn.btn-primary.m-1(type='submit' formaction='/front_desk/send/#{patient.patient_id}', formmethod='post') Send to Nurses
+									button.btn.btn-primary.m-1(type='submit' formaction='/nurses_station/send/#{patient.patient_id}', formmethod='post') Send to Doctor
+				br
+	script.
+		var use = '#{user.username}'.toString()
+		
+	script(src='/javascripts/login.js')

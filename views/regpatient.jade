@@ -77,4 +77,7 @@ block content
         var last = #{ids[ids.length - 1]};
         var k = #{ids[0]}
     
+    script.
+        var use = '#{user.username}'.toString()
+    script(src='/javascripts/login.js')
     script(src='/javascripts/registration.js')

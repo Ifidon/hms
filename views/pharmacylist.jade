@@ -14,3 +14,7 @@ block content
             - var date = patient.consultations[0].updatedAt
             form(method='get', action="/patients/#{patient.patient_id}/consultations/#{patient.consultations[0]._id}/pharmacy")
               button.btn.btn-primary(type='submit' onclick='endpoint()').float-right= date.toISOString().substr(0, 10)
+
+    script.
+      var use = '#{user.username}'.toString()
+    script(src='/javascripts/login.js')

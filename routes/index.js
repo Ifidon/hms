@@ -18,7 +18,8 @@ var codes = require('../codes');
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  res.render('homepage', {title: 'Welcome - HealthMax'})
+  var user = " "
+  res.render('homepage', {user, title: 'Welcome - HealthMax'})
 })
 
 
@@ -48,7 +49,8 @@ router.post('/', (req, res, next) => {
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login - HealthMax' });
+  var user = ""
+  res.render('login', {user, title: 'Login - HealthMax' });
 });
 
 router.route('/unauthorized')
@@ -62,24 +64,37 @@ router.get('/authentication_failed', (req, res, next) => {
 });
 
 router.get('/front_desk', authorize.fdaccess, function(req, res) {
-  res.render('front_desk', {title: 'Front Desk - HealthMax'})
+  var user = req.user
+  res.render('front_desk', {title: 'Front Desk - HealthMax', user})
 });
 
 router.get('/front_desk/patientadmin', authorize.fdaccess, function(req, res, next) {
-  res.render('patientadmin', {patientlist: front_office, title: 'Patient Administration - HealthMax'})
+  var user = req.user
+  res.render('patientadmin', {patientlist: front_office, user, title: 'Patient Administration - HealthMax', user})
+});
+
+router.get('/front_desk/useradmin', authorize.fdaccess, function(req, res, next) {
+  var user = req.user
+  res.render('newuser', {patientlist: front_office, user, title: 'Patient Administration - HealthMax', user})
 });
 
 router.post('/front_desk/send/:patient_id', function(req, res, next) {
+  var user = req.user
   Patients.findOne(req.params)
   .then((patient) => {
-      if (codes.check(nurses_station, patient)) {
-        res.render('patientview', {patient, message: "Patient already sent to Nurses' Station"})
+      if (codes.check(nurses_station, patient) && codes.check(front_office, patient)) {
+        res.render('patientview', {patient, user, message: "Entry already exists in nurses station"})
       }
-      else {
+      if (!codes.check(nurses_station, patient) && codes.check(front_office, patient)) {
+        nurses_station.push(patient)
+        res.render('patientview', {patient, user, message: "Entry sent to nurses station"})
+      }
+      if(!codes.check(nurses_station, patient) && !codes.check(front_office, patient)) {
         nurses_station.push(patient)
         front_office.push(patient)
-        res.redirect('/front_desk')
-      }    
+        res.redirect('/front_desk/patientadmin')
+      } 
+      console.log(codes.check(nurses_station, patient))   
   })
   .catch((error) => {
     next(error)
@@ -88,30 +103,32 @@ router.post('/front_desk/send/:patient_id', function(req, res, next) {
 
 router.route('/nurses_station')
 .get(authorize.nurseaccess, (req, res) => {
+  var user = req.user
   var message = ""
-  res.render('consultationList', {patientlist: nurses_station, title: 'Nurses Station - HealthMax', message: req.message})
+  res.render('consultationList', {patientlist: nurses_station, user, title: 'Nurses Station - HealthMax', message: req.message})
 });
 
 router.route('/nurses_station/:patient_id')
 .post((req, res, next) => {
+  var user = req.user
   var message = ""
   Patients.findOne(req.params)
   .then((patient) => {
     if ((codes.consultlimit(patient.consultations)) && (codes.check(doctors_office, patient))) {
       nurses_station.splice(nurses_station.indexOf(patient), 1)
-      res.render('consultationList', {patientlist: nurses_station, message: "Entry already exixts"})
+      res.render('consultationList', {patientlist: nurses_station, user, message: "Entry already exixts"})
     }
     if ((codes.consultlimit(patient.consultations)) && (!codes.check(doctors_office, patient))) {
       doctors_office.push(patient)
       nurses_station.splice(nurses_station.indexOf(patient), 1)
-      res.render('consultationList', {patientlist: nurses_station, message: "Existing entry has been sent to the Doctor's Office"})
+      res.render('consultationList', {patientlist: nurses_station, user, message: "Existing entry has been sent to the Doctor's Office"})
     }
     else {
       patient.consultations.unshift(req.body)
       patient.save()
       doctors_office.push(patient)
       nurses_station.splice(nurses_station.indexOf(patient), 1)
-      res.render('consultationList', {patientlist: nurses_station, message: "Entry created and sent to the Doctor"})
+      res.render('consultationList', {patientlist: nurses_station, user, message: "Entry created and sent to the Doctor"})
     }
   })
   .catch((error) => {
@@ -121,16 +138,18 @@ router.route('/nurses_station/:patient_id')
 
 router.route('/nurses_station/send/:patient_id')
 .post((req, res, next) => {
+  var user = req.user
   Patients.findOne(req.params)
   .then((patient) => {
     if(codes.check(doctors_office, patient)) {
       nurses_station.splice(nurses_station.indexOf(patient), 1)
-      res.redirect('/nurses_station')
+      var message = ""
+      res.render('consultationList', {patientlist: nurses_station, user, title: 'Nurses Station - HealthMax', message: "Entry already sent to the doctor's office"})
     }
     else {
       doctors_office.push(patient)
       nurses_station.splice(nurses_station.indexOf(patient), 1)
-      console.log(res)
+      // console.log(res)
       res.redirect('/nurses_station')
     }
   })
@@ -141,22 +160,45 @@ router.route('/nurses_station/send/:patient_id')
 
 router.route('/doctors_office')
 .get(authorize.draccess, (req, res) => {
-  res.render('doctorslist', {patientlist: doctors_office, title: "Doctor's Office - HealthMax"})
+  var user = req.user
+  res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax"})
 });
 
 router.route('/doctors_office/:patient_id/:consultation_id')
 .post((req, res, next) => {
+  var user = req.user
   Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
   .then((patient) => {
-    var visit  = patient.consultations.id(req.params.consultation_id);
-    // var person = new Object()
-    // patient.info = person
-    // patient.visit = visit
-    pharmacy_list.push(patient);
-    laboratory_list.push(patient);
-    doctors_office.splice(pharmacy_list.indexOf(patient), 1)
-    console.log(patient)
-    res.redirect('/doctors_office');
+    var message=" "
+    var consultation = patient.consultations[0]
+
+    if(!codes.check(pharmacy_list, patient) && !codes.check(laboratory_list, patient)) {
+      pharmacy_list.push(patient);
+      laboratory_list.push(patient);
+      doctors_office.splice(pharmacy_list.indexOf(patient), 1)
+      console.log(patient)
+      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry Sent."})
+    }
+
+    if (codes.checkdate(laboratory_list, consultation) && codes.checkdate(pharmacy_list, consultation)) {
+      // doctors_office.splice(pharmacy_list.indexOf(patient), 1)
+      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry already exists."})
+    }
+
+    if (codes.check(pharmacy_list, patient) && codes.check(laboratory_list, patient)) {
+      doctors_office.splice(pharmacy_list.indexOf(patient), 1)
+      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry already exists."})
+    }
+
+    if (codes.check(pharmacy_list, patient) && !codes.check(laboratory_list, patient)) {
+      laboratory_list.push(patient)
+      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Sent to lab. Entry already exists in pharmacy."})
+    }
+
+    if (!codes.check(pharmacy_list, patient) && codes.check(laboratory_list, patient)) {
+      pharmacy_list.push(patient)
+      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Sent to pharmacy. Entry already exists in lab."})
+    }    
   })
   .catch((error) => {
     next(error)
@@ -165,11 +207,13 @@ router.route('/doctors_office/:patient_id/:consultation_id')
 
 router.route('/pharmacy')
 .get(authorize.pharmacyaccess, (req, res, next) => {
-  res.render('pharmacylist', {patients: pharmacy_list, title: 'Pharmacy - HealthMax', user: req.user})
+  var user = req.user
+  res.render('pharmacylist', {patients: pharmacy_list, user, title: 'Pharmacy - HealthMax', user: req.user})
 });
 
 router.route('/pharmacy/:patient_id')
 .post((req, res, next) => {
+  var user = req.user
   Patients.findOne(req.params)
   .then((patient) => {
     pharmacy_list.splice(pharmacy_list.indexOf(patient), 1)
@@ -179,7 +223,8 @@ router.route('/pharmacy/:patient_id')
 
 router.route('/Laboratory')
 .get(authorize.labaccess, (req, res, next) => {
-  res.render('lablist', {patients: laboratory_list, pending, title: 'Laboratory - HealthMax', user: req.user})
+  var user = req.user
+  res.render('lablist', {patients: laboratory_list, pending, user, title: 'Laboratory - HealthMax', user: req.user})
 });
 
 router.route('/laboratory/:patient_id/:consultation_id')
@@ -200,6 +245,15 @@ router.route('/laboratory/:patient_id/findings')
     res.redirect('/laboratory')
   })
 });
+
+router.route('/consultationlist')
+.get(authorize.genaccess, (req, res, next) => {
+  var user = req.user
+  var message = " "
+  res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Today's History"})
+})
+
+
 
 
 

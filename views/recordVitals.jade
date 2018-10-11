@@ -7,7 +7,7 @@ block content
       div.col-3
         img.img-thumbnail.d-block(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height=200 width=200)
 
-      div.col-12.col-md-5.offset-md-2
+      div.col-12.col-md-7.m-3
         h3.col-xs-12= patient.firstname + ' ' + patient.lastname
           span= " (Hospital ID: " + patient.patient_id + ")"
           h5#age.col-xs-12
@@ -46,3 +46,7 @@ block content
             input#temp(type="text" name="heartRate" placeholder="Heart Rate(BPM)" required)
           input.col-12.btn.btn-primary(type='submit' value="Save & Send to Doctor's Office")
     br
+
+  script.
+    var use = '#{user.username}'.toString()  
+  script(src='/javascripts/login.js')

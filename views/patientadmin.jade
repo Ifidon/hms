@@ -3,43 +3,49 @@ extends layout
 block content
   div.container
     div.row
-      form
-        button.btn.btn-primary(type="submit" formaction="/patients/registration") Register New Patient
+      div.col-12
+        form.form-group.form-inline
+          button.btn.btn-primary(type="submit" formaction="/patients/registration") Register New Patient
+          br
+          br
+          button.btn.btn-primary.ml-auto(type='submit' formaction="/patients") Display List of Existing Patients
         br
         br
-        button.btn.btn-primary(type='submit' formaction="/patients") Display List of Existing Patients
-      br
-      br
-      hr
+        hr
+      
+      div.col-12
+        h6
+          em Search for patient using Last Name or Hospital Number
+        br
+        br
 
-    div.row
-      h6.col-12 
-        em Search for patient using Last Name or Hospital Number
-      br
-      br
+        div.form-group.col-12
+          form(method="post", action="/")
+            input.form-control-sm(type="text" name="search" id='search' placeholder="Hospital No./Last Name" required)
+            button.btn.btn-primary(type='submit') Search
+          br
+          br
+          hr
 
-      div.form-group
-        form(method="post", action="/")
-          input.form-control-sm(type="text" name="search" id='search' placeholder="Hospital No./Last Name" required)
-          button.btn.btn-primary(type='submit') Search
-      br
-      br
-      hr
+      div.form-group.d-none
+        form(method='post' action='/patients/dailyhistory')
+          button(type='submit') Show History
 
-    div.form-group.d-none
-      form(method='post' action='/patients/dailyhistory')
-        button(type='submit') Show History
+      div.col-12
+        p= message
+        ul.list-group
+        each patient in patientlist
+          li.list-group-item
+            h6.col-3= patient.firstname + " " + patient.lastname
+            h6.col-3= patient.patient_id
+            form
+              button.btn.btn-sm(type='submit' formaction='/front_desk/send/#{patient.patient_id}', formmethod='post') Send to Nurses
 
-    div.row
-      p= message
-        ol.list-group.col-12
-          each patient in patientlist
-            li
-              h4.col-3= patient.patient_id
-              h4.col-4.offset-1= patient.firstname + " " + patient.lastname
-              form.col-4.float-right(method="post", action="/front_desk/#{patientlist.indexOf(patient)}")
-                button#delButton.btn.btn-primary(type="submit") Remove from list
-            br
-            br
-            hr
-     br
+              button.btn.btn-sm(type='submit' formaction='/nurses_station/send/#{patient.patient_id}', formmethod='post') Send to Doctors
+          br
+       br
+
+    script.
+      var use = '#{user.username}'.toString()
+      console.log(use)
+    script(src="/javascripts/login.js")

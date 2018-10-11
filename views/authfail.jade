@@ -12,4 +12,8 @@ block content
 						span
 							a(href='/login') here 
 						|to try again
-					p.text-center If problem persists contact your system admininstrator 
+					p.text-center If problem persists contact your system admininstrator
+
+	script.
+    	var use = '#{user.username}'.toString()
+  	script(src='/javascripts/login.js') 

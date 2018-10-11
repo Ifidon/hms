@@ -34,12 +34,13 @@ block content
 				br
 
 				input.btn.btn-primary.float-right(type='submit' value="Save")
-				input.btn.btn-primary(type="submit" value="Exit" formaction='/laboratory/#{patient.patient_id}', formmethod='post')
+				input.btn.btn-primary(type="submit" value="Exit" formaction='/laboratory/#{patient.patient_id}/#{consultation._id}', formmethod='post')
 		br
 		br
 
+		
+	Script.
+		var use ='#{user.username}'.toString()
 
-
-
-
+	script(src='/javascripts/login.js')
 	script(src='/javascripts/script.js')

@@ -16,11 +16,10 @@ block content
 				input.btn.btn-primary(type='submit' value='Save Findings')
 
 		script.
-			var att = #{consultation.labInvestigation.attachment}
-			var alert = document.getElementById('alert');
-			if(!att) {
-			alert.hidden = true
-			}
-			if(att) {
-			alert.hidden = false
-			}
+			var att = '#{consultation.labInvestigation.attachment}'.toString()
+			var aler = document.getElementById('alert');
+			var use = '#{user.username}'.toString()
+			console.log(att)
+			
+
+		script(src='/javascripts/login.js')

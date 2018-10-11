@@ -2,35 +2,26 @@ extends layout
 
 block content
   div.container
-    h1= title
-    p Welcome to #{title}
-    form
-      button.btn.btn-primary(type="submit" formaction="/patients/registration") Register New Patient
+    div.row
+      h1= title
+      p Welcome to #{title}
+      form
+        button.btn.btn-primary(type="submit" formaction="/patients/registration") Register New Patient
+        br
+        br
+        button.btn.btn-primary(type='submit' formaction="/patients") Display List of Existing Patients
       br
       br
-      button.btn.btn-primary(type='submit' formaction="/patients") Display List of Existing Patients
-    br
-    br
-  div(hidden)
-    h5 OR Search Using Last Name or Hospital Number
-    br
+      div(hidden)
+        h5 OR Search Using Last Name or Hospital Number
+        br
 
-    div.form-group
-      form(method="post", action="/")
-        input.form-control-sm(type="text" name="search" id='search' placeholder="Hospital No./Last Name")
-        button.btn.btn-primary(type='submit') Search
+        div.form-group
+          form(method="post", action="/")
+            input.form-control-sm(type="text" name="search" id='search' placeholder="Hospital No./Last Name")
+            button.btn.btn-primary(type='submit') Search
 
 
-
-
-
-
-
-
-
-
-
-div.container
     div.row
       form.form-group(method='post', action="/front_desk")
         input(type="text" placeholder="Search with Hospital Number" name="search")

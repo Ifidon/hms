@@ -36,9 +36,9 @@ block content
 				input.btn.btn-primary(type="submit" value="Exit" formaction='/pharmacy/#{patient.patient_id}', formmethod='post')
 				input.btn.btn-primary.float-right(type='submit' value="Save")
 
+
 	script.
-		var cons = #{consultation.prescription}
-
-
+		var use ='#{user.username}'.toString()
+	script(src='/javascripts/login.js')
 	script(src='/javascripts/script.js')
 

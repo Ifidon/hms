@@ -4,7 +4,7 @@ block content
 
   div.container
     div.row
-      h5.col-12.text-danger
+      h5.col-12.text-info
         em= message
 
       div.col-3
@@ -30,4 +30,9 @@ block content
     br
 
 
+
+    script.
+      var use = '#{user.username}'.toString()
+      
+    script(src='/javascripts/login.js')
     script(src ='/javascripts/patientview.js')

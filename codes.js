@@ -1,13 +1,34 @@
 module.exports = {
 	check: function (array, item) {
     	for (i in array) {
-        	if(array._id === item._id) {
+        	if(array[i].patient_id == item.patient_id) {
         		return true
         	}
         	else {
         		return false
         	}
    		}
+	},
+
+	checkdate: function (array, item) {
+    	for (i in array) {
+        	if(array[i].consultations[0].createdAt == item.createdAt) {
+        		return true
+        	}
+        	else {
+        		return false
+        	}
+   		}
+	},
+
+	useradm: function (array, item) {
+		var adminbar = document.getElementById('loginbar')
+    	if (!req.user) {
+			adminbar.hidden = true
+		}
+		else{
+			adminbar.hidden=false
+		}
 	},
 
 	consultlimit: function(array) {

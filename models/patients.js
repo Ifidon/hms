@@ -33,7 +33,7 @@ var labSchema = new Schema ({
   findings: {
     type: String
   },
-  attachemnt: {
+  attachment: {
     type: String
   }
 });
@@ -106,7 +106,8 @@ var PatientSchema = new Schema ({
 
   firstname: {
     type: String,
-    required: true
+    required: true,
+    uppercase: true
   },
 
   lastname: {
