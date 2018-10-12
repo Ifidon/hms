@@ -297,18 +297,56 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/find
   var user = req.user
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    var consultation = patient.consultations.id(req.params.consultation_id)
-    consultation.labInvestigation.attachment = req.file.path
-    consultation.labInvestigation.findings = req.body.findings
-    patient.save()
-    // console.log(req.body)
-    res.render('findings', {patient, consultation, user, title: 'Enter Lab Results - HealthMax'})
+    if (!req.file) {
+      var consultation = patient.consultations.id(req.params.consultation_id)
+      consultation.labInvestigation.attachment = "No file uploaded"
+      consultation.labInvestigation.findings = req.body.findings
+      patient.save()
+      res.render('findings', {patient, consultation, user, title: 'Enter Lab Results - HealthMax'})
+    }
+    else {
+      var consultation = patient.consultations.id(req.params.consultation_id)
+      consultation.labInvestigation.attachment = req.file.path
+      consultation.labInvestigation.findings = req.body.findings
+      patient.save()
+      res.render('findings', {patient, consultation, user, title: 'Enter Lab Results - HealthMax'})
+    }
+    
     // console.log(consultation.labInvestigation)
   })
   .catch((error) => {
       next(error)
   })
 });
+
+patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/findings/review')
+.get((req, res, next) => {
+  var user = req.user
+  Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
+  .then((patient) => {
+    var consultation = patient.consultations[0]
+    res.render('labreview', {user, patient, consultation, title: 'Lab Results - HealthMax'})
+  })
+  .catch((error) => {
+    next(error)
+  })
+})
+.post((req, res, next) => {
+  var user = req.user
+  Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
+  .then((patient) => {
+    var consultation = patient.consultations[0]
+    consultation.otherPayment = new Array [2]
+    consultation.otherPayment.push({description: req.body.prescription})
+    consultation.otherPayment.push({description: req.body.tests})
+    consultation.save()
+    patient.save()
+    res.render('labreview', {user, patient, consultation, title: 'Lab Results - HealthMax'})
+  })
+  .catch((error) => {
+    next(error)
+  })
+})
 
 patientRouter.post('/dailyhistory', function(req, res, next) {
   var today = new Date();

@@ -4,52 +4,66 @@ var Schema = mongoose.Schema;
 
 var prescriptionSchema = new Schema ({
   drugs: {
-    type: String
+    type: String,
+    default: "No Entry "
   },
   cost: {
-    type: String
+    type: String,
+    default: ""
   },
   amountPaid: {
-    type: String
+    type: String,
+    default: ""
   },
   balance: {
-    type: String
+    type: String,
+    default: ""
   }
 });
 
 var labSchema = new Schema ({
   tests: {
-    type: String
+    type: String,
+    default: "No Entry"
   },
   cost: {
-    type: String
+    type: String,
+    default: ""
   },
   amountPaid: {
-    type: String
+    type: String,
+    default: ""
   },
   balance: {
-    type: String
+    type: String,
+    default: ""
   },
   findings: {
-    type: String
+    type: String,
+    default: ""
   },
   attachment: {
-    type: String
+    type: String,
+    default: ""
   }
 });
 
 var otherPaymentSchema = new Schema ({
   description: {
-    type: String
+    type: String,
+    default: "No Entry"
   },
   cost: {
-    type: String
+    type: String,
+    default: ""
   },
   amountPaid: {
-    type: String
+    type: String,
+    default: ""
   },
   balance: {
-    type: String
+    type: String,
+    default: ""
   }
 });
 
@@ -81,7 +95,7 @@ var consultation = new Schema ({
 
   labInvestigation:labSchema,
 
-  otherPayment: otherPaymentSchema,
+  otherPayment: [otherPaymentSchema]
 }, {
   timestamps: true
 });

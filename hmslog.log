@@ -12393,3 +12393,1807 @@ Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the cli
     at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
     at runCallback (timers.js:756:18)
     at tryOnImmediate (timers.js:717:5) 
+11:28:07.143 INFO  mongodb://localhost:27017/hms 
+11:29:50.188 INFO  mongodb://localhost:27017/hms 
+11:30:11.169 INFO  mongodb://localhost:27017/hms 
+11:30:41.025 INFO  mongodb://localhost:27017/hms 
+11:31:38.856 INFO  mongodb://localhost:27017/hms 
+11:31:40.000 INFO  Connect Successful in development 
+11:33:06.445 INFO  mongodb://localhost:27017/hms 
+11:33:07.538 INFO  Connect Successful in development 
+11:33:13.165 INFO  mongodb://localhost:27017/hms 
+11:33:14.280 INFO  Connect Successful in development 
+11:34:05.941 INFO  mongodb://localhost:27017/hms 
+11:34:07.034 INFO  Connect Successful in development 
+11:34:12.136 INFO  mongodb://localhost:27017/hms 
+11:34:13.244 INFO  Connect Successful in development 
+11:34:21.879 INFO  User @dolly successfully logged in 
+11:34:22.377 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+11:34:44.402 ERROR Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:185:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+11:34:50.474 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:26
+    24| 							td
+    25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+  > 26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+    29| 								input.m-auto.form-control#cost0(type='number' name="cost0" value='#{consultation.otherPayment[0].cost}')
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:26
+    24| 							td
+    25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+  > 26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+    29| 								input.m-auto.form-control#cost0(type='number' name="cost0" value='#{consultation.otherPayment[0].cost}')
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:306:122)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:435:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:229:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+11:40:33.836 INFO  mongodb://localhost:27017/hms 
+11:40:34.941 INFO  Connect Successful in development 
+11:40:39.265 INFO  User @dolly successfully logged in 
+11:41:28.539 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|       div.col-3
+  > 9|           img.col-12.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|       div.col-9
+    11|         h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|         p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|       div.col-3
+  > 9|           img.col-12.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|       div.col-9
+    11|         h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|         p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:220:116)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:373:4)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:435:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.find.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:64:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+11:43:10.721 ERROR Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:185:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+11:43:16.190 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:25
+    23| 						tr
+    24| 							td
+  > 25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+    26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+
+Cannot read property 'drugs' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:25
+    23| 						tr
+    24| 							td
+  > 25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+    26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+
+Cannot read property 'drugs' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:300:119)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:435:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:229:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+11:43:36.698 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:25
+    23| 						tr
+    24| 							td
+  > 25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+    26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+
+Cannot read property 'drugs' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:25
+    23| 						tr
+    24| 							td
+  > 25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+    26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+
+Cannot read property 'drugs' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:300:119)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:435:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:229:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+11:43:54.568 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\medlab.jade:26
+    24| 							form()
+    25| 								td
+  > 26| 									textarea(rows=7 cols=50 disabled)= consultation.labInvestigation.tests
+    27| 									textarea(rows=7 cols=50 disabled)= consultation.otherPayment[1].description
+    28| 								td
+    29| 									input.m-auto.form-control#cost(type='number' name="cost" value="#{consultation.labInvestigation.cost}")
+
+Cannot read property 'tests' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\medlab.jade:26
+    24| 							form()
+    25| 								td
+  > 26| 									textarea(rows=7 cols=50 disabled)= consultation.labInvestigation.tests
+    27| 									textarea(rows=7 cols=50 disabled)= consultation.otherPayment[1].description
+    28| 								td
+    29| 									input.m-auto.form-control#cost(type='number' name="cost" value="#{consultation.labInvestigation.cost}")
+
+Cannot read property 'tests' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:303:123)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:451:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:259:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+11:45:20.493 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:25
+    23| 						tr
+    24| 							td
+  > 25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+    26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+
+Cannot read property 'drugs' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:25
+    23| 						tr
+    24| 							td
+  > 25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+    26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+
+Cannot read property 'drugs' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:300:119)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:435:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:229:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+11:46:25.152 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:26
+    24| 							td
+    25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+  > 26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+    29| 								input.m-auto.form-control#cost0(type='number' name="cost0" value='#{consultation.otherPayment[0].cost}')
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:26
+    24| 							td
+    25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+  > 26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+    29| 								input.m-auto.form-control#cost0(type='number' name="cost0" value='#{consultation.otherPayment[0].cost}')
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:306:122)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:435:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:229:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+11:46:51.690 INFO  mongodb://localhost:27017/hms 
+11:46:52.779 INFO  Connect Successful in development 
+11:47:07.568 INFO  mongodb://localhost:27017/hms 
+11:47:08.683 INFO  Connect Successful in development 
+11:47:11.009 INFO  mongodb://localhost:27017/hms 
+11:47:12.122 INFO  Connect Successful in development 
+11:47:28.778 INFO  mongodb://localhost:27017/hms 
+11:47:29.896 INFO  Connect Successful in development 
+11:47:42.601 INFO  mongodb://localhost:27017/hms 
+11:47:43.706 INFO  Connect Successful in development 
+11:47:59.754 INFO  mongodb://localhost:27017/hms 
+11:48:00.857 INFO  Connect Successful in development 
+11:48:05.046 INFO  mongodb://localhost:27017/hms 
+11:48:06.155 INFO  Connect Successful in development 
+11:48:17.920 INFO  mongodb://localhost:27017/hms 
+11:48:19.014 INFO  Connect Successful in development 
+11:48:32.700 INFO  mongodb://localhost:27017/hms 
+11:48:33.821 INFO  Connect Successful in development 
+11:48:41.006 INFO  mongodb://localhost:27017/hms 
+11:48:42.114 INFO  Connect Successful in development 
+11:48:44.231 INFO  mongodb://localhost:27017/hms 
+11:48:45.343 INFO  Connect Successful in development 
+11:49:01.594 INFO  mongodb://localhost:27017/hms 
+11:49:02.694 INFO  Connect Successful in development 
+11:49:04.921 INFO  mongodb://localhost:27017/hms 
+11:49:06.020 INFO  Connect Successful in development 
+11:50:45.076 INFO  User @dolly successfully logged in 
+11:52:48.447 ERROR Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:185:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+11:52:52.165 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:26
+    24| 							td
+    25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+  > 26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+    29| 								input.m-auto.form-control#cost0(type='number' name="cost0" value='#{consultation.otherPayment[0].cost}')
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:26
+    24| 							td
+    25| 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+  > 26| 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
+    27| 							td
+    28| 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
+    29| 								input.m-auto.form-control#cost0(type='number' name="cost0" value='#{consultation.otherPayment[0].cost}')
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:306:122)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:435:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:229:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+11:53:30.945 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:32
+    30| 							td
+    31| 								input.m-auto.form-control#amtpaid(type='number' name='amountPaid' value='#{consultation.prescription.amountPaid}')
+  > 32| 								input.m-auto.form-control#amtpaid0(type='number' name='amountPaid0' value='#{consultation.otherPayment[0].amountPaid}')
+    33| 							td
+    34| 								input.m-auto.form-control#balance(type='number' name='balance' onfocus="getBalance()" value='#{consultation.prescription.balance}')
+    35| 								input.m-auto.form-control#balance0(type='number' name='balance0' onfocus="getBalance()" value='#{consultation.otherPayment.balance}')
+
+Cannot read property 'amountPaid' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\pharmacy.jade:32
+    30| 							td
+    31| 								input.m-auto.form-control#amtpaid(type='number' name='amountPaid' value='#{consultation.prescription.amountPaid}')
+  > 32| 								input.m-auto.form-control#amtpaid0(type='number' name='amountPaid0' value='#{consultation.otherPayment[0].amountPaid}')
+    33| 							td
+    34| 								input.m-auto.form-control#balance(type='number' name='balance' onfocus="getBalance()" value='#{consultation.prescription.balance}')
+    35| 								input.m-auto.form-control#balance0(type='number' name='balance0' onfocus="getBalance()" value='#{consultation.otherPayment.balance}')
+
+Cannot read property 'amountPaid' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:333:129)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:435:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:229:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+11:54:54.093 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\medlab.jade:27
+    25| 								td
+    26| 									textarea(rows=7 cols=50 disabled)= consultation.labInvestigation.tests
+  > 27| 									textarea(rows=7 cols=50 disabled)= consultation.otherPayment[1].description
+    28| 								td
+    29| 									input.m-auto.form-control#cost(type='number' name="cost" value="#{consultation.labInvestigation.cost}")
+    30| 									input.m-auto.form-control#cost1(type='number' name="cost1" value="#{consultation.otherPayment[1].cost}")  
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\medlab.jade:27
+    25| 								td
+    26| 									textarea(rows=7 cols=50 disabled)= consultation.labInvestigation.tests
+  > 27| 									textarea(rows=7 cols=50 disabled)= consultation.otherPayment[1].description
+    28| 								td
+    29| 									input.m-auto.form-control#cost(type='number' name="cost" value="#{consultation.labInvestigation.cost}")
+    30| 									input.m-auto.form-control#cost1(type='number' name="cost1" value="#{consultation.otherPayment[1].cost}")  
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:309:122)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:451:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:259:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+11:56:33.169 ERROR Cannot read property 'path' of undefined
+TypeError: Cannot read property 'path' of undefined
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:301:57)
+    at runCallback (timers.js:756:18)
+From previous event:
+    at model.Query.Query.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\mongoose\lib\query.js:3037:22)
+    at patientRouter.route.get.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:299:4)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Immediate.<anonymous> (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\multer\lib\make-middleware.js:53:37)
+    at runCallback (timers.js:757:11)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+11:57:19.635 INFO  mongodb://localhost:27017/hms 
+11:57:20.728 INFO  Connect Successful in development 
+11:57:27.018 INFO  mongodb://localhost:27017/hms 
+11:57:28.117 INFO  Connect Successful in development 
+11:57:31.259 INFO  mongodb://localhost:27017/hms 
+11:57:32.369 INFO  Connect Successful in development 
+11:57:38.248 INFO  mongodb://localhost:27017/hms 
+11:57:39.358 INFO  Connect Successful in development 
+11:59:00.340 INFO  mongodb://localhost:27017/hms 
+11:59:01.472 INFO  Connect Successful in development 
+11:59:24.724 INFO  mongodb://localhost:27017/hms 
+11:59:25.823 INFO  Connect Successful in development 
+11:59:47.534 INFO  User @dolly successfully logged in 
+12:00:05.323 ERROR Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:185:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+12:00:47.350 ERROR Cannot read property 'path' of undefined
+TypeError: Cannot read property 'path' of undefined
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:301:57)
+    at runCallback (timers.js:756:18)
+From previous event:
+    at model.Query.Query.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\mongoose\lib\query.js:3037:22)
+    at patientRouter.route.get.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:299:4)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Immediate.<anonymous> (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\multer\lib\make-middleware.js:53:37)
+    at runCallback (timers.js:757:11)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+12:03:03.549 ERROR Cannot read property 'path' of undefined
+TypeError: Cannot read property 'path' of undefined
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:301:57)
+    at runCallback (timers.js:756:18)
+From previous event:
+    at model.Query.Query.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\mongoose\lib\query.js:3037:22)
+    at patientRouter.route.get.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:299:4)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Immediate.<anonymous> (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\multer\lib\make-middleware.js:53:37)
+    at runCallback (timers.js:757:11)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+12:03:48.156 INFO  mongodb://localhost:27017/hms 
+12:03:49.247 INFO  Connect Successful in development 
+12:06:57.956 INFO  User @dolly successfully logged in 
+12:07:30.471 ERROR Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:185:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+12:10:55.120 INFO  mongodb://localhost:27017/hms 
+12:10:56.208 INFO  Connect Successful in development 
+12:11:22.136 INFO  mongodb://localhost:27017/hms 
+12:11:23.252 INFO  Connect Successful in development 
+12:11:40.334 INFO  mongodb://localhost:27017/hms 
+12:11:41.437 INFO  Connect Successful in development 
+12:11:52.666 INFO  mongodb://localhost:27017/hms 
+12:11:53.767 INFO  Connect Successful in development 
+12:13:20.901 INFO  mongodb://localhost:27017/hms 
+12:13:21.984 INFO  Connect Successful in development 
+12:13:36.382 INFO  mongodb://localhost:27017/hms 
+12:13:37.504 INFO  Connect Successful in development 
+12:13:48.936 INFO  mongodb://localhost:27017/hms 
+12:13:50.038 INFO  Connect Successful in development 
+12:13:54.932 INFO  User @dolly successfully logged in 
+12:14:16.017 ERROR Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:186:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+12:17:37.351 INFO  mongodb://localhost:27017/hms 
+12:17:38.446 INFO  Connect Successful in development 
+12:17:58.214 INFO  mongodb://localhost:27017/hms 
+12:17:59.336 INFO  Connect Successful in development 
+12:18:21.138 INFO  mongodb://localhost:27017/hms 
+12:18:22.238 INFO  Connect Successful in development 
+12:18:48.580 INFO  mongodb://localhost:27017/hms 
+12:18:49.699 INFO  Connect Successful in development 
+12:18:55.338 INFO  mongodb://localhost:27017/hms 
+12:18:56.457 INFO  Connect Successful in development 
+12:19:01.073 INFO  User @dolly successfully logged in 
+12:19:21.300 ERROR Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:186:11)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5) 
+12:21:37.091 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15 
+12:23:45.914 ERROR Patients.fiondOne is not a function
+TypeError: Patients.fiondOne is not a function
+    at patientRouter.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:325:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+12:25:10.759 INFO  mongodb://localhost:27017/hms 
+12:25:11.851 INFO  Connect Successful in development 
+12:25:20.284 INFO  User @dolly successfully logged in 
+12:25:41.576 ERROR Patients.fiondOne is not a function
+TypeError: Patients.fiondOne is not a function
+    at patientRouter.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:325:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+12:25:52.931 INFO  mongodb://localhost:27017/hms 
+12:25:54.058 INFO  Connect Successful in development 
+12:26:12.276 INFO  User @dolly successfully logged in 
+12:26:37.365 ERROR Patients.fiondOne is not a function
+TypeError: Patients.fiondOne is not a function
+    at patientRouter.route.get (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:325:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7 
+12:26:51.979 INFO  mongodb://localhost:27017/hms 
+12:26:53.099 INFO  Connect Successful in development 
+12:26:58.445 INFO  User @dolly successfully logged in 
+12:27:27.171 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:6
+    4| 	div.container
+    5| 		div.row
+  > 6| 			h3.col-12= patient.firstname + " " + patient.lastname
+    7| 			p.col-12 Hospital ID: patient.patient_id
+    8| 			section.col-9.m-auto.border-black
+    9| 				h5.col-12 Findings
+
+Cannot read property 'firstname' of null
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:6
+    4| 	div.container
+    5| 		div.row
+  > 6| 			h3.col-12= patient.firstname + " " + patient.lastname
+    7| 			p.col-12 Hospital ID: patient.patient_id
+    8| 			section.col-9.m-auto.border-black
+    9| 				h5.col-12 Findings
+
+Cannot read property 'firstname' of null
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:204:80)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:303:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:327:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+12:30:07.504 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:6
+    4| 	div.container
+    5| 		div.row
+  > 6| 			h3.col-12= patient.firstname + " " + patient.lastname
+    7| 			p.col-12 Hospital ID: patient.patient_id
+    8| 			section.col-9.m-auto.border-black
+    9| 				h5.col-12 Findings
+
+Cannot read property 'firstname' of null
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:6
+    4| 	div.container
+    5| 		div.row
+  > 6| 			h3.col-12= patient.firstname + " " + patient.lastname
+    7| 			p.col-12 Hospital ID: patient.patient_id
+    8| 			section.col-9.m-auto.border-black
+    9| 				h5.col-12 Findings
+
+Cannot read property 'firstname' of null
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:204:80)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:303:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:327:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+12:30:37.750 INFO  mongodb://localhost:27017/hms 
+12:30:38.839 INFO  Connect Successful in development 
+12:30:45.132 INFO  mongodb://localhost:27017/hms 
+12:30:46.251 INFO  Connect Successful in development 
+12:30:59.502 INFO  User @dolly successfully logged in 
+12:31:55.774 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:10
+    8| 			section.col-9.m-auto.border-black
+    9| 				h5.col-12 Findings
+  > 10| 				p.col-12= consultation.labInvestigations.findings
+    11| 				form.form-group.col-12(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id/findings/review')
+    12| 					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter prescription here (if any)')
+    13| 					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter furthertests here (if any)')
+
+Cannot read property 'labInvestigations' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:10
+    8| 			section.col-9.m-auto.border-black
+    9| 				h5.col-12 Findings
+  > 10| 				p.col-12= consultation.labInvestigations.findings
+    11| 				form.form-group.col-12(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id/findings/review')
+    12| 					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter prescription here (if any)')
+    13| 					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter furthertests here (if any)')
+
+Cannot read property 'labInvestigations' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:231:84)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:300:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:327:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+12:33:31.072 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:10
+    8| 			section.col-9.m-auto.border-black
+    9| 				h5.col-12 Findings
+  > 10| 				p.col-12= patient.consultations[0].labInvestigations.findings
+    11| 				form.form-group.col-12(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id/findings/review')
+    12| 					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter prescription here (if any)')
+    13| 					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter furthertests here (if any)')
+
+Cannot read property 'findings' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:10
+    8| 			section.col-9.m-auto.border-black
+    9| 				h5.col-12 Findings
+  > 10| 				p.col-12= patient.consultations[0].labInvestigations.findings
+    11| 				form.form-group.col-12(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id/findings/review')
+    12| 					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter prescription here (if any)')
+    13| 					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter furthertests here (if any)')
+
+Cannot read property 'findings' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:231:114)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:300:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:327:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+12:49:51.419 INFO  mongodb://localhost:27017/hms 
+12:49:52.510 INFO  Connect Successful in development 
+13:01:10.226 INFO  mongodb://localhost:27017/hms 
+13:01:11.323 INFO  Connect Successful in development 
+13:01:22.048 INFO  mongodb://localhost:27017/hms 
+13:01:23.168 INFO  Connect Successful in development 
+13:01:38.050 INFO  mongodb://localhost:27017/hms 
+13:01:39.171 INFO  Connect Successful in development 
+13:01:45.304 INFO  User @dolly successfully logged in 
+13:03:04.235 INFO  mongodb://localhost:27017/hms 
+13:03:05.357 INFO  Connect Successful in development 
+13:04:06.779 INFO  User @dolly successfully logged in 
+13:04:21.995 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:17
+    15| 						h4.col-12.text-center Lab Results/Findings
+    16| 					div.card-body
+  > 17| 						h5.col-12= consultation.labInvestigation.findings
+    18| 				br
+    19| 				br
+    20| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id/findings/review')
+
+Cannot read property 'labInvestigation' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:17
+    15| 						h4.col-12.text-center Lab Results/Findings
+    16| 					div.card-body
+  > 17| 						h5.col-12= consultation.labInvestigation.findings
+    18| 				br
+    19| 				br
+    20| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id/findings/review')
+
+Cannot read property 'labInvestigation' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:252:85)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:372:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+13:06:18.759 INFO  mongodb://localhost:27017/hms 
+13:06:19.856 INFO  Connect Successful in development 
+13:06:27.445 INFO  User @dolly successfully logged in 
+13:07:40.710 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15 
+13:08:54.092 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15 
+13:14:57.824 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15 
+13:16:08.305 INFO  mongodb://localhost:27017/hms 
+13:16:09.401 INFO  Connect Successful in development 
+13:21:30.957 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\authfail.jade:18
+    16| 
+    17| 	script.
+  > 18|     	var use = '#{user.username}'.toString()
+    19|   	script(src='/javascripts/login.js') 
+
+Invalid indentation, you can use tabs or spaces but not both
+Error: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\authfail.jade:18
+    16| 
+    17| 	script.
+  > 18|     	var use = '#{user.username}'.toString()
+    19|   	script(src='/javascripts/login.js') 
+
+Invalid indentation, you can use tabs or spaces but not both
+    at Lexer.indent (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:790:15)
+    at Lexer.next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:941:15)
+    at Lexer.lookahead (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:113:46)
+    at Parser.lookahead (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:102:23)
+    at Parser.peek (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:79:17)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:809:18)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.parseBlock (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:535:14)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:215:21)
+    at Parser.parse (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:122:25)
+    at parse (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:104:21)
+    at Object.exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:205:16)
+    at handleTemplateCache (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:174:25)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:10)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7) 
+13:22:54.749 INFO  User @dolly successfully logged in 
+13:23:24.850 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15 
+13:25:26.315 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15 
+13:26:53.425 INFO  mongodb://localhost:27017/hms 
+13:26:54.537 INFO  Connect Successful in development 
+13:27:42.559 INFO  mongodb://localhost:27017/hms 
+13:27:43.674 INFO  Connect Successful in development 
+13:28:23.439 INFO  mongodb://localhost:27017/hms 
+13:28:24.565 INFO  Connect Successful in development 
+13:28:54.184 INFO  mongodb://localhost:27017/hms 
+13:28:55.311 INFO  Connect Successful in development 
+13:29:25.631 INFO  mongodb://localhost:27017/hms 
+13:29:26.747 INFO  Connect Successful in development 
+13:29:52.229 INFO  mongodb://localhost:27017/hms 
+13:29:53.346 INFO  Connect Successful in development 
+13:33:18.877 INFO  User @dolly successfully logged in 
+13:34:56.309 INFO  mongodb://localhost:27017/hms 
+13:34:57.404 INFO  Connect Successful in development 
+13:35:08.508 INFO  User @dolly successfully logged in 
+13:39:27.841 INFO  mongodb://localhost:27017/hms 
+13:39:28.930 INFO  Connect Successful in development 
+13:40:00.355 INFO  mongodb://localhost:27017/hms 
+13:40:01.466 INFO  Connect Successful in development 
+13:40:46.394 INFO  mongodb://localhost:27017/hms 
+13:40:47.507 INFO  Connect Successful in development 
+13:41:23.284 INFO  mongodb://localhost:27017/hms 
+13:41:24.381 INFO  Connect Successful in development 
+13:44:28.506 INFO  User @dolly successfully logged in 
+13:44:48.038 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:26
+    24| 
+    25| 					h6.my-2 Notes & Observation
+  > 26| 					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter prescription here (if any)')= consultation.consultation.doctorsNote
+    27| 					br
+    28| 					br
+    29| 
+
+Cannot read property 'doctorsNote' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:26
+    24| 
+    25| 					h6.my-2 Notes & Observation
+  > 26| 					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter prescription here (if any)')= consultation.consultation.doctorsNote
+    27| 					br
+    28| 					br
+    29| 
+
+Cannot read property 'doctorsNote' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:297:194)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+13:45:12.227 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= consultation.otherpayment[0].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property '0' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= consultation.otherpayment[0].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property '0' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:194)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+13:45:31.129 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= consultation.otherPayment[0].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= consultation.otherPayment[0].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+13:45:47.425 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= consultation.otherPayment[0].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= consultation.otherPayment[0].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+13:48:12.001 INFO  mongodb://localhost:27017/hms 
+13:48:13.123 INFO  Connect Successful in development 
+13:48:17.880 INFO  User @dolly successfully logged in 
+13:50:51.948 INFO  mongodb://localhost:27017/hms 
+13:50:53.042 INFO  Connect Successful in development 
+13:51:44.281 INFO  User @dolly successfully logged in 
+13:52:02.655 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= "" #{||} consultation.otherPayment.description
+    32| 					br
+    33| 					br
+    34| 
+
+Invalid or unexpected token
+SyntaxError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= "" #{||} consultation.otherPayment.description
+    32| 					br
+    33| 					br
+    34| 
+
+Invalid or unexpected token
+    at Function (<anonymous>)
+    at assertExpression (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:30:3)
+    at Lexer.code (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:584:23)
+    at Lexer.next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:936:15)
+    at Lexer.lookahead (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\lexer.js:113:46)
+    at Parser.lookahead (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:102:23)
+    at Parser.peek (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:79:17)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:773:22)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21) 
+13:52:48.010 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= "" ||	 consultation.otherPayment[0].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= "" ||	 consultation.otherPayment[0].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:205)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+13:53:07.603 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= "" ||	 consultation.otherPayment[1].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= "" ||	 consultation.otherPayment[1].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:205)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+13:53:12.309 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= "" ||	 consultation.otherPayment[2].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')= "" ||	 consultation.otherPayment[2].description
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:205)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+13:56:48.835 ERROR patient is not defined
+ReferenceError: patient is not defined
+    at router.route.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\index.js:210:22)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\authenticator.js:349:7) 
+13:58:21.938 INFO  mongodb://localhost:27017/hms 
+13:58:23.025 INFO  Connect Successful in development 
+13:58:32.436 INFO  mongodb://localhost:27017/hms 
+13:58:33.549 INFO  Connect Successful in development 
+13:58:52.909 INFO  mongodb://localhost:27017/hms 
+13:58:54.032 INFO  Connect Successful in development 
+13:59:08.200 INFO  mongodb://localhost:27017/hms 
+13:59:09.323 INFO  Connect Successful in development 
+13:59:16.728 INFO  mongodb://localhost:27017/hms 
+13:59:17.846 INFO  Connect Successful in development 
+13:59:27.076 INFO  mongodb://localhost:27017/hms 
+13:59:28.172 INFO  Connect Successful in development 
+13:59:40.639 INFO  mongodb://localhost:27017/hms 
+13:59:41.746 INFO  Connect Successful in development 
+13:59:45.936 INFO  mongodb://localhost:27017/hms 
+13:59:47.061 INFO  Connect Successful in development 
+14:00:01.738 INFO  mongodb://localhost:27017/hms 
+14:00:02.852 INFO  Connect Successful in development 
+14:00:10.329 INFO  User @dolly successfully logged in 
+14:00:33.235 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+14:01:52.986 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:36
+    34| 
+    35| 					h6.my-2.mt-5 Additional Tests/Scans
+  > 36| 					textarea.col-12(name='tests' col-100 rows=10 placeholder='Enter tests here (if any)')= consultation.otherPayment[0].description || "No Entry"
+    37| 
+    38| 					input.btn.btn-primary(type="submit" value='Save')
+    39| 					input.btn.btn-primary(type='submit' value='Send' formmethod='post' formaction='/doctors_office/#{patient.patient_id}/#{consultation_id}/findings')
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:36
+    34| 
+    35| 					h6.my-2.mt-5 Additional Tests/Scans
+  > 36| 					textarea.col-12(name='tests' col-100 rows=10 placeholder='Enter tests here (if any)')= consultation.otherPayment[0].description || "No Entry"
+    37| 
+    38| 					input.btn.btn-primary(type="submit" value='Save')
+    39| 					input.btn.btn-primary(type='submit' value='Send' formmethod='post' formaction='/doctors_office/#{patient.patient_id}/#{consultation_id}/findings')
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:339:184)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+14:02:12.698 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+14:02:54.380 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:36
+    34| 
+    35| 					h6.my-2.mt-5 Additional Tests/Scans
+  > 36| 					textarea.col-12(name='tests' col-100 rows=10 placeholder='Enter tests here (if any)')= consultation.otherPayment[1].description || "No Entry"
+    37| 
+    38| 					input.btn.btn-primary(type="submit" value='Save')
+    39| 					input.btn.btn-primary(type='submit' value='Send' formmethod='post' formaction='/doctors_office/#{patient.patient_id}/#{consultation_id}/findings')
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:36
+    34| 
+    35| 					h6.my-2.mt-5 Additional Tests/Scans
+  > 36| 					textarea.col-12(name='tests' col-100 rows=10 placeholder='Enter tests here (if any)')= consultation.otherPayment[1].description || "No Entry"
+    37| 
+    38| 					input.btn.btn-primary(type="submit" value='Save')
+    39| 					input.btn.btn-primary(type='submit' value='Send' formmethod='post' formaction='/doctors_office/#{patient.patient_id}/#{consultation_id}/findings')
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:339:184)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+14:04:37.998 INFO  mongodb://localhost:27017/hms 
+14:04:39.101 INFO  Connect Successful in development 
+14:06:08.823 INFO  User @dolly successfully logged in 
+14:11:08.639 INFO  mongodb://localhost:27017/hms 
+14:11:09.748 INFO  Connect Successful in development 
+14:11:15.298 INFO  User @dolly successfully logged in 
+14:11:36.038 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:756:18)
+    at tryOnImmediate (timers.js:717:5)
+    at processImmediate [as _immediateCallback] (timers.js:697:5) 
+14:13:00.084 INFO  mongodb://localhost:27017/hms 
+14:13:01.214 INFO  Connect Successful in development 

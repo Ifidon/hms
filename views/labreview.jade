@@ -1,0 +1,42 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			div.card-header.col-12.my-4
+				h3.col-12.text-center= patient.firstname + " " + patient.lastname
+				p.col-12.text-center= "Hospital ID: " + patient.patient_id
+			br
+			br
+
+			section.col-9.m-auto.border-black
+				div.card
+					div.card-header
+						h4.col-12.text-center Lab Results/Findings
+					div.card-body
+						h5.col-12= consultation.labInvestigation.findings
+				br
+				br
+				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+					h4.card-header.text-center Additional Notes, prescription, and tests
+					br
+					br
+
+					h6.my-2 Notes & Observation
+					textarea.col-12(name='description' col-100 rows=10 placeholder='Enter prescription here (if any)')= consultation.doctorsNote || "No Entry"
+					br
+					br
+
+					h6.my-2 Addtional Prescription
+					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+					br
+					br
+
+					h6.my-2.mt-5 Additional Tests/Scans
+					textarea.col-12(name='tests' col-100 rows=10 placeholder='Enter tests here (if any)')= consultation.otherPayment[1].description || "No Entry"
+
+					input.btn.btn-primary(type="submit" value='Save')
+					input.btn.btn-primary(type='submit' value='Send' formmethod='post' formaction='/doctors_office/#{patient.patient_id}/#{consultation_id}/findings')
+
+
+

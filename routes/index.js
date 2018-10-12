@@ -10,6 +10,7 @@ var doctors_office = [];
 var pharmacy_list = [];
 var laboratory_list = [];
 var pending = [];
+var reviewlist =[];
 
 var authorize = require('../authorize');
 var codes = require('../codes');
@@ -204,6 +205,19 @@ router.route('/doctors_office/:patient_id/:consultation_id')
     next(error)
   })
 });
+router.route('/doctors_office/:patient_id/:consultation_id/findings')
+.post((req, res, next) => {  // var user = req.user
+  Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
+  .then((patient) => {
+    pharmacy_list.push(patient);
+    laboratory_list.push(patient);
+    doctors_office.splice(pharmacy_list.indexOf(patient), 1)
+    res.redirect('/doctors_office')
+  })
+  .catch((error) => {
+    next(error)
+  })
+})
 
 router.route('/pharmacy')
 .get(authorize.pharmacyaccess, (req, res, next) => {
@@ -218,6 +232,9 @@ router.route('/pharmacy/:patient_id')
   .then((patient) => {
     pharmacy_list.splice(pharmacy_list.indexOf(patient), 1)
     res.redirect('/pharmacy')
+  })
+  .catch((error) => {
+    next(error)
   })
 });
 
@@ -235,14 +252,22 @@ router.route('/laboratory/:patient_id/:consultation_id')
     laboratory_list.splice(pharmacy_list.indexOf(patient), 1)
     res.redirect('/laboratory')
   })
+  .catch((error) => {
+    next(error)
+  })
 });
 
-router.route('/laboratory/:patient_id/findings')
+router.route('/laboratory/:patient_id/:consultation_id/findings')
 .post((req, res, next) => {
-  Patients.findOne(req.params)
+  Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
   .then((patient) => {
     pending.splice(pharmacy_list.indexOf(patient), 1)
+    doctors_office.push(patient)
+    reviewlist.push(patient)
     res.redirect('/laboratory')
+  })
+  .catch((error) => {
+    next(error)
   })
 });
 

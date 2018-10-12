@@ -30,6 +30,10 @@ block content
       br
 
       h6.col-12= "Heart Rate: " + consultation.heartRate + " bpm"
+      br
+      br
+      form
+        button.m-3.btn.btn-info( formmenthod="get" formaction='/patients/#{patient.patient_id}/consultations/#{consultation.id}/laboratory/findings/review') Review Lab Results
     hr
 
     div.row.form-group
