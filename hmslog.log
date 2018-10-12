@@ -14197,3 +14197,1631 @@ Cannot read property 'description' of undefined
     at processImmediate [as _immediateCallback] (timers.js:697:5) 
 14:13:00.084 INFO  mongodb://localhost:27017/hms 
 14:13:01.214 INFO  Connect Successful in development 
+14:48:35.326 INFO  mongodb://localhost:27017/hms 
+14:48:44.241 INFO  Connect Successful in development 
+14:49:07.487 INFO  User @dolly successfully logged in 
+14:49:14.238 ERROR Not Found
+Error: Not Found
+    at C:\Users\Home PC\Desktop\App Folder\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\Home PC\Desktop\App Folder\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+15:02:43.272 INFO  User @david successfully logged in 
+15:02:59.257 ERROR Cannot read property 'firstname' of null
+TypeError: Cannot read property 'firstname' of null
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:113:76)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at model.Query.Query.then (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\query.js:3037:22)
+    at patientRouter.route.get (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:112:4)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at fdaccess (C:\Users\Home PC\Desktop\App Folder\HMS\authorize.js:7:7)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\Home PC\Desktop\App Folder\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7 
+15:03:04.442 ERROR Cannot read property 'firstname' of null
+TypeError: Cannot read property 'firstname' of null
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:113:76)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at model.Query.Query.then (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\query.js:3037:22)
+    at patientRouter.route.get (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:112:4)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at fdaccess (C:\Users\Home PC\Desktop\App Folder\HMS\authorize.js:7:7)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\Home PC\Desktop\App Folder\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7 
+15:03:57.846 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\update.jade:7
+    5|         div.form-group
+    6| 
+  > 7|             form(method="post", action="/patients/#{patient.patient_id}/update")
+    8|                 h3 Patient Information Update Form
+    9|                 fieldset
+    10|                     legend Personal Details
+
+Cannot read property 'patient_id' of null
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\update.jade:7
+    5|         div.form-group
+    6| 
+  > 7|             form(method="post", action="/patients/#{patient.patient_id}/update")
+    8|                 h3 Patient Information Update Form
+    9|                 fieldset
+    10|                     legend Personal Details
+
+Cannot read property 'patient_id' of null
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:204:81)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:576:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:125:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+15:05:31.658 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|       div.col-3
+  > 9|           img.col-12.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|       div.col-9
+    11|         h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|         p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|       div.col-3
+  > 9|           img.col-12.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|       div.col-9
+    11|         h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|         p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:220:116)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:373:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:435:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.find.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:64:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+15:07:58.423 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:17
+    15| 						h4.col-12.text-center Lab Results/Findings
+    16| 					div.card-body
+  > 17| 						h5.col-12= consultation.labInvestigation.findings
+    18| 				br
+    19| 				br
+    20| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+
+Cannot read property 'findings' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:17
+    15| 						h4.col-12.text-center Lab Results/Findings
+    16| 					div.card-body
+  > 17| 						h5.col-12= consultation.labInvestigation.findings
+    18| 				br
+    19| 				br
+    20| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+
+Cannot read property 'findings' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:252:102)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+15:09:58.541 ERROR Can't set headers after they are sent.
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\index.js:186:11)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+00:50:33.622 INFO  mongodb://localhost:27017/hms 
+00:50:35.034 INFO  Connect Successful in development 
+00:52:23.127 INFO  User @david successfully logged in 
+00:52:24.886 ERROR Not Found
+Error: Not Found
+    at C:\Users\Home PC\Desktop\App Folder\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\Home PC\Desktop\App Folder\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+00:53:06.895 ERROR Patient validation failed: dob: Path `dob` is required.
+ValidationError: dob: Path `dob` is required.
+    at new ValidationError (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+From previous event:
+    at Object.promiseOrCallback (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\utils.js:221:10)
+    at Function.create (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\model.js:2029:16)
+    at patientRouter.route.get.post (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:85:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Immediate._onImmediate (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\multer\lib\make-middleware.js:53:37)
+    at runCallback (timers.js:814:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+00:53:33.356 ERROR Patient validation failed: dob: Path `dob` is required.
+ValidationError: dob: Path `dob` is required.
+    at new ValidationError (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+From previous event:
+    at Object.promiseOrCallback (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\utils.js:221:10)
+    at Function.create (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\model.js:2029:16)
+    at patientRouter.route.get.post (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:85:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Immediate._onImmediate (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\multer\lib\make-middleware.js:53:37)
+    at runCallback (timers.js:814:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+00:54:20.800 INFO  mongodb://localhost:27017/hms 
+00:54:21.990 INFO  Connect Successful in development 
+00:54:35.355 INFO  User @david successfully logged in 
+00:55:06.189 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|       div.col-3
+  > 9|           img.col-12.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|       div.col-9
+    11|         h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|         p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\patientslist.jade:9
+    7|     each patient in patientlist
+    8|       div.col-3
+  > 9|           img.col-12.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
+    10|       div.col-9
+    11|         h1.col-12= patient.firstname + ' ' + patient.lastname
+    12|         p.col-12= "Address: " + patient.address
+
+Cannot read property 'toString' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:220:116)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:373:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:435:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.find.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:64:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+17:12:24.351 INFO  mongodb://localhost:27017/hms 
+17:12:25.515 INFO  Connect Successful in development 
+17:13:25.231 INFO  mongodb://localhost:27017/hms 
+17:13:26.455 INFO  Connect Successful in development 
+17:13:33.625 INFO  User @david successfully logged in 
+17:14:16.893 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:17
+    15| 						h4.col-12.text-center Lab Results/Findings
+    16| 					div.card-body
+  > 17| 						h5.col-12= consultation.labInvestigation.findings
+    18| 				br
+    19| 				br
+    20| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+
+Cannot read property 'findings' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:17
+    15| 						h4.col-12.text-center Lab Results/Findings
+    16| 					div.card-body
+  > 17| 						h5.col-12= consultation.labInvestigation.findings
+    18| 				br
+    19| 				br
+    20| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+
+Cannot read property 'findings' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:252:102)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:16:14.201 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:17
+    15| 						h4.col-12.text-center Lab Results/Findings
+    16| 					div.card-body
+  > 17| 						h5.col-12= consultation.labInvestigation.findings || 'No Entry'
+    18| 				br
+    19| 				br
+    20| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+
+Cannot read property 'findings' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:17
+    15| 						h4.col-12.text-center Lab Results/Findings
+    16| 					div.card-body
+  > 17| 						h5.col-12= consultation.labInvestigation.findings || 'No Entry'
+    18| 				br
+    19| 				br
+    20| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+
+Cannot read property 'findings' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:252:102)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:18:40.270 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:20
+    18| 						- if (consultation.ivestigation = undefined) {
+    19| 						document.getElementById('find').innerHTML = 'No Entry'
+  > 20| 						}
+    21| 				br
+    22| 				br
+    23| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+
+unexpected text }
+			
+Error: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:20
+    18| 						- if (consultation.ivestigation = undefined) {
+    19| 						document.getElementById('find').innerHTML = 'No Entry'
+  > 20| 						}
+    21| 				br
+    22| 				br
+    23| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+
+unexpected text }
+			
+    at Lexer.fail (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:887:11)
+    at Lexer.next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:947:15)
+    at Lexer.lookahead (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:113:46)
+    at Parser.lookahead (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:102:23)
+    at Parser.peek (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:79:17)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:832:30)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24) 
+17:19:15.938 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:17
+    15| 						h4.col-12.text-center Lab Results/Findings
+    16| 					div.card-body
+  > 17| 						h5.col-12#find= consultation.labInvestigation.findings
+    18| 						- if (consultation.ivestigation = undefined) {
+    19| 						- document.getElementById('find').innerHTML = 'No Entry'
+    20| 						- }
+
+Cannot read property 'findings' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:17
+    15| 						h4.col-12.text-center Lab Results/Findings
+    16| 					div.card-body
+  > 17| 						h5.col-12#find= consultation.labInvestigation.findings
+    18| 						- if (consultation.ivestigation = undefined) {
+    19| 						- document.getElementById('find').innerHTML = 'No Entry'
+    20| 						- }
+
+Cannot read property 'findings' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:252:114)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:405:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:19:49.013 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:19
+    17| 						h5.col-12#find= consultation.labInvestigation.findings
+    18| 						- if (consultation.ivestigation = undefined) {
+  > 19| 						 document.getElementById('find').innerHTML = 'No Entry'
+    20| 						- }
+    21| 				br
+    22| 				br
+
+Invalid indentation, you can use tabs or spaces but not both
+Error: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:19
+    17| 						h5.col-12#find= consultation.labInvestigation.findings
+    18| 						- if (consultation.ivestigation = undefined) {
+  > 19| 						 document.getElementById('find').innerHTML = 'No Entry'
+    20| 						- }
+    21| 				br
+    22| 				br
+
+Invalid indentation, you can use tabs or spaces but not both
+    at Lexer.indent (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:790:15)
+    at Lexer.next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:941:15)
+    at Lexer.lookahead (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:113:46)
+    at Parser.lookahead (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:102:23)
+    at Parser.peek (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:79:17)
+    at Parser.parseCode (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:361:30)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:235:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17) 
+17:20:17.256 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:18
+    16| 					div.card-body
+    17| 						- if (consultation.ivestigation = undefined) {
+  > 18| 						 document.getElementById('find').innerHTML = 'No Entry'
+    19| 						- }
+    20| 						h5.col-12#find= consultation.labInvestigation.findings
+    21| 				br
+
+Invalid indentation, you can use tabs or spaces but not both
+Error: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:18
+    16| 					div.card-body
+    17| 						- if (consultation.ivestigation = undefined) {
+  > 18| 						 document.getElementById('find').innerHTML = 'No Entry'
+    19| 						- }
+    20| 						h5.col-12#find= consultation.labInvestigation.findings
+    21| 				br
+
+Invalid indentation, you can use tabs or spaces but not both
+    at Lexer.indent (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:790:15)
+    at Lexer.next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:941:15)
+    at Lexer.lookahead (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:113:46)
+    at Parser.lookahead (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:102:23)
+    at Parser.peek (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:79:17)
+    at Parser.parseCode (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:361:30)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:235:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17) 
+17:20:51.194 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:18
+    16| 					div.card-body
+    17| 						- if (consultation.labInvestigation = undefined) {
+  > 18| 						 document.getElementById('find').innerHTML = 'No Entry'
+    19| 						- }
+    20| 						h5.col-12#find= consultation.labInvestigation.findings
+    21| 				br
+
+Invalid indentation, you can use tabs or spaces but not both
+Error: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:18
+    16| 					div.card-body
+    17| 						- if (consultation.labInvestigation = undefined) {
+  > 18| 						 document.getElementById('find').innerHTML = 'No Entry'
+    19| 						- }
+    20| 						h5.col-12#find= consultation.labInvestigation.findings
+    21| 				br
+
+Invalid indentation, you can use tabs or spaces but not both
+    at Lexer.indent (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:790:15)
+    at Lexer.next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:941:15)
+    at Lexer.lookahead (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:113:46)
+    at Parser.lookahead (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:102:23)
+    at Parser.peek (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:79:17)
+    at Parser.parseCode (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:361:30)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:235:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17) 
+17:21:31.691 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:20
+    18| 						document.getElementById('find').innerHTML = 'No Entry'
+    19| 					- }
+  > 20| 						h5.col-12#find= consultation.labInvestigation.findings
+    21| 				br
+    22| 				br
+    23| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+
+Cannot read property 'findings' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:20
+    18| 						document.getElementById('find').innerHTML = 'No Entry'
+    19| 					- }
+  > 20| 						h5.col-12#find= consultation.labInvestigation.findings
+    21| 				br
+    22| 				br
+    23| 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')
+
+Cannot read property 'findings' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:275:114)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:419:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:22:32.519 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:26:11.098 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:28:07.726 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:32:20.953 ERROR Can't set headers after they are sent.
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\index.js:190:11)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+17:34:39.065 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:396:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:37:14.937 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:413:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:37:47.514 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:43
+    41| 				script.
+    42| 				console.log('Ok')
+  > 43| 					if(!consultation.otherPayment) {
+    44| 					document.getElementByTagName('textarea').placeholder = 'No ENtry'
+    45| 					}
+    46| 
+
+Unexpected token {
+SyntaxError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:43
+    41| 				script.
+    42| 				console.log('Ok')
+  > 43| 					if(!consultation.otherPayment) {
+    44| 					document.getElementByTagName('textarea').placeholder = 'No ENtry'
+    45| 					}
+    46| 
+
+Unexpected token {
+    at Function (<anonymous>)
+    at assertExpression (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:30:3)
+    at Lexer.conditional (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:509:11)
+    at Lexer.next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:930:15)
+    at Lexer.lookahead (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\lexer.js:113:46)
+    at Parser.lookahead (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:102:23)
+    at Parser.peek (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:79:17)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:725:30)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\parser.js:759:17) 
+17:37:59.229 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:38:18.207 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:38:49.721 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:39:09.148 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:39:23.492 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:39:27.296 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:40:25.837 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:40:29.381 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:40:34.929 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:41:02.478 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:41:11.296 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:41:38.059 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:41:44.495 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:42:03.348 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:42:11.865 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\labreview.jade:31
+    29| 
+    30| 					h6.my-2 Addtional Prescription
+  > 31| 					textarea.col-12(name='prescription' col-100 rows=10 placeholder='Enter prescription here (if any)')=	 consultation.otherPayment[0].description || "No Entry"
+    32| 					br
+    33| 					br
+    34| 
+
+Cannot read property 'description' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:318:198)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:417:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:328:9)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+17:44:58.422 INFO  mongodb://localhost:27017/hms 
+17:44:59.600 INFO  Connect Successful in development 
+17:45:11.574 INFO  mongodb://localhost:27017/hms 
+17:45:12.748 INFO  Connect Successful in development 
+17:45:25.332 INFO  User @david successfully logged in 
+17:46:26.767 ERROR Can't set headers after they are sent.
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\index.js:136:11)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+17:47:10.891 ERROR Can't set headers after they are sent.
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\index.js:190:11)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+17:50:46.552 ERROR Array[2] is not a constructor
+TypeError: Array[2] is not a constructor
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:340:33)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at model.Query.Query.then (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\query.js:3037:22)
+    at patientRouter.route.get.post (C:\Users\Home PC\Desktop\App Folder\HMS\routes\patients.js:338:4)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:131:14)
+    at Route.dispatch (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\Home PC\Desktop\App Folder\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12) 
+17:51:47.288 INFO  mongodb://localhost:27017/hms 
+17:51:48.460 INFO  Connect Successful in development 
+17:52:42.852 INFO  mongodb://localhost:27017/hms 
+17:52:44.081 INFO  Connect Successful in development 
+17:52:56.286 INFO  mongodb://localhost:27017/hms 
+17:52:57.477 INFO  Connect Successful in development 
+17:53:27.970 INFO  mongodb://localhost:27017/hms 
+17:53:29.192 INFO  Connect Successful in development 
+17:53:33.228 INFO  mongodb://localhost:27017/hms 
+17:53:34.420 INFO  Connect Successful in development 

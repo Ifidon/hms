@@ -119,6 +119,10 @@ router.route('/nurses_station/:patient_id')
       nurses_station.splice(nurses_station.indexOf(patient), 1)
       res.render('consultationList', {patientlist: nurses_station, user, message: "Entry already exixts"})
     }
+    if ((!codes.consultlimit(patient.consultations)) && (codes.check(doctors_office, patient))) {
+      nurses_station.splice(nurses_station.indexOf(patient), 1)
+      res.render('consultationList', {patientlist: nurses_station, user, message: "Entry already exixts"})
+    }
     if ((codes.consultlimit(patient.consultations)) && (!codes.check(doctors_office, patient))) {
       doctors_office.push(patient)
       nurses_station.splice(nurses_station.indexOf(patient), 1)

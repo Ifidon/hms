@@ -5,42 +5,42 @@ var Schema = mongoose.Schema;
 var prescriptionSchema = new Schema ({
   drugs: {
     type: String,
-    default: "No Entry "
+    // default: "No Entry "
   },
   cost: {
     type: String,
-    default: ""
+    // default: ""
   },
   amountPaid: {
     type: String,
-    default: ""
+    // default: ""
   },
   balance: {
     type: String,
-    default: ""
+    // default: ""
   }
 });
 
 var labSchema = new Schema ({
   tests: {
     type: String,
-    default: "No Entry"
+    // default: "No Entry"
   },
   cost: {
     type: String,
-    default: ""
+    // default: ""
   },
   amountPaid: {
     type: String,
-    default: ""
+    // default: ""
   },
   balance: {
     type: String,
-    default: ""
+    // default: ""
   },
   findings: {
     type: String,
-    default: ""
+    // default: "No Entry"
   },
   attachment: {
     type: String,
@@ -51,19 +51,19 @@ var labSchema = new Schema ({
 var otherPaymentSchema = new Schema ({
   description: {
     type: String,
-    default: "No Entry"
+    // default: "No Entry"
   },
   cost: {
     type: String,
-    default: ""
+    // default: ""
   },
   amountPaid: {
     type: String,
-    default: ""
+    // default: ""
   },
   balance: {
     type: String,
-    default: ""
+    // default: ""
   }
 });
 
@@ -144,7 +144,7 @@ var PatientSchema = new Schema ({
 
   dob: {
     type: Date,
-    required: true
+    // required: true
   },
 
   nokName: {

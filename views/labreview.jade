@@ -14,7 +14,7 @@ block content
 					div.card-header
 						h4.col-12.text-center Lab Results/Findings
 					div.card-body
-						h5.col-12= consultation.labInvestigation.findings
+						h5.col-12#find= consultation.labInvestigation.findings
 				br
 				br
 				form.form-group.col-12.border.p-2(method='post' action='/patients/#{patient.patient_id}/consultations/#{consultation._id}/laboratory/findings/review')

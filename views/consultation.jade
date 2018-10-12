@@ -33,7 +33,7 @@ block content
       br
       br
       form
-        button.m-3.btn.btn-info( formmenthod="get" formaction='/patients/#{patient.patient_id}/consultations/#{consultation.id}/laboratory/findings/review') Review Lab Results
+        button.m-3.btn.btn-info#revw( formmenthod="get" formaction='/patients/#{patient.patient_id}/consultations/#{consultation.id}/laboratory/findings/review' disabled) Review Lab Results
     hr
 
     div.row.form-group
@@ -70,6 +70,18 @@ block content
 
     script.
       var use = '#{user.username}'.toString()
+      var revbutton = document.getElementById('revw')
+      var findings = '#{consultation.labInvestigation.findings}'.toString()
+      console.log(findings)
+      if (findings != 'No Entry') {
+        revbutton.disabled = false
+
+      }
+      else {
+        revbutton.disabled = true
+      }
+
+
 
     script(src='/javascripts/login.js')
     script(src ='/javascripts/consultation.js')

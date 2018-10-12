@@ -209,6 +209,7 @@ patientRouter.route('/:patient_id/consultations')
       consultation.doctorsNote = req.body.doctorsNote
       consultation.prescription = {}
       consultation.labInvestigation = {}
+      consultation.otherPayment = [{description: ' '}, {description: ' '}]
       consultation.prescription.drugs = req.body.drugs
       consultation.labInvestigation.tests = req.body.tests      
       patient.save()
@@ -336,7 +337,6 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/find
   Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
   .then((patient) => {
     var consultation = patient.consultations[0]
-    consultation.otherPayment = new Array [2]
     consultation.otherPayment.push({description: req.body.prescription})
     consultation.otherPayment.push({description: req.body.tests})
     consultation.save()
