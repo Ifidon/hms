@@ -4,31 +4,26 @@ block content
 
   div.container
     div.row
-      div.col-3
-        img.img-thumbnail.col-12(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')} " height='250' width='250')
-      div.col-12.col-lg-5
-        h1.col-xs-12= patient.firstname + ' ' + patient.lastname
+      div.col-10.m-auto
+        h5.col-xs-12= patient.firstname + ' ' + patient.lastname
         p#age.col-xs-12
         p#dob(hidden)= patient.dob
         p#id= "Hospital ID: " + patient.patient_id
     hr
     br
-    br
 
     div.row
-      h2 Consultations
-      br
-      br
-    each consultation in patient.consultations
-      div#consult.row
-        h5#consdate.col-12.col-lg-5= consultation.createdAt.toString().slice(0, 15)
-        br
-        form.col-12.col-lg-3(method="get" action="/patients/#{patient.patient_id}/consultations/#{consultation.id}")
-          button#consButton.btn.btn-primary(type="submit") View / Edit
-        br
-      hr
-
-    br
+      table.table.table-striped.table-bodered.col-10.m-auto
+        thead.thead-dark
+          tr
+            th Date Last Updated
+            th Action
+        tbody
+        each consultation in patient.consultations
+          tr
+            td= consultation.updatedAt.toString().substr(0, 16)
+            td
+              a.btn.btn-primary(href="/patients/#{patient.patient_id}/consultations/#{consultation.id}") Open
 
     script.
       var use = '#{user.username}'.toString()

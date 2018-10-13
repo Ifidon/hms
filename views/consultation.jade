@@ -71,14 +71,14 @@ block content
     script.
       var use = '#{user.username}'.toString()
       var revbutton = document.getElementById('revw')
-      var findings = '#{consultation.labInvestigation.findings}'.toString()
+      var findings = '#{consultation.labInvestigation.findings}'
       console.log(findings)
-      if (findings != 'No Entry') {
-        revbutton.disabled = false
+      if (findings = undefined) {
+        revbutton.disabled = true
 
       }
       else {
-        revbutton.disabled = true
+        revbutton.disabled = false
       }
 
 

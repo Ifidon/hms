@@ -1,4 +1,16 @@
 module.exports = {
+  admaccess: function (req, res, next) {
+    if(!req.user) {
+      res.redirect('/login')
+    }
+    else if(req.user.role == "IT Administrator") {
+      next()
+    }
+    else {
+      res.redirect('/unauthorized')
+    }
+  },
+
   fdaccess: function (req, res, next) {
     if(!req.user) {
       res.redirect('/login')

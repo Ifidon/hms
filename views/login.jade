@@ -3,12 +3,12 @@ extends layout
 block content
 
     div.container
-        div.row.m-auto.border
+        div.row.m-auto.border.col-7
           span.alert.alert-primary.col-12.text-center Please login to proceed.
             br
             br
             |Don't have an account? Click 
-            a(href='/users/new') here 
+            a(href='/users/new' disabled) here 
             |to register 
           form.form-signin.col-12(method='post' action='/users/login')
             h1.h3.mb-3.font-weight-normal
@@ -17,6 +17,8 @@ block content
             br
             label.sr-only(for='inputPassword') Password
             input.form-control(type='password', placeholder='Password' name='password')
+            br
+            p.text-warning For password reset and new registration, please contact your system administrator
             br
             button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign In
         br

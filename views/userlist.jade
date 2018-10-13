@@ -1,0 +1,35 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			section.col-10.mx-auto.mb-3
+				div.card
+					div.card-header
+						h5.text-center User Administration
+					div.card-body
+						a(href='/users/new') Register New User
+						a.float-right(href='/users') View, Edit, and Delete Users
+
+			table.table.table-striped.table-bodered.col-10.m-auto
+				thead.thead-dark
+					tr
+						th Name
+						th Email
+						th Username
+						th Role
+						th Date Created
+						th Action
+						th Action
+				tbody
+				each user in users
+					tr
+						td= user.firstname + ' ' + user.lastname
+						td= user.email
+						td= user.username
+						td= user.role
+						td
+						td
+							a.btn.btn-secondary(href='/users/#{user._id}') Edit Details
+						td
+							a.btn.btn-danger(href='/users/#{user._id}') Delete User

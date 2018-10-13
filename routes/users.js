@@ -10,18 +10,28 @@ var codes = require('../codes');
 
 var transport = mailer.createTransport(codes.opts);
 
+var authorize = require('../authorize');
+
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/', authorize.admaccess, function(req, res, next) {
+	var user = req.user
+	User.find()
+	.then((users) => {
+		res.render('userlist', {users, title: 'Users', user})
+	})
+	.catch((error) => {
+		next(err)
+	})
 });
 
 router.get('/new', function(req, res, next) {
+	var user = req.user
 	if(err) {
 		var err = err;
 		next(err)
 	}
 	else {
-		res.render('newuser')
+		res.render('newuser', {user})
 	}
 });
 

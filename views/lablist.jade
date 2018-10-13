@@ -4,18 +4,24 @@ block content
 
   div.container
     div.row
-      section.col-7.list-group
-        ol
+      table.table.table-striped.table-bodered.col-10.m-auto
+        thead.thead-dark
+          tr
+            th Patient Name
+            th Hospital ID
+            th Date 
+            th Action
+        tbody
         each patient in patients
-          li.list-group-item
-            h4= patient.firstname + " " + patient.lastname
-              sup
-                span.badge.badge-primary.mx-1 Hospital ID: #{patient.patient_id}
-            - var date = patient.consultations[0].updatedAt
-            form(method='get', action="/patients/#{patient.patient_id}/consultations/#{patient.consultations[0]._id}/laboratory")
-              button.btn.btn-primary(type='submit' onclick='endpoint()').float-right= date.toISOString().substr(0, 10)    
+          tr
+            td= patient.firstname + ' ' + patient.lastname
+            td= patient.patient_id
+            td= patient.consultations[0].updatedAt.toString().substr(0, 16)
+            td
+              a.btn.btn-primary(href="/patients/#{patient.patient_id}/consultations/#{patient.consultations[0]._id}/laboratory") Open
 
-      div.card.col-4.m-auto
+    div.row
+      div.card.col-10.m-auto
         div.card-header
           h5.col-12.text-center Pending Test Results
         div.card-body

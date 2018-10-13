@@ -4,42 +4,36 @@ block content
 
   div.container
     div.row
-      div.col-3
-        img.img-thumbnail.d-block(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height=200 width=200)
-
-      div.col-12.col-md-7.m-3
-        h3.col-xs-12= patient.firstname + ' ' + patient.lastname
-          span= " (Hospital ID: " + patient.patient_id + ")"
-          h5#age.col-xs-12
-          h5#phone= "Phone Number: " + patient.phone
-          h5#addres= "Contact Address: " + patient.address
-          h5#nok= "Next of Kin (Name): " + patient.nokName
-    br
-    br
-
-    form.col-12(method="post", action="/nurses_station/send/#{patient.patient_id}")
-      button.btn.btn-primary(type="submit") Send to Doctor's Office
-    hr
-
+      table.table.table-striped.table-bodered.col-10.m-auto
+        thead.thead-dark
+          tr
+            th Patient Name
+            th Hospital ID
+            th Action
+        tbody
+          tr
+            td= patient.firstname + ' ' + patient.lastname
+            td= patient.patient_id
+            td
+              form.col-12(method="post", action="/nurses_station/send/#{patient.patient_id}")
+                button.btn.btn-primary(type="submit") Send to Doctor's Office
+  div.row
     h6
-      em Send to Doctor for follow-up consultation.
-      br
-      br
-
       em For new consultation please record patient's vitals
     
     br
 
     div.row.form-group.col-12
-        form#vitalsform(method="post", action="/nurses_station/#{patient.patient_id}")
+        form.form-group#vitalsform(method="post", action="/nurses_station/#{patient.patient_id}")
           p.btn-success Vitals Form
-          div
+          div.input-group
             label(for="weight") Weight:
             input#weight(type="text" name="weight" placeholder="Weight(KG)" required)
             label(for="blppdPressure") Blood Pressure:
             input#bp(type="text" name="bloodPressure" placeholder="Blood Pressure(mmHg)" required)
             br
             br
+          div.input-group
             label(for="temperature") Temperature:
             input#temp(type="text" name="temperature" placeholder="Temperature(C)" required)
             label(for="heartrate") Heart Rate:

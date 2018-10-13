@@ -23,16 +23,16 @@ block content
 						tr
 							td
 								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
-								textarea(rows=7 cols=50 disabled)= consultation.otherPayment.description
+								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
 							td
 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
-								input.m-auto.form-control#cost0(type='number' name="cost0" value='#{consultation.otherPayment.cost}')
+								input.m-auto.form-control#cost1(type='number' name="cost" value='#{consultation.otherPayment[0].cost}')
 							td
 								input.m-auto.form-control#amtpaid(type='number' name='amountPaid' value='#{consultation.prescription.amountPaid}')
-								input.m-auto.form-control#amtpaid0(type='number' name='amountPaid0' value='#{consultation.otherPayment.amountPaid}')
+								input.m-auto.form-control#amtpaid1(type='number' name='amountPaid1' value='#{consultation.otherPayment[0].amountPaid}')
 							td
 								input.m-auto.form-control#balance(type='number' name='balance' onfocus="getBalance()" value='#{consultation.prescription.balance}')
-								input.m-auto.form-control#balance0(type='number' name='balance0' onfocus="getBalance()" value='#{consultation.otherPayment.balance}')
+								input.m-auto.form-control#balance1(type='number' name='balance1' onfocus="getBalance()" value='#{consultation.otherPayment[0].balance}')
 
 				br
 				br

@@ -13,6 +13,19 @@ block content
             li.list-group-item Start patient consultation process
           a.btn.btn-primary.my-2(href='/front_desk/patientadmin') Open
       div.col-5.mx-auto.card
+        h4.card-header User Administration
+        h6.card-body 
+          ul.list-group
+            li.list-group-item Register New User
+            li.list-group-item Edit/Update User Details
+            li.list-group-item Delete Users/User information
+          a.btn.btn-primary.my-2(href='/users') Open
+    br
+    hr
+    br
+
+    div.row
+      div.col-5.mx-auto.card.d-none
         h4.card-header Reporting
         h6.card-body 
           ul.list-group
@@ -20,20 +33,7 @@ block content
             li.list-group-item Generate Patient Specific Reports
             li.list-group-item Save and Print Reports
           a.btn.btn-primary.my-2(href='/front_desk/reporting') Open
-    br
-    hr
-    br
-
-    div.row
-      div.col-5.mx-auto.card
-        h4.card-header User Administration
-        h6.card-body 
-          ul.list-group
-            li.list-group-item Register New User
-            li.list-group-item Edit/Update User Details
-            li.list-group-item Delete Users/User information
-          a.btn.btn-primary.my-2(href='/front_desk/useradmin') Open
-      div.col-5.mx-auto.card.invisible
+      div.col-5.mx-auto.card.d-none
         h4.card-header New Functionality Group
         h6.card-body 
           ul.list-group

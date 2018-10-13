@@ -209,7 +209,7 @@ patientRouter.route('/:patient_id/consultations')
       consultation.doctorsNote = req.body.doctorsNote
       consultation.prescription = {}
       consultation.labInvestigation = {}
-      consultation.otherPayment = [{description: ' '}, {description: ' '}]
+      consultation.otherPayment = [{description: ''}, {description: ''}]
       consultation.prescription.drugs = req.body.drugs
       consultation.labInvestigation.tests = req.body.tests      
       patient.save()
@@ -242,6 +242,9 @@ patientRouter.route('/:patient_id/consultations')
       consultation.prescription.cost = req.body.cost
       consultation.prescription.amountPaid = req.body.amountPaid
       consultation.prescription.balance = req.body.balance
+      consultation.otherPayment[0].cost = req.body.cost1
+      consultation.otherPayment[0].amountPaid = req.body.amountPaid1
+      consultation.otherPayment[0].balance = req.body.balance1
       patient.save()
       res.render('pharmacy', {patient, consultation, user, title: 'Pharmacy Entries - HealthMax'})
     })
@@ -271,6 +274,9 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
     consultation.labInvestigation.cost = req.body.cost
     consultation.labInvestigation.amountPaid = req.body.amountPaid
     consultation.labInvestigation.balance = req.body.balance
+    consultation.otherPayment[1].cost = req.body.cost1
+    consultation.otherPayment[1].amountPaid = req.body.amountPaid1
+    consultation.otherPayment[1].balance = req.body.balance1
     patient.save()
     // console.log(req.body)
     res.render('medlab', {patient, consultation, user, title: 'Laboratory Entries - HealthMax'})
@@ -323,9 +329,9 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/find
 patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/findings/review')
 .get((req, res, next) => {
   var user = req.user
-  Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
+  Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    var consultation = patient.consultations[0]
+    var consultation = patient.consultations.id(req.params.consultation_id)
     res.render('labreview', {user, patient, consultation, title: 'Lab Results - HealthMax'})
   })
   .catch((error) => {
@@ -334,12 +340,12 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/find
 })
 .post((req, res, next) => {
   var user = req.user
-  Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
+  Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    var consultation = patient.consultations[0]
-    consultation.otherPayment.push({description: req.body.prescription})
-    consultation.otherPayment.push({description: req.body.tests})
-    consultation.save()
+    var consultation = patient.consultations.id(req.params.consultation_id)
+    consultation.otherPayment.unshift({description: req.body.tests})
+    consultation.otherPayment.unshift({description: req.body.prescription})
+    consultation.otherPayment.splice(2, 2)
     patient.save()
     res.render('labreview', {user, patient, consultation, title: 'Lab Results - HealthMax'})
   })

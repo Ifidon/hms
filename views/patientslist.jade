@@ -4,21 +4,30 @@ block content
 
   div.container
     div.row
-    each patient in patientlist
-      div.col-3
-          img.col-12.img-thumbnail(src="data: #{patient.picture.contentType};base64, #{patient.picture.data.toString('base64')}" height="200" width="200")
-      div.col-9
-        h1.col-12= patient.firstname + ' ' + patient.lastname
-        p.col-12= "Address: " + patient.address
-        p#id.col-12= "Hospital ID: " + patient.patient_id
-        div.row.form-group
-          form#viewform.col-5(method="get" action="/patients/#{patient.patient_id}")
-            button#viewDetails.btn.btn-primary(type='submit') View Details
-          form#editform.col-5(method="get", action="/patients/#{patient.patient_id}/update")
-            button#editDetails.btn.btn-primary(type='submit') Edit Details
-        hr
-
-    br
+      table.table.table-striped.table-bodered.col-10.m-auto
+        thead.thead-dark
+          tr
+            th Patient Name
+            th Hospital ID
+            th Action
+            th Action
+            th Action
+            th Action
+        tbody
+        each patient in patientlist
+          tr
+            td= patient.firstname + ' ' + patient.lastname
+            td= patient.patient_id
+            td
+              form
+                button.btn.btn-sm(type='submit' formaction='/consultationlist/frontdesk/#{patient.patient_id}', formmethod='post') Send to Nurses
+            td
+              form
+                button.btn.btn-sm(type='submit' formaction='/consultationlist/nurses/#{patient.patient_id}', formmethod='post') Send to Doctors
+            td
+              a.btn.btn-primary(href="/patients/#{patient.patient_id}") View Details
+            td
+              a.btn.btn-primary(href="/patients/#{patient.patient_id}/update") Edit Details
 
   script.
     var use = '#{user.username}'.toString()

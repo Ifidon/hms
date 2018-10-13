@@ -31,19 +31,28 @@ block content
         form(method='post' action='/patients/dailyhistory')
           button(type='submit') Show History
 
-      div.col-12
-        p= message
-        ul.list-group
+    div.row
+      table.table.table-striped.table-bodered.col-12.m-auto
+        thead.thead-dark
+          tr
+            th Patient Name
+            th Hospital ID
+            th Date of Registration
+            th Action
+            th Action
+        tbody
         each patient in patientlist
-          li.list-group-item
-            h6.col-3= patient.firstname + " " + patient.lastname
-            h6.col-3= patient.patient_id
-            form
-              button.btn.btn-sm(type='submit' formaction='/front_desk/send/#{patient.patient_id}', formmethod='post') Send to Nurses
+          tr
+            td= patient.firstname + ' ' + patient.lastname
+            td= patient.patient_id
+            td= patient.createdAt.toString().substr(0, 16)
+            td
+              form
+                button.btn.btn-sm(type='submit' formaction='/consultationlist/frontdesk/#{patient.patient_id}', formmethod='post') Send to Nurses
+            td
+              form
+                button.btn.btn-sm(type='submit' formaction='/consultationlist/nurses/#{patient.patient_id}', formmethod='post') Send to Doctors
 
-              button.btn.btn-sm(type='submit' formaction='/nurses_station/send/#{patient.patient_id}', formmethod='post') Send to Doctors
-          br
-       br
 
     script.
       var use = '#{user.username}'.toString()

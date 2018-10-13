@@ -25,6 +25,7 @@ router.get('/', function(req, res, next) {
 
 
 router.post('/', (req, res, next) => {
+  var user = req.user
   if (isNaN(req.body.search)) {
     var searchTerm = req.body.search;
     searchTerm = searchTerm.toUpperCase()
@@ -32,7 +33,7 @@ router.post('/', (req, res, next) => {
     Patients.find({lastname: searchTerm})
     .then((patients) => {
       console.log(patients)
-        res.render('search_result', {patientlist: patients, title: 'Search Results - ' + searchTerm})
+        res.render('search_result', {patientlist: patients, user, title: 'Search Results - ' + searchTerm})
     })
     .catch((error) => {
       next(error)
@@ -41,7 +42,7 @@ router.post('/', (req, res, next) => {
   else {
       Patients.find({patient_id: req.body.search})
       .then((patient) => {
-          res.render('search_result', {patientlist: patient, title: 'Search Results'})
+          res.render('search_result', {patientlist: patient, user, title: 'Search Results'})
       })
       .catch((error) => {
         next(error)
@@ -115,26 +116,33 @@ router.route('/nurses_station/:patient_id')
   var message = ""
   Patients.findOne(req.params)
   .then((patient) => {
-    if ((codes.consultlimit(patient.consultations)) && (codes.check(doctors_office, patient))) {
-      nurses_station.splice(nurses_station.indexOf(patient), 1)
-      res.render('consultationList', {patientlist: nurses_station, user, message: "Entry already exixts"})
-    }
-    if ((!codes.consultlimit(patient.consultations)) && (codes.check(doctors_office, patient))) {
-      nurses_station.splice(nurses_station.indexOf(patient), 1)
-      res.render('consultationList', {patientlist: nurses_station, user, message: "Entry already exixts"})
-    }
-    if ((codes.consultlimit(patient.consultations)) && (!codes.check(doctors_office, patient))) {
-      doctors_office.push(patient)
-      nurses_station.splice(nurses_station.indexOf(patient), 1)
-      res.render('consultationList', {patientlist: nurses_station, user, message: "Existing entry has been sent to the Doctor's Office"})
-    }
-    else {
+    if (!codes.consultlimit(patient.consultations)) {
       patient.consultations.unshift(req.body)
       patient.save()
       doctors_office.push(patient)
       nurses_station.splice(nurses_station.indexOf(patient), 1)
       res.render('consultationList', {patientlist: nurses_station, user, message: "Entry created and sent to the Doctor"})
     }
+    if ((codes.consultlimit(patient.consultations)) && (codes.check(doctors_office, patient))) {
+      nurses_station.splice(nurses_station.indexOf(patient), 1)
+      res.render('consultationList', {patientlist: nurses_station, user, message: "Entry already exixts"})
+    }
+    // if ((!codes.consultlimit(patient.consultations)) && (codes.check(doctors_office, patient))) {
+    //   nurses_station.splice(nurses_station.indexOf(patient), 1)
+    //   res.render('consultationList', {patientlist: nurses_station, user, message: "Entry already exixts"})
+    // }
+    if ((codes.consultlimit(patient.consultations)) && (!codes.check(doctors_office, patient))) {
+      doctors_office.push(patient)
+      nurses_station.splice(nurses_station.indexOf(patient), 1)
+      res.render('consultationList', {patientlist: nurses_station, user, message: "Existing entry has been sent to the Doctor's Office"})
+    }
+    // else {
+    //   patient.consultations.unshift(req.body)
+    //   patient.save()
+    //   doctors_office.push(patient)
+    //   nurses_station.splice(nurses_station.indexOf(patient), 1)
+    //   res.render('consultationList', {patientlist: nurses_station, user, message: "Entry created and sent to the Doctor"})
+    // }
   })
   .catch((error) => {
     next(error)
@@ -210,13 +218,14 @@ router.route('/doctors_office/:patient_id/:consultation_id')
   })
 });
 router.route('/doctors_office/:patient_id/:consultation_id/findings')
-.post((req, res, next) => {  // var user = req.user
+.post((req, res, next) => {
+  var user = req.user
   Patients.findOne({patient_id: req.params.patient_id}, {firstname: 1, lastname: 1, patient_id: 1, consultations: {$elemMatch: {_id: req.params.consultation_id}}})
   .then((patient) => {
     pharmacy_list.push(patient);
     laboratory_list.push(patient);
-    doctors_office.splice(pharmacy_list.indexOf(patient), 1)
-    res.redirect('/doctors_office')
+    doctors_office.splice(doctors_office.indexOf(patient), 1)
+    res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry sent."})
   })
   .catch((error) => {
     next(error)
@@ -281,6 +290,51 @@ router.route('/consultationlist')
   var message = " "
   res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Today's History"})
 })
+
+router.post('/consultationlist/frontdesk/:patient_id', function(req, res, next) {
+  var user = req.user
+  Patients.findOne(req.params)
+  .then((patient) => {
+      if (codes.check(nurses_station, patient)) {
+       res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Entry already exists in nurses station"})
+      }
+      if (!codes.check(nurses_station, patient)) {
+        nurses_station.push(patient)
+        res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Entry sent to nurses station"})
+      }
+      // if(!codes.check(nurses_station, patient) && !codes.check(front_office, patient)) {
+      //   nurses_station.push(patient)
+      //   front_office.push(patient)
+      //   res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Entry sent to nurses station"})
+      // } 
+      console.log(codes.check(nurses_station, patient))   
+  })
+  .catch((error) => {
+    next(error)
+  })
+});
+
+router.route('/consultationlist/nurses/:patient_id')
+.post((req, res, next) => {
+  var user = req.user
+  Patients.findOne(req.params)
+  .then((patient) => {
+    if(codes.check(doctors_office, patient)) {
+      // nurses_station.splice(nurses_station.indexOf(patient), 1)
+      var message = ""
+     res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Entry already sent to the doctor's office"})
+    }
+    else {
+      doctors_office.push(patient)
+      // nurses_station.splice(nurses_station.indexOf(patient), 1)
+      // console.log(res)
+      res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Entry Sent to the Doctor's Office"})
+    }
+  })
+  .catch((error) => {
+    next(error)
+  })
+});
 
 
 
