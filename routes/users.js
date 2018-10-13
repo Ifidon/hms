@@ -121,17 +121,26 @@ router.route('/logout')
 });
 
 router.route('/:username/edit')
-.get((res, req, next) => {
+.get((req, res, next) => {
 	var user = req.params
 	User.findOne(req.params)
 	.then((person) => {
 		res.render('edituser', {user, person})
-
 	})
 	.catch((error) => {
-		next(err)
+		next(error)
 	})
 })
+.post((req, res, next) => {
+	var user = req.user
+	// User.findAndUpdate({req.params}, {$set: {req.body}})
+	.then((person) => {
+		res.render('userlist', {user: person, title: 'User - ' + person.username})
+	})
+	.catch((error) => {
+		next(error)
+	})
+});
 
 router.route('/:username/delete')
 .post((res, req, next) => {

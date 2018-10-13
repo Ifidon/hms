@@ -18868,3 +18868,157 @@ Error: Can't set headers after they are sent.
 06:56:35.831 INFO  Connect Successful in development 
 06:56:43.763 INFO  mongodb://localhost:27017/hms 
 06:56:44.923 INFO  Connect Successful in development 
+09:41:56.654 INFO  mongodb://localhost:27017/hms 
+09:41:57.817 INFO  Connect Successful in development 
+09:42:50.417 INFO  User @david successfully logged in 
+09:42:50.987 ERROR Not Found
+Error: Not Found
+    at C:\Users\Home PC\Desktop\App Folder\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\Home PC\Desktop\App Folder\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+09:46:11.557 ERROR Can't set headers after they are sent.
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\index.js:203:11)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+17:28:24.646 INFO  mongodb://localhost:27017/hms 
+17:28:25.907 INFO  Connect Successful in development 
+17:30:13.259 INFO  User @david successfully logged in 
+17:30:15.045 ERROR Not Found
+Error: Not Found
+    at C:\Users\Home PC\Desktop\App Folder\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\Home PC\Desktop\App Folder\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+17:30:28.017 INFO  User @dolly successfully logged in 
+17:32:08.316 INFO  User @david successfully logged in 
+17:33:27.277 INFO  mongodb://localhost:27017/hms 
+17:33:28.467 INFO  Connect Successful in development 
+17:33:30.191 ERROR res.render is not a function
+TypeError: res.render is not a function
+    at User.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:128:7)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at model.Query.Query.then (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\query.js:3037:22)
+    at router.route.get (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:127:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7 
+17:33:34.348 INFO  mongodb://localhost:27017/hms 
+17:33:35.477 INFO  Connect Successful in development 
+17:33:54.264 INFO  User @david successfully logged in 
+17:34:00.873 ERROR res.render is not a function
+TypeError: res.render is not a function
+    at User.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:128:7)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at model.Query.Query.then (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\query.js:3037:22)
+    at router.route.get (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:127:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7 
+17:34:35.867 INFO  mongodb://localhost:27017/hms 
+17:34:37.005 INFO  Connect Successful in development 
+17:34:55.838 INFO  mongodb://localhost:27017/hms 
+17:34:56.999 INFO  Connect Successful in development 
+17:35:06.299 INFO  User @david successfully logged in 
