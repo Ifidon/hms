@@ -30,6 +30,11 @@ block content
 						td= user.role
 						td
 						td
-							a.btn.btn-secondary(href='/users/#{user._id}') Edit Details
+							a.btn.btn-secondary(href='/users/#{user.username}/edit') Edit Details
 						td
-							a.btn.btn-danger(href='/users/#{user._id}') Delete User
+						form(method='post' action='/users/#{user.username}/delete')
+							button.btn.btn-danger(type='submit') Delete User
+
+			script.
+				var use ='#{user.username}'.toString()
+			script(src='/javascripts/login.js')

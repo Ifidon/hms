@@ -18775,3 +18775,96 @@ Error: Not Found
 03:08:14.876 INFO  mongodb://localhost:27017/hms 
 03:08:15.989 INFO  Connect Successful in development 
 03:08:31.242 INFO  User @david successfully logged in 
+03:15:45.710 INFO  mongodb://localhost:27017/hms 
+03:15:46.891 INFO  Connect Successful in development 
+03:20:00.903 INFO  User @david successfully logged in 
+03:20:01.621 ERROR Not Found
+Error: Not Found
+    at C:\Users\Home PC\Desktop\App Folder\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\Home PC\Desktop\App Folder\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+03:20:44.985 ERROR Can't set headers after they are sent.
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:170:12)
+    at done (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:967:10)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:374:12)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at Patients.findOne.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\index.js:198:11)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+03:28:07.018 INFO  mongodb://localhost:27017/hms 
+03:28:08.174 INFO  Connect Successful in development 
+03:28:21.158 INFO  mongodb://localhost:27017/hms 
+03:28:22.311 INFO  Connect Successful in development 
+03:28:44.508 INFO  mongodb://localhost:27017/hms 
+03:28:45.654 INFO  Connect Successful in development 
+03:29:00.890 INFO  mongodb://localhost:27017/hms 
+03:29:02.048 INFO  Connect Successful in development 
+03:29:35.541 INFO  mongodb://localhost:27017/hms 
+03:29:36.684 INFO  Connect Successful in development 
+03:30:15.798 INFO  mongodb://localhost:27017/hms 
+03:30:16.954 INFO  Connect Successful in development 
+03:30:33.301 INFO  mongodb://localhost:27017/hms 
+03:30:34.428 INFO  Connect Successful in development 
+03:30:38.413 INFO  mongodb://localhost:27017/hms 
+03:30:39.567 INFO  Connect Successful in development 
+03:31:31.233 INFO  mongodb://localhost:27017/hms 
+03:31:32.379 INFO  Connect Successful in development 
+03:31:51.009 INFO  mongodb://localhost:27017/hms 
+03:31:52.124 INFO  Connect Successful in development 
+03:32:24.937 INFO  mongodb://localhost:27017/hms 
+03:32:26.085 INFO  Connect Successful in development 
+03:33:06.093 INFO  mongodb://localhost:27017/hms 
+03:33:07.239 INFO  Connect Successful in development 
+03:33:17.552 INFO  mongodb://localhost:27017/hms 
+03:33:18.703 INFO  Connect Successful in development 
+03:33:42.579 INFO  mongodb://localhost:27017/hms 
+03:33:43.729 INFO  Connect Successful in development 
+03:34:00.041 INFO  mongodb://localhost:27017/hms 
+03:34:01.193 INFO  Connect Successful in development 
+03:35:18.216 INFO  mongodb://localhost:27017/hms 
+03:35:19.371 INFO  Connect Successful in development 
+03:35:33.016 INFO  mongodb://localhost:27017/hms 
+03:35:34.164 INFO  Connect Successful in development 
+03:36:00.454 INFO  mongodb://localhost:27017/hms 
+03:36:01.605 INFO  Connect Successful in development 
+03:36:20.979 INFO  mongodb://localhost:27017/hms 
+03:36:22.146 INFO  Connect Successful in development 
+06:56:34.674 INFO  mongodb://localhost:27017/hms 
+06:56:35.831 INFO  Connect Successful in development 
+06:56:43.763 INFO  mongodb://localhost:27017/hms 
+06:56:44.923 INFO  Connect Successful in development 

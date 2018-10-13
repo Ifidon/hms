@@ -118,6 +118,26 @@ router.route('/logout')
 	var user = " "
   req.logout()
   res.render('homepage', {user})
+});
+
+router.route('/:username/edit')
+.get((res, req, next) => {
+	var user = req.params
+	User.findOne(req.params)
+	.then((person) => {
+		res.render('edituser', {user, person})
+
+	})
+	.catch((error) => {
+		next(err)
+	})
+})
+
+router.route('/:username/delete')
+.post((res, req, next) => {
+	var user = req.params
+	User.deleteOne(req.params)
+	res.redirect('/users')
 })
 
   

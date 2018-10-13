@@ -185,7 +185,7 @@ router.route('/doctors_office/:patient_id/:consultation_id')
     var message=" "
     var consultation = patient.consultations[0]
 
-    if(!codes.check(pharmacy_list, patient) && !codes.check(laboratory_list, patient)) {
+    if((!codes.check(pharmacy_list, patient)) && (!codes.check(laboratory_list, patient))) {
       pharmacy_list.push(patient);
       laboratory_list.push(patient);
       doctors_office.splice(pharmacy_list.indexOf(patient), 1)
@@ -193,10 +193,10 @@ router.route('/doctors_office/:patient_id/:consultation_id')
       res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry Sent."})
     }
 
-    if (codes.checkdate(laboratory_list, consultation) && codes.checkdate(pharmacy_list, consultation)) {
-      // doctors_office.splice(pharmacy_list.indexOf(patient), 1)
-      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry already exists."})
-    }
+    // if (codes.checkdate(laboratory_list, consultation) && codes.checkdate(pharmacy_list, consultation)) {
+    //   doctors_office.splice(pharmacy_list.indexOf(patient), 1)
+    //   res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry already exists."})
+    // }
 
     if (codes.check(pharmacy_list, patient) && codes.check(laboratory_list, patient)) {
       doctors_office.splice(pharmacy_list.indexOf(patient), 1)
@@ -211,7 +211,7 @@ router.route('/doctors_office/:patient_id/:consultation_id')
     if (!codes.check(pharmacy_list, patient) && codes.check(laboratory_list, patient)) {
       pharmacy_list.push(patient)
       res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Sent to pharmacy. Entry already exists in lab."})
-    }    
+    }  
   })
   .catch((error) => {
     next(error)
