@@ -12,6 +12,7 @@ block content
 						a.float-right(href='/users') View, Edit, and Delete Users
 
 			table.table.table-striped.table-bodered.col-10.m-auto
+				p.text-success= message
 				thead.thead-dark
 					tr
 						th Name
@@ -22,17 +23,17 @@ block content
 						th Action
 						th Action
 				tbody
-				each user in users
+				each person in users
 					tr
-						td= user.firstname + ' ' + user.lastname
-						td= user.email
-						td= user.username
-						td= user.role
+						td= person.firstname + ' ' + person.lastname
+						td= person.email
+						td= person.username
+						td= person.role
 						td
 						td
-							a.btn.btn-secondary(href='/users/#{user.username}/edit') Edit Details
+							a.btn.btn-secondary(href='/users/#{person.username}/edit') Edit Details
 						td
-							form(method='post' action='/users/#{user.username}/delete')
+							form(method='post' action='/users/#{person.username}/delete')
 							button.btn.btn-danger(type='submit') Delete User
 
 			script.

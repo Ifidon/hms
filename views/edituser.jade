@@ -3,7 +3,7 @@ extends layout
 block content
 	div.container
 		div.form-group
-			form.form-control(method='post' action='/users/new')
+			form.form-control(method='post' action='/users/#{person.username}/edit')
 				fieldset
 					legend.text-center Register User
 					br

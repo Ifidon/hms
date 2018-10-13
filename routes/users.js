@@ -133,9 +133,12 @@ router.route('/:username/edit')
 })
 .post((req, res, next) => {
 	var user = req.user
-	// User.findAndUpdate({req.params}, {$set: {req.body}})
+	var users = []
+	User.findOneAndUpdate(req.params, {$set: req.body})
 	.then((person) => {
-		res.render('userlist', {user: person, title: 'User - ' + person.username})
+		person.save()
+		users.push(person)
+		res.render('userlist', {users, user, title: 'User - ' + person.username})
 	})
 	.catch((error) => {
 		next(error)

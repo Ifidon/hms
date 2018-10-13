@@ -19022,3 +19022,696 @@ From previous event:
 17:34:55.838 INFO  mongodb://localhost:27017/hms 
 17:34:56.999 INFO  Connect Successful in development 
 17:35:06.299 INFO  User @david successfully logged in 
+17:55:32.079 INFO  mongodb://localhost:27017/hms 
+17:55:33.227 INFO  Connect Successful in development 
+18:47:16.296 INFO  mongodb://localhost:27017/hms 
+18:47:17.466 INFO  Connect Successful in development 
+18:54:33.501 INFO  User @david successfully logged in 
+18:56:14.330 ERROR No username was given
+MissingUsernameError: No username was given
+    at Promise.resolve.then (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\passport-local-mongoose\index.js:232:17)
+    at <anonymous> 
+18:57:57.585 INFO  mongodb://localhost:27017/hms 
+18:57:58.785 INFO  Connect Successful in development 
+18:58:07.379 INFO  User @david successfully logged in 
+18:58:58.961 ERROR No username was given
+MissingUsernameError: No username was given
+    at Promise.resolve.then (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\passport-local-mongoose\index.js:232:17)
+    at <anonymous> 
+19:00:52.422 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each user in users
+    26| 					tr
+    27| 						td= user.firstname + ' ' + user.lastname
+    28| 						td= user.email
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each user in users
+    26| 					tr
+    27| 						td= user.firstname + ' ' + user.lastname
+    28| 						td= user.email
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:342:32)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:566:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:01:55.178 INFO  mongodb://localhost:27017/hms 
+19:01:56.387 INFO  Connect Successful in development 
+19:02:02.869 INFO  User @david successfully logged in 
+19:02:49.402 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:27
+    25| 				each user in users
+    26| 					tr
+  > 27| 						td= user.firstname + ' ' + user.lastname
+    28| 						td= user.email
+    29| 						td= user.username
+    30| 						td= user.role
+
+Cannot read property 'firstname' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:27
+    25| 				each user in users
+    26| 					tr
+  > 27| 						td= user.firstname + ' ' + user.lastname
+    28| 						td= user.email
+    29| 						td= user.username
+    30| 						td= user.role
+
+Cannot read property 'firstname' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:433:60)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:566:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:03:54.984 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:27
+    25| 				each person in users
+    26| 					tr
+  > 27| 						td= person.firstname + ' ' + user.lastname
+    28| 						td= user.email
+    29| 						td= user.username
+    30| 						td= user.role
+
+Cannot read property 'lastname' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:27
+    25| 				each person in users
+    26| 					tr
+  > 27| 						td= person.firstname + ' ' + user.lastname
+    28| 						td= user.email
+    29| 						td= user.username
+    30| 						td= user.role
+
+Cannot read property 'lastname' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:433:85)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:566:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:04:32.392 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:33
+    31| 						td
+    32| 						td
+  > 33| 							a.btn.btn-secondary(href='/users/#{user.username}/edit') Edit Details
+    34| 						td
+    35| 							form(method='post' action='/users/#{user.username}/delete')
+    36| 							button.btn.btn-danger(type='submit') Delete User
+
+Cannot read property 'username' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:33
+    31| 						td
+    32| 						td
+  > 33| 							a.btn.btn-secondary(href='/users/#{user.username}/edit') Edit Details
+    34| 						td
+    35| 							form(method='post' action='/users/#{user.username}/delete')
+    36| 							button.btn.btn-danger(type='submit') Delete User
+
+Cannot read property 'username' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:466:54)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:566:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:04:56.726 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:35
+    33| 							a.btn.btn-secondary(href='/users/#{person.username}/edit') Edit Details
+    34| 						td
+  > 35| 							form(method='post' action='/users/#{user.username}/delete')
+    36| 							button.btn.btn-danger(type='submit') Delete User
+    37| 
+    38| 			script.
+
+Cannot read property 'username' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:35
+    33| 							a.btn.btn-secondary(href='/users/#{person.username}/edit') Edit Details
+    34| 						td
+  > 35| 							form(method='post' action='/users/#{user.username}/delete')
+    36| 							button.btn.btn-danger(type='submit') Delete User
+    37| 
+    38| 			script.
+
+Cannot read property 'username' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:481:75)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:566:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:05:22.659 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:27
+    25| 				each person in users
+    26| 					tr
+  > 27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+    29| 						td= person.username
+    30| 						td= person.role
+
+Cannot read property 'firstname' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:27
+    25| 				each person in users
+    26| 					tr
+  > 27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+    29| 						td= person.username
+    30| 						td= person.role
+
+Cannot read property 'firstname' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:433:62)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:566:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:06:56.773 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:29
+    27| 
+    28| 			script.
+  > 29| 				var use ='#{user.username}'.toString()
+    30| 			script(src='/javascripts/login.js')
+
+Cannot read property 'username' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:29
+    27| 
+    28| 			script.
+  > 29| 				var use ='#{user.username}'.toString()
+    30| 			script(src='/javascripts/login.js')
+
+Cannot read property 'username' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:351:58)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:402:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+19:08:09.161 INFO  mongodb://localhost:27017/hms 
+19:08:10.320 INFO  Connect Successful in development 
+19:08:17.256 INFO  mongodb://localhost:27017/hms 
+19:08:18.417 INFO  Connect Successful in development 
+19:08:35.872 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:29
+    27| 
+    28| 			script.
+  > 29| 				var use ='#{user.username}'.toString()
+    30| 			script(src='/javascripts/login.js')
+
+Cannot read property 'username' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:29
+    27| 
+    28| 			script.
+  > 29| 				var use ='#{user.username}'.toString()
+    30| 			script(src='/javascripts/login.js')
+
+Cannot read property 'username' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:351:58)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:402:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+19:09:13.614 INFO  mongodb://localhost:27017/hms 
+19:09:14.778 INFO  Connect Successful in development 
+19:09:44.563 INFO  mongodb://localhost:27017/hms 
+19:09:45.748 INFO  Connect Successful in development 
+19:10:04.466 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:29
+    27| 
+    28| 			script.
+  > 29| 				var use ='#{user.username}'.toString()
+    30| 			script(src='/javascripts/login.js')
+
+Cannot read property 'username' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:29
+    27| 
+    28| 			script.
+  > 29| 				var use ='#{user.username}'.toString()
+    30| 			script(src='/javascripts/login.js')
+
+Cannot read property 'username' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:351:58)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:402:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+19:10:32.810 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each person in users
+    26| 					tr
+    27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each person in users
+    26| 					tr
+    27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:342:32)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:551:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:10:42.783 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each person in users
+    26| 					tr
+    27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each person in users
+    26| 					tr
+    27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:342:32)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:551:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:11:03.256 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each person in users
+    26| 					tr
+    27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each person in users
+    26| 					tr
+    27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:342:32)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:551:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:13:09.669 INFO  mongodb://localhost:27017/hms 
+19:13:10.831 INFO  Connect Successful in development 
+19:14:16.196 INFO  User @david successfully logged in 
+19:14:49.539 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each person in users
+    26| 					tr
+    27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each person in users
+    26| 					tr
+    27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:342:32)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:566:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:16:22.797 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each person in users
+    26| 					tr
+    27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+
+Cannot read property 'length' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:25
+    23| 						th Action
+    24| 				tbody
+  > 25| 				each person in users
+    26| 					tr
+    27| 						td= person.firstname + ' ' + person.lastname
+    28| 						td= person.email
+
+Cannot read property 'length' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:342:32)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:505:4)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:566:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5) 
+19:19:04.162 INFO  mongodb://localhost:27017/hms 
+19:19:05.302 INFO  Connect Successful in development 
+19:19:13.719 INFO  mongodb://localhost:27017/hms 
+19:19:14.890 INFO  Connect Successful in development 
+19:19:37.153 INFO  mongodb://localhost:27017/hms 
+19:19:38.327 INFO  Connect Successful in development 
+19:19:45.189 INFO  User @david successfully logged in 
+19:20:28.635 ERROR User.findAndUpdate is not a function
+TypeError: User.findAndUpdate is not a function
+    at router.route.get.post (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:136:7)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:131:14)
+    at Route.dispatch (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12) 
+19:20:46.692 INFO  mongodb://localhost:27017/hms 
+19:20:47.864 INFO  Connect Successful in development 
+19:22:16.537 INFO  mongodb://localhost:27017/hms 
+19:22:17.699 INFO  Connect Successful in development 
+19:22:40.398 INFO  mongodb://localhost:27017/hms 
+19:22:41.544 INFO  Connect Successful in development 
+19:23:26.906 INFO  mongodb://localhost:27017/hms 
+19:23:28.082 INFO  Connect Successful in development 
+19:24:08.290 INFO  mongodb://localhost:27017/hms 
+19:24:10.274 INFO  Connect Successful in development 
+19:24:21.109 INFO  User @david successfully logged in 
+19:25:01.361 ERROR user.push is not a function
+TypeError: user.push is not a function
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:139:8)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at model.Query.Query.then (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\mongoose\lib\query.js:3037:22)
+    at router.route.get.post (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:138:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:131:14)
+    at Route.dispatch (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13) 
+19:25:28.223 INFO  mongodb://localhost:27017/hms 
+19:25:29.417 INFO  Connect Successful in development 
+19:25:42.187 ERROR C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:40
+    38| 
+    39| 			script.
+  > 40| 				var use ='#{user.username}'.toString()
+    41| 			script(src='/javascripts/login.js')
+
+Cannot read property 'username' of undefined
+TypeError: C:\Users\Home PC\Desktop\App Folder\HMS\views\userlist.jade:40
+    38| 
+    39| 			script.
+  > 40| 				var use ='#{user.username}'.toString()
+    41| 			script(src='/javascripts/login.js')
+
+Cannot read property 'username' of undefined
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:521:58)
+    at eval (eval at exports.compile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:218:8), <anonymous>:572:22)
+    at res (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:219:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:380:38)
+    at Object.exports.renderFile (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:370:21)
+    at View.exports.__express [as engine] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\jade\lib\index.js:417:11)
+    at View.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\view.js:127:8)
+    at tryRender (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:640:10)
+    at Function.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\response.js:971:7)
+    at User.findOneAndUpdate.then (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:140:7)
+    at tryCatcher (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) 
+19:26:08.183 INFO  User @david successfully logged in 
+19:28:06.383 INFO  mongodb://localhost:27017/hms 
+19:28:07.549 INFO  Connect Successful in development 
