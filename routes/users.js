@@ -136,9 +136,8 @@ router.route('/:username/edit')
 	var users = []
 	User.findOneAndUpdate(req.params, {$set: req.body})
 	.then((person) => {
-		person.save()
 		users.push(person)
-		res.render('userlist', {users, user, title: 'User - ' + person.username})
+		res.redirect('/users')
 	})
 	.catch((error) => {
 		next(error)
@@ -146,10 +145,15 @@ router.route('/:username/edit')
 });
 
 router.route('/:username/delete')
-.post((res, req, next) => {
+.post((req, res, next) => {
 	var user = req.params
-	User.deleteOne(req.params)
-	res.redirect('/users')
+	User.findOne(req.params)
+	.then((person) => {
+		console.log(person)
+		person.remove()
+		// person.save()
+		res.redirect('/users')
+	})
 })
 
   

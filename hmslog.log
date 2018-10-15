@@ -19743,3 +19743,431 @@ Error: Not Found
     at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
     at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
     at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+13:02:30.745 INFO  mongodb://localhost:27017/hms 
+13:02:32.484 INFO  Connect Successful in development 
+13:10:05.236 INFO  User @dolly successfully logged in 
+13:10:09.614 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+13:15:34.349 INFO  mongodb://localhost:27017/hms 
+13:15:35.512 INFO  Connect Successful in development 
+13:15:55.212 INFO  User @dolly successfully logged in 
+13:21:34.879 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\userlist.jade:30
+    28| 						td= person.firstname + ' ' + person.lastname
+    29| 						td
+  > 30| 							(href='mailto:#{person.email}')=person.email
+    31| 						td= person.username
+    32| 						td= person.role
+    33| 						td
+
+unexpected token "attrs"
+Error: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\userlist.jade:30
+    28| 						td= person.firstname + ' ' + person.lastname
+    29| 						td
+  > 30| 							(href='mailto:#{person.email}')=person.email
+    31| 						td= person.username
+    32| 						td= person.role
+    33| 						td
+
+unexpected token "attrs"
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:254:15)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.parseEach (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:461:23)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:233:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24) 
+13:22:21.278 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\userlist.jade:30
+    28| 						td= person.firstname + ' ' + person.lastname
+    29| 						td
+  > 30| 							(href='#{mailto:person.email}')= person.email
+    31| 						td= person.username
+    32| 						td= person.role
+    33| 						td
+
+unexpected token "attrs"
+Error: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\userlist.jade:30
+    28| 						td= person.firstname + ' ' + person.lastname
+    29| 						td
+  > 30| 							(href='#{mailto:person.email}')= person.email
+    31| 						td= person.username
+    32| 						td= person.role
+    33| 						td
+
+unexpected token "attrs"
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:254:15)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.parseEach (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:461:23)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:233:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24) 
+13:22:27.144 ERROR C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\userlist.jade:30
+    28| 						td= person.firstname + ' ' + person.lastname
+    29| 						td
+  > 30| 							(href='#{mailto:person.email}')= person.email
+    31| 						td= person.username
+    32| 						td= person.role
+    33| 						td
+
+unexpected token "attrs"
+Error: C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\views\userlist.jade:30
+    28| 						td= person.firstname + ' ' + person.lastname
+    29| 						td
+  > 30| 							(href='#{mailto:person.email}')= person.email
+    31| 						td= person.username
+    32| 						td= person.role
+    33| 						td
+
+unexpected token "attrs"
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:254:15)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.parseEach (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:461:23)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:233:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24)
+    at Parser.parseTag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:759:17)
+    at Parser.parseExpr (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:211:21)
+    at Parser.block (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:729:25)
+    at Parser.tag (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\jade\lib\parser.js:838:24) 
+13:37:11.144 INFO  mongodb://localhost:27017/hms 
+13:37:12.253 INFO  Connect Successful in development 
+13:37:22.024 INFO  User @dolly successfully logged in 
+13:38:07.694 ERROR User.findOneAndDelete is not a function
+TypeError: User.findOneAndDelete is not a function
+    at router.route.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\users.js:150:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5) 
+13:38:41.945 INFO  mongodb://localhost:27017/hms 
+13:38:43.041 INFO  Connect Successful in development 
+13:38:45.551 ERROR User.findOneAndDelete is not a function
+TypeError: User.findOneAndDelete is not a function
+    at router.route.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\users.js:150:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5) 
+13:38:56.462 INFO  User @dolly successfully logged in 
+13:39:00.582 ERROR User.findOneAndDelete is not a function
+TypeError: User.findOneAndDelete is not a function
+    at router.route.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\users.js:150:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5) 
+13:44:38.721 INFO  mongodb://localhost:27017/hms 
+13:44:39.814 INFO  Connect Successful in development 
+13:44:46.879 INFO  User @dolly successfully logged in 
+13:44:52.911 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15 
+13:45:56.684 INFO  mongodb://localhost:27017/hms 
+13:45:57.790 INFO  Connect Successful in development 
+13:46:27.496 INFO  User @dolly successfully logged in 
+13:46:32.243 ERROR Not Found
+Error: Not Found
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15 
+13:46:51.632 INFO  mongodb://localhost:27017/hms 
+13:46:52.728 INFO  Connect Successful in development 
+13:46:53.312 ERROR res.redirect is not a function
+TypeError: res.redirect is not a function
+    at router.route.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\users.js:151:6)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5) 
+13:47:02.543 INFO  User @dolly successfully logged in 
+13:47:34.612 ERROR res.redirect is not a function
+TypeError: res.redirect is not a function
+    at router.route.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\users.js:151:6)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5) 
+13:49:06.084 INFO  mongodb://localhost:27017/hms 
+13:49:07.185 INFO  Connect Successful in development 
+13:49:13.196 INFO  User @dolly successfully logged in 
+13:49:52.228 INFO  mongodb://localhost:27017/hms 
+13:49:53.325 INFO  Connect Successful in development 
+13:54:36.400 INFO  mongodb://localhost:27017/hms 
+13:54:37.500 INFO  Connect Successful in development 
+13:54:43.519 INFO  User @dolly successfully logged in 
+13:54:47.831 ERROR User.findOneAndDelete is not a function
+TypeError: User.findOneAndDelete is not a function
+    at router.route.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\users.js:150:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5) 
+13:56:11.802 INFO  mongodb://localhost:27017/hms 
+13:56:12.900 INFO  Connect Successful in development 
+13:56:18.590 INFO  mongodb://localhost:27017/hms 
+13:56:19.687 INFO  Connect Successful in development 
+13:56:20.878 INFO  mongodb://localhost:27017/hms 
+13:56:21.981 INFO  Connect Successful in development 
+13:56:33.495 INFO  User @dolly successfully logged in 
+13:58:22.721 INFO  mongodb://localhost:27017/hms 
+13:58:23.813 INFO  Connect Successful in development 
+13:58:30.966 INFO  User @dolly successfully logged in 
+13:58:34.362 ERROR User.findByIdAndDelete is not a function
+TypeError: User.findByIdAndDelete is not a function
+    at router.route.post (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\routes\users.js:150:7)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\ifidon.omokhomion\Desktop\Folders\Projects\HMS\node_modules\express\lib\router\layer.js:95:5) 
+14:02:58.523 INFO  mongodb://localhost:27017/hms 
+14:02:59.617 INFO  Connect Successful in development 
+14:03:04.341 INFO  mongodb://localhost:27017/hms 
+14:03:05.440 INFO  Connect Successful in development 
+14:03:20.943 INFO  User @dolly successfully logged in 
+14:04:32.584 INFO  mongodb://localhost:27017/hms 
+14:04:33.689 INFO  Connect Successful in development 
+14:05:35.134 INFO  mongodb://localhost:27017/hms 
+14:05:36.232 INFO  Connect Successful in development 
+14:05:37.904 INFO  mongodb://localhost:27017/hms 
+14:05:38.998 INFO  Connect Successful in development 
+14:05:45.956 INFO  mongodb://localhost:27017/hms 
+14:05:47.055 INFO  Connect Successful in development 
+14:05:52.886 INFO  mongodb://localhost:27017/hms 
+14:05:54.079 INFO  Connect Successful in development 
+14:05:58.679 INFO  User @dolly successfully logged in 
+14:06:36.929 INFO  mongodb://localhost:27017/hms 
+14:06:38.044 INFO  Connect Successful in development 
+14:06:50.160 INFO  User @dolly successfully logged in 
+14:07:42.555 INFO  User @debbie01successfully created and logged In 
+14:08:00.842 INFO  User @dolly successfully logged in 
+14:09:36.105 INFO  mongodb://localhost:27017/hms 
+14:09:37.215 INFO  Connect Successful in development 
+14:10:18.617 INFO  mongodb://localhost:27017/hms 
+14:10:19.706 INFO  Connect Successful in development 
+14:10:41.177 INFO  mongodb://localhost:27017/hms 
+14:10:42.274 INFO  Connect Successful in development 
+14:11:12.755 INFO  mongodb://localhost:27017/hms 
+14:11:13.913 INFO  Connect Successful in development 

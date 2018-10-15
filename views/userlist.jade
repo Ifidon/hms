@@ -26,7 +26,8 @@ block content
 				each person in users
 					tr
 						td= person.firstname + ' ' + person.lastname
-						td= person.email
+						td
+							a(href='mailto:#{person.email}')= person.email
 						td= person.username
 						td= person.role
 						td
@@ -34,7 +35,7 @@ block content
 							a.btn.btn-secondary(href='/users/#{person.username}/edit') Edit Details
 						td
 							form(method='post' action='/users/#{person.username}/delete')
-							button.btn.btn-danger(type='submit') Delete User
+								button.btn.btn-danger(type='submit') Delete User
 
 			script.
 				var use ='#{user.username}'.toString()
