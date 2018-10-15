@@ -146,9 +146,10 @@ router.route('/:username/edit')
 });
 
 router.route('/:username/delete')
-.post((res, req, next) => {
+.post((req, res, next) => {
 	var user = req.params
-	User.deleteOne(req.params)
+	console.log(req.params)
+	User.findOneAndDelete(req.params)
 	res.redirect('/users')
 })
 

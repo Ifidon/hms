@@ -19715,3 +19715,116 @@ Cannot read property 'username' of undefined
 19:26:08.183 INFO  User @david successfully logged in 
 19:28:06.383 INFO  mongodb://localhost:27017/hms 
 19:28:07.549 INFO  Connect Successful in development 
+21:26:21.120 INFO  mongodb://localhost:27017/hms 
+21:26:22.450 INFO  Connect Successful in development 
+21:28:26.943 INFO  User @david successfully logged in 
+21:28:27.803 ERROR Not Found
+Error: Not Found
+    at C:\Users\Home PC\Desktop\App Folder\HMS\app.js:94:13
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at auth (C:\Users\Home PC\Desktop\App Folder\HMS\app.js:84:5)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\passport\lib\middleware\authenticate.js:338:9) 
+21:29:33.734 ERROR res.redirect is not a function
+TypeError: res.redirect is not a function
+    at router.route.post (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:152:6)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5) 
+21:31:27.279 INFO  mongodb://localhost:27017/hms 
+21:31:28.441 INFO  Connect Successful in development 
+21:31:40.674 INFO  User @david successfully logged in 
+21:33:35.974 INFO  mongodb://localhost:27017/hms 
+21:33:37.223 INFO  Connect Successful in development 
+21:33:51.948 INFO  User @david successfully logged in 
+21:38:39.232 INFO  mongodb://localhost:27017/hms 
+21:38:40.511 INFO  Connect Successful in development 
+21:38:55.574 INFO  mongodb://localhost:27017/hms 
+21:38:57.052 INFO  Connect Successful in development 
+21:39:05.196 INFO  User @david successfully logged in 
+21:39:13.552 ERROR User.findOneAndDelete is not a function
+TypeError: User.findOneAndDelete is not a function
+    at router.route.post (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:152:7)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5) 
+21:41:30.808 INFO  mongodb://localhost:27017/hms 
+21:41:32.032 INFO  Connect Successful in development 
+21:41:51.319 INFO  User @david successfully logged in 
+21:41:59.027 ERROR User.findOneAndDelete is not a function
+TypeError: User.findOneAndDelete is not a function
+    at router.route.post (C:\Users\Home PC\Desktop\App Folder\HMS\routes\users.js:152:7)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Home PC\Desktop\App Folder\HMS\node_modules\express\lib\router\layer.js:95:5) 

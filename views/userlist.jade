@@ -34,7 +34,7 @@ block content
 							a.btn.btn-secondary(href='/users/#{person.username}/edit') Edit Details
 						td
 							form(method='post' action='/users/#{person.username}/delete')
-							button.btn.btn-danger(type='submit') Delete User
+								button.btn.btn-danger(type='submit') Delete User
 
 			script.
 				var use ='#{user.username}'.toString()
