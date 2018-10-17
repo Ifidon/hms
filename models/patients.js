@@ -8,15 +8,15 @@ var prescriptionSchema = new Schema ({
     // default: "No Entry "
   },
   cost: {
-    type: String,
+    type: Number,
     // default: ""
   },
   amountPaid: {
-    type: String,
+    type: Number,
     // default: ""
   },
   balance: {
-    type: String,
+    type: Number,
     // default: ""
   }
 });
@@ -27,15 +27,15 @@ var labSchema = new Schema ({
     // default: "No Entry"
   },
   cost: {
-    type: String,
+    type: Number,
     // default: ""
   },
   amountPaid: {
-    type: String,
+    type: Number,
     // default: ""
   },
   balance: {
-    type: String,
+    type: Number,
     // default: ""
   },
   findings: {
@@ -54,15 +54,15 @@ var otherPaymentSchema = new Schema ({
     // default: "No Entry"
   },
   cost: {
-    type: String,
+    type: Number,
     // default: ""
   },
   amountPaid: {
-    type: String,
+    type: Number,
     // default: ""
   },
   balance: {
-    type: String,
+    type: Number,
     // default: ""
   }
 });
