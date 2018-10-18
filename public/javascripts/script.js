@@ -9,14 +9,14 @@ function getBalance() {
     if( c && p) {
       b.value = c - p;
     }
-}
-
-function getBalance1() {
-
-    if( c1 && p1) {
-      b1.value = c1 - p1;
-    }
 };
+
+// function () {
+
+//     if( c1 && p1) {
+//       b1.value = c1 - p1;
+//     }
+// };
 
 // if (cons) {
 // 	var c = document.getElementById('cost').value;

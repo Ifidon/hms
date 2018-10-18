@@ -4,7 +4,7 @@ block content
 
   div.container
     div.row
-      table.table.table-striped.table-bodered.col-10.m-auto
+      table.table-striped.table-bodered.col-10.m-auto
         thead.thead-dark
           tr
             th Patient Name
@@ -25,9 +25,9 @@ block content
               form
                 button.btn.btn-sm(type='submit' formaction='/consultationlist/nurses/#{patient.patient_id}', formmethod='post') Send to Doctors
              td
-              a.btn.btn-primary(href="/patients/#{patient.patient_id}") View Details
+              a.btn.btn-sm.btn-primary(href="/patients/#{patient.patient_id}") View Details
             td
-              a.btn.btn-primary(href="/patients/#{patient.patient_id}/update") Edit Details
+              a.btn.btn-sm.btn-primary(href="/patients/#{patient.patient_id}/update") Edit Details
 
   script.
       var use = '#{user.username}'.toString()

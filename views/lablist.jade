@@ -4,7 +4,7 @@ block content
 
   div.container
     div.row
-      table.table.table-striped.table-bodered.col-10.m-auto
+      table.table-striped.table-bodered.col-10.m-auto
         thead.thead-dark
           tr
             th Patient Name
@@ -18,7 +18,7 @@ block content
             td= patient.patient_id
             td= patient.consultations[0].updatedAt.toString().substr(0, 16)
             td
-              a.btn.btn-primary(href="/patients/#{patient.patient_id}/consultations/#{patient.consultations[0]._id}/laboratory") Open
+              a.btn.btn-sm.btn-primary(href="/patients/#{patient.patient_id}/consultations/#{patient.consultations[0]._id}/laboratory") Open
 
     div.row
       div.card.col-10.m-auto

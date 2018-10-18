@@ -3,21 +3,39 @@ extends Layout
 block content
 	div.container
 		div.row
-			form.form-group.col-5.m-auto(method='post' action='/patients/#{patient.patient_id}/record_payment')
-				fieldset
-					legend.text-center Record Payment Details (#{patient.firstname + " " + patient.lastname + " - ID: " + patient.patient_id})
-					label(for='description') Payment Description:
-					textarea.form-control.m-auto(cols=10 rows=10 name='description' placeholder='Payment Description')
-					label.m-2(for='cost') Amount Due:
-					input.form-control.m-auto#cost(type='number' name='cost' placeholder='Amount Due')
-					label.m-2(for='amountPaid') Amount Paid:
-					input.form-control.m-auto#amtpaid(type='number' name='amountPaid' placeholder='Amount Paid')
-					label.m-2(for='balance') Balance:
-					input.form-control.m-auto#balance(type='number' name='balance' placeholder='Balance' onfocus="getBalance()")
-					button.btn.btn-primary.form-control.m-auto(type="submit") Save
+			section.col-12.alert-primary.p-2.mx-auto
+				h5.text-center= patient.firstname + " " + patient.lastname + " - ID: " + patient.patient_id
+			
+			p.bg-dark.col-12
+				a.float-right.text-white(href='/patients/#{patient.patient_id}/accountsummary') View Account Summary
+			div.card.col-5.mx-auto.my-2
+				div.card-header.text-center
+					h6 Account Summary
+				div.card-body
+					h6 Total Due: 
+						span.badge.badge-primary.float-right= patient.totalDue
+					h6 Total Amount Paid (to-date): 
+						span.badge.badge-success.float-right= patient.totalPaid
+					h6 Outstanding Account Balance: 
+						span.badge.badge-danger.float-right= patient.totalBalance
+					br
+					br
+					- var today = new Date()
+					p.d-none#lastdate Last updated:  
+						span= today || patient.payment[0].updatedAt.toString().substr(0, 16)
 
-			div.col-4
-				a.btn.btn-secondary(href='/patients/#{patient.patient_id}/accountsummary') View Account Summary
+					form
+						button.btn.btn-sm.btn-primary(type='submit' formmethod='post' formaction='/patients/#{patient.patient_id}/accountsummary') Update Account
+
+
+			form.form-group.col-6.m-auto.border.bg-secondary(method='post' action='/patients/#{patient.patient_id}/record_payment')
+				fieldset
+					legend.text-center.m-3.bg-info Record Payment Details
+					textarea.form-control.mx-auto.my-2(cols=10 rows=10 name='description' placeholder='Payment Description')
+					input.form-control.mx-auto.my-2#cost(type='number' name='cost' placeholder='Amount Due')
+					input.form-control.mx-auto.my-2#amtpaid(type='number' name='amountPaid' placeholder='Amount Paid')
+					input.form-control.mx-auto.my-2#balance(type='number' name='balance' placeholder='Balance' onfocus="getBalance()")
+					button.btn.btn-primary.form-control.m-auto(type="submit") Save
 
 	script.
 		var use = '#{user.username}'.toString()

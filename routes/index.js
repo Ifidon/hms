@@ -295,18 +295,18 @@ router.post('/consultationlist/frontdesk/:patient_id', function(req, res, next) 
   var user = req.user
   Patients.findOne(req.params)
   .then((patient) => {
-      if (codes.check(nurses_station, patient)) {
+      if (codes.check(nurses_station, patient) && codes.check(front_office, patient)) {
        res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Entry already exists in nurses station"})
       }
-      if (!codes.check(nurses_station, patient)) {
+      if (!codes.check(nurses_station, patient) && codes.check(front_office, patient)) {
         nurses_station.push(patient)
         res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Entry sent to nurses station"})
       }
-      // if(!codes.check(nurses_station, patient) && !codes.check(front_office, patient)) {
-      //   nurses_station.push(patient)
-      //   front_office.push(patient)
-      //   res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Entry sent to nurses station"})
-      // } 
+      if(!codes.check(nurses_station, patient) && !codes.check(front_office, patient)) {
+        nurses_station.push(patient)
+        front_office.push(patient)
+        res.render('current', {patientlist: front_office, user, title: 'Ongoing patient visits', message: "Entry sent to nurses station"})
+      } 
       console.log(codes.check(nurses_station, patient))   
   })
   .catch((error) => {

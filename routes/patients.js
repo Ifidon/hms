@@ -170,11 +170,32 @@ var user = req.user
 
 patientRouter.route('/:patient_id/accountsummary')
 .get((req, res, next) => {
-  Patients.aggregate([{$unwind: '$payment'}, {$group: {_id: '$patient_id', totaldue: {$sum: '$payment.cost'}, totalpaid: {$sum: '$payment.amountPaid'}, totalbalance: {$sum: '$payment.balance'}}}])
-  .then((patients) => {
-    res.send(patients)
-  })
+
 })
+
+.post((req, res, next) => {
+  var update = {}
+  Patients.aggregate([{$match: req.params}, {$unwind: '$payment'}, {$group: {_id: '$patient_id', totaldue: {$sum: '$payment.cost'}, totalpaid: {$sum: '$payment.amountPaid'}, totalbalance: {$sum: '$payment.balance'}}}])
+  .then((result) => {
+    update = {totalDue: result[0].totaldue.toString(),
+      totalPaid: result[0].totalpaid.toString(),
+      totalBalance: result[0].totalbalance.toString()
+    }
+    Patients.findOne(req.params)
+    .then((patient) => {
+      patient.set(update)
+      patient.save()
+      res.redirect('/patients/' + req.params.patient_id + '/record_payment')
+    })
+    .catch((error) => {
+    next(error)
+  })
+
+  })
+  .catch((error) => {
+    next(error)
+  })
+});
 
 patientRouter.route('/:patient_id/recordvitals')
 .get(authorize.nurseaccess, (req, res, next) => {
@@ -244,8 +265,8 @@ patientRouter.route('/:patient_id/consultations')
       consultation.prescription = {}
       consultation.labInvestigation = {}
       consultation.otherPayment = [{description: ''}, {description: ''}]
-      consultation.prescription.drugs = req.body.drugs
-      consultation.labInvestigation.tests = req.body.tests      
+      consultation.prescription.description = req.body.drugs
+      consultation.labInvestigation.description = req.body.tests      
       patient.save()
       res.render('consultation', {patient, consultation, user})
     })
@@ -279,6 +300,9 @@ patientRouter.route('/:patient_id/consultations')
       consultation.otherPayment[0].cost = req.body.cost1
       consultation.otherPayment[0].amountPaid = req.body.amountPaid1
       consultation.otherPayment[0].balance = req.body.balance1
+      if(!codes.check_id(patient.payment, consultation.prescription)) {
+        patient.payment.unshift(consultation.prescription)
+      }
       if(!codes.check_id(patient.payment, consultation.otherPayment[0])) {
         patient.payment.unshift(consultation.otherPayment[0])
       }
@@ -315,6 +339,9 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
     consultation.otherPayment[1].cost = req.body.cost1
     consultation.otherPayment[1].amountPaid = req.body.amountPaid1
     consultation.otherPayment[1].balance = req.body.balance1
+    if(!codes.check_id(patient.payment, consultation.labInvestigation)) {
+        patient.payment.unshift(consultation.labInvestigation)
+      }
     if(!codes.check_id(patient.payment, consultation.otherPayment[1])) {
         patient.payment.unshift(consultation.otherPayment[1])
       }

@@ -164,22 +164,22 @@ var PatientSchema = new Schema ({
   nokRelationship: {
     type: String
   },
-  payment: [otherPaymentSchema],
-
-  consultations:[consultation],
-
+  
   totalDue: {
-    type: Number,
-    default: 0
+    type: String,
+    // default: 0
   },
   totalPaid: {
-    type: Number,
-    default: 0
+    type: String,
+    // default: 0
   },
   totalBalance: {
-    type: Number,
-    default: 0
+    type: String,
+    // default: 0
   },
+  payment: [otherPaymentSchema],
+
+  consultations:[consultation]
 }, {
   timestamps: true
 });
