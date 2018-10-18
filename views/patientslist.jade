@@ -13,6 +13,7 @@ block content
             th Action
             th Action
             th Action
+            th Action
         tbody
         each patient in patientlist
           tr
@@ -20,10 +21,12 @@ block content
             td= patient.patient_id
             td
               form
-                button.btn.btn-sm(type='submit' formaction='/consultationlist/frontdesk/#{patient.patient_id}', formmethod='post') Send to Nurses
+                button.btn.btn-secondary(type='submit' formaction='/consultationlist/frontdesk/#{patient.patient_id}', formmethod='post') Send to Nurses
             td
               form
-                button.btn.btn-sm(type='submit' formaction='/consultationlist/nurses/#{patient.patient_id}', formmethod='post') Send to Doctors
+                button.btn.btn-secondary(type='submit' formaction='/consultationlist/nurses/#{patient.patient_id}', formmethod='post') Send to Doctors
+            td
+              a.btn.btn-primary(href='/patients/#{patient.patient_id}/record_payment') Record Payment
             td
               a.btn.btn-primary(href="/patients/#{patient.patient_id}") View Details
             td

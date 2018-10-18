@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var Patients =  require('../models/patients');
 
 var authorize = require('../authorize');
+var codes = require('../codes')
 
 
 var patientRouter = express.Router();
@@ -142,6 +143,39 @@ patientRouter.route('/:patient_id/update')
 
 });
 
+patientRouter.route('/:patient_id/record_payment')
+.get((req, res, next) => { 
+var user = req.user 
+    Patients.findOne(req.params, {_id: 0})
+    .then((patient) => {
+      res.render('payments', {patient, user, title: "Payments Page"})
+    })
+})
+.post((req, res, next) => {
+  Patients.findOne(req.params)
+  .then((patient) => {
+    patient.payment.unshift(req.body)
+    patient.save()
+    res.redirect('/patients')
+    // paydetails.unshift(req.body)
+    // var totaldue = patient.totalDue + req.body.cost
+    // var totalpaid = patient.totalPaid + req.body.amountPaid
+    // var totalbal = patient.totalBalance + req.body.balance
+    // patient.totalDue = totaldue
+    // patient.totalPaid = totalpaid
+    // patienttotalBalance = totalbal
+    // patient.set({totalDue: totaldue, totalPaid: totalpaid, totalBalance: totalbal})
+  })
+})
+
+patientRouter.route('/:patient_id/accountsummary')
+.get((req, res, next) => {
+  Patients.aggregate([{$unwind: '$payment'}, {$group: {_id: '$patient_id', totaldue: {$sum: '$payment.cost'}, totalpaid: {$sum: '$payment.amountPaid'}, totalbalance: {$sum: '$payment.balance'}}}])
+  .then((patients) => {
+    res.send(patients)
+  })
+})
+
 patientRouter.route('/:patient_id/recordvitals')
 .get(authorize.nurseaccess, (req, res, next) => {
   var user = req.user
@@ -245,6 +279,10 @@ patientRouter.route('/:patient_id/consultations')
       consultation.otherPayment[0].cost = req.body.cost1
       consultation.otherPayment[0].amountPaid = req.body.amountPaid1
       consultation.otherPayment[0].balance = req.body.balance1
+      if(!codes.check_id(patient.payment, consultation.otherPayment[0])) {
+        patient.payment.unshift(consultation.otherPayment[0])
+      }
+      // patient.payment.unshift(consultation.otherPayment[0])
       patient.save()
       res.render('pharmacy', {patient, consultation, user, title: 'Pharmacy Entries - HealthMax'})
     })
@@ -277,6 +315,9 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
     consultation.otherPayment[1].cost = req.body.cost1
     consultation.otherPayment[1].amountPaid = req.body.amountPaid1
     consultation.otherPayment[1].balance = req.body.balance1
+    if(!codes.check_id(patient.payment, consultation.otherPayment[1])) {
+        patient.payment.unshift(consultation.otherPayment[1])
+      }
     patient.save()
     // console.log(req.body)
     res.render('medlab', {patient, consultation, user, title: 'Laboratory Entries - HealthMax'})

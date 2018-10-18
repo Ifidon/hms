@@ -50,6 +50,17 @@ module.exports = {
 	    }
 	},
 
+	check_id: function (array, item) {
+    	for (i in array) {
+        	if(array[i]._id == item._id) {
+        		return true
+        	}
+        	else {
+        		return false
+        	}
+   		}
+	},
+
 	opts: {
 	service: 'gmail',
 	auth: {

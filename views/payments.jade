@@ -1,0 +1,25 @@
+extends Layout
+
+block content
+	div.container
+		div.row
+			form.form-group.col-5.m-auto(method='post' action='/patients/#{patient.patient_id}/record_payment')
+				fieldset
+					legend.text-center Record Payment Details (#{patient.firstname + " " + patient.lastname + " - ID: " + patient.patient_id})
+					label(for='description') Payment Description:
+					textarea.form-control.m-auto(cols=10 rows=10 name='description' placeholder='Payment Description')
+					label.m-2(for='cost') Amount Due:
+					input.form-control.m-auto#cost(type='number' name='cost' placeholder='Amount Due')
+					label.m-2(for='amountPaid') Amount Paid:
+					input.form-control.m-auto#amtpaid(type='number' name='amountPaid' placeholder='Amount Paid')
+					label.m-2(for='balance') Balance:
+					input.form-control.m-auto#balance(type='number' name='balance' placeholder='Balance' onfocus="getBalance()")
+					button.btn.btn-primary.form-control.m-auto(type="submit") Save
+
+			div.col-4
+				a.btn.btn-secondary(href='/patients/#{patient.patient_id}/accountsummary') View Account Summary
+
+	script.
+		var use = '#{user.username}'.toString()
+	script(src='/javascripts/login.js')
+	script(src='/javascripts/script.js')
