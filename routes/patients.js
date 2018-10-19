@@ -157,19 +157,16 @@ var user = req.user
     patient.payment.unshift(req.body)
     patient.save()
     res.redirect('/patients')
-    // paydetails.unshift(req.body)
-    // var totaldue = patient.totalDue + req.body.cost
-    // var totalpaid = patient.totalPaid + req.body.amountPaid
-    // var totalbal = patient.totalBalance + req.body.balance
-    // patient.totalDue = totaldue
-    // patient.totalPaid = totalpaid
-    // patienttotalBalance = totalbal
-    // patient.set({totalDue: totaldue, totalPaid: totalpaid, totalBalance: totalbal})
   })
 })
 
 patientRouter.route('/:patient_id/accountsummary')
 .get((req, res, next) => {
+  var user = req.user
+  Patients.findOne(req.params, {firstname: 1, lastname: 1, patient_id: 1, totalDue: 1, totalPaid: 1, totalBalance: 1, payment: 1, _id: 0})
+  .then((patient) => {
+    res.render('accounthistory', {patient, user, title: 'Payment History'})
+  })
 
 })
 
@@ -303,8 +300,20 @@ patientRouter.route('/:patient_id/consultations')
       if(!codes.check_id(patient.payment, consultation.prescription)) {
         patient.payment.unshift(consultation.prescription)
       }
+      if(codes.check_id(patient.payment, consultation.prescription)) {
+        var payment = patient.payment.id(consultation.prescription._id)
+        payment.cost = req.body.cost
+        payment.amountPaid = req.body.amountPaid
+        payment.balance = req.body.balance
+      }
       if(!codes.check_id(patient.payment, consultation.otherPayment[0])) {
         patient.payment.unshift(consultation.otherPayment[0])
+      }
+      if(codes.check_id(patient.payment, consultation.otherPayment[0])) {
+        var payment = patient.payment.id(consultation.prescription._id)
+        payment.cost = req.body.cost1
+        payment.amountPaid = req.body.amountPaid1
+        payment.balance = req.body.balance1
       }
       // patient.payment.unshift(consultation.otherPayment[0])
       patient.save()

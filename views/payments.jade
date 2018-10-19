@@ -3,11 +3,9 @@ extends Layout
 block content
 	div.container
 		div.row
-			section.col-12.alert-primary.p-2.mx-auto
+			section.col-12.alert-primary.p-2.mx-auto.mb-2
 				h5.text-center= patient.firstname + " " + patient.lastname + " - ID: " + patient.patient_id
 			
-			p.bg-dark.col-12
-				a.float-right.text-white(href='/patients/#{patient.patient_id}/accountsummary') View Account History
 			div.card.col-5.mx-auto.my-2
 				div.card-header.text-center
 					h6 Account Summary
@@ -19,12 +17,16 @@ block content
 					h6 Outstanding Account Balance: 
 						span.badge.badge-danger.float-right= patient.totalBalance
 					br
-					br
-					- var today = new Date()
-					p.d-none#lastdate Last updated:  
-						span= today || patient.payment[0].updatedAt.toString().substr(0, 16)
 
-					form
+					a(href='/patients/#{patient.patient_id}/accountsummary') View Details
+					br
+					br
+					
+					p#lastdate Last updated:  
+						span#update
+
+
+					form.m-2
 						button.btn.btn-sm.btn-primary(type='submit' formmethod='post' formaction='/patients/#{patient.patient_id}/accountsummary') Update Account
 
 
@@ -40,4 +42,17 @@ block content
 	script.
 		var use = '#{user.username}'.toString()
 	script(src='/javascripts/login.js')
-	script(src='/javascripts/script.js')
+	script.
+		var today = new Date()
+		var date =  '#{patient.payment[0].updatedAt.toString().substr(0, 16)}'
+
+		var update = document.getElementById('update')
+
+		if (date) {
+			console.log(date)
+			update.innerHTML = date
+		}
+		else {
+			conole.log(today)
+			update.innerHTML = today
+		}

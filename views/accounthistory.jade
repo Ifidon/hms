@@ -1,0 +1,38 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			h5.col-12.text-center.alert-info Payment Details for #{patient.firstname} #{patient.lastname} - ID: #{patient.patient_id}
+
+		table.table-striped.table-bodered.col-10.m-auto
+			thead.thead-dark
+				tr
+					th Payment Description
+					th Total Amount
+					th Amount Paid
+					th Outstanding Balance
+					th Date
+			tbody
+			each payment in patient.payment
+				tr
+					td= payment.description
+					td= payment.cost
+					td= payment.amountPaid
+					td= payment.balance
+					td= payment.createdAt.toString().substr(0, 16)
+			tbody
+				tr
+					td Total
+					td= patient.totalDue
+					td= patient.totalPaid
+					td= patient.totalBalance
+
+
+
+
+
+	script.
+		var use = '#{user.username}'.toString()
+	script(src='/javascripts/login.js')
+			
