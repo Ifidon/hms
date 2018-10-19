@@ -36,7 +36,9 @@ block content
 					textarea.col-12(name='tests' col-100 rows=10 placeholder='Enter tests here (if any)')= consultation.otherPayment[1].description
 
 					input.btn.btn-primary(type="submit" value='Save')
-					input.btn.btn-primary(type='submit' value='Send' formmethod='post' formaction='/doctors_office/#{patient.patient_id}/#{consultation._id}/findings')
+					input.btn.btn-primary.float-right(type='submit' value='Send' formmethod='post' formaction='/doctors_office/#{patient.patient_id}/#{consultation._id}/findings')
+				
+				button.btn.btn-primary.col-12(type='submit' onclick='window.history.back()') Back
 
 			script.
 				var use = '#{user.username}'.toString()

@@ -22,7 +22,7 @@ block content
 					tbody
 						tr
 							td
-								textarea(rows=7 cols=50 disabled)= consultation.prescription.drugs
+								textarea(rows=7 cols=50 disabled)= consultation.prescription.description
 								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[0].description
 							td
 								input.m-auto.form-control#cost(type='number' name="cost" value='#{consultation.prescription.cost}')
@@ -45,4 +45,5 @@ block content
 		var use ='#{user.username}'.toString()
 	script(src='/javascripts/login.js')
 	script(src='/javascripts/script.js')
+	script(src='/javascripts/script2.js')
 

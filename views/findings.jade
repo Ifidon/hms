@@ -13,8 +13,8 @@ block content
 				input.form-control(type='file' name='attachment')
 				br
 				br
-				input.btn.btn-primary(type='submit' value='Save Findings')
-				input.btn.btn-primary.float-right(type="submit" value="Exit" formaction='/laboratory/#{patient.patient_id}/#{consultation._id}/findings', formmethod='post')
+				input.btn.btn-sm.btn-primary(type='submit' value='Save Findings')
+				input.btn.btn-sm.btn-primary.float-right(type="submit" value="Exit" formaction='/laboratory/#{patient.patient_id}/#{consultation._id}/findings', formmethod='post')
 
 		script.
 			var att = '#{consultation.labInvestigation.attachment}'.toString()

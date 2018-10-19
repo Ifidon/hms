@@ -49,7 +49,7 @@ block content
           h2 Prescription
           br
           br
-          textarea#drugs(name="drugs" rows=10 cols=100 required)= consultation.prescription.drugs
+          textarea#drugs(name="drugs" rows=10 cols=100 required)= consultation.prescription.description
           hr
           br
 
@@ -57,7 +57,7 @@ block content
           h2 Laboratory Tests & Scans
           br
           br
-          textarea#tests(name="tests" rows=10 cols=100 required)= consultation.labInvestigation.tests
+          textarea#tests(name="tests" rows=10 cols=100 required)= consultation.labInvestigation.description
           hr
         br
         br

@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var prescriptionSchema = new Schema ({
-  drugs: {
+  description: {
     type: String,
     // default: "No Entry "
   },
@@ -22,7 +22,7 @@ var prescriptionSchema = new Schema ({
 });
 
 var labSchema = new Schema ({
-  tests: {
+  description: {
     type: String,
     // default: "No Entry"
   },

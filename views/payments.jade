@@ -41,7 +41,6 @@ block content
 
 	script.
 		var use = '#{user.username}'.toString()
-	script(src='/javascripts/login.js')
 	script.
 		var today = new Date()
 		var date =  '#{patient.payment[0].updatedAt.toString().substr(0, 16)}'
@@ -56,3 +55,6 @@ block content
 			conole.log(today)
 			update.innerHTML = today
 		}
+
+	script(src='/javascripts/login.js')
+	script(src='/javascripts/script2.js')
