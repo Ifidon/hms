@@ -291,30 +291,54 @@ patientRouter.route('/:patient_id/consultations')
     Patients.findOne({patient_id: req.params.patient_id})
     .then((patient) => {
       var consultation = patient.consultations.id(req.params.consultation_id)
-      consultation.prescription.cost = req.body.cost
-      consultation.prescription.amountPaid = req.body.amountPaid
-      consultation.prescription.balance = req.body.balance
-      consultation.otherPayment[0].cost = req.body.cost1
-      consultation.otherPayment[0].amountPaid = req.body.amountPaid1
-      consultation.otherPayment[0].balance = req.body.balance1
-      if(!codes.check_id(patient.payment, consultation.prescription)) {
-        patient.payment.unshift(consultation.prescription)
+      if(consultation.prescription.description && consultation.otherPayment[0].description) {
+         consultation.prescription.cost = req.body.cost
+        consultation.prescription.amountPaid = req.body.amountPaid
+        consultation.prescription.balance = req.body.balance
+        consultation.otherPayment[0].cost = req.body.cost1
+        consultation.otherPayment[0].amountPaid = req.body.amountPaid1
+        consultation.otherPayment[0].balance = req.body.balance1
+        if(!codes.check_id(patient.payment, consultation.prescription) && !codes.check_id(patient.payment, consultation.otherPayment[0])) {
+          patient.payment.unshift(consultation.prescription)
+          patient.payment.unshift(consultation.otherPayment[0])
+        }
+        else if (codes.check_id(patient.payment, consultation.prescription) && codes.check_id(patient.payment, consultation.otherPayment[0])) {
+          patient.payment.splice(indexOf(consultation.prescription), 1)
+          patient.payment.splice(indexOf(consultation.otherPayment[0]), 1)
+          patient.payment.unshift(consultation.prescription)
+          patient.payment.unshift(consultation.otherPayment[0])
+        }
+        else {
+          next()
+        }
       }
-      if(codes.check_id(patient.payment, consultation.prescription)) {
-        var payments = patient.payment
-      	var prescr = consultation.prescription
-      	payments.splice(payments.indexOf(prescr, 1))
-      	payments.unshift(prescr)
+      else if (consultation.prescription.description) {
+        consultation.prescription.cost = req.body.cost
+        consultation.prescription.amountPaid = req.body.amountPaid
+        consultation.prescription.balance = req.body.balance
+        // consultation.otherPayment[0].cost = req.body.cost1
+        // consultation.otherPayment[0].amountPaid = req.body.amountPaid1
+        // consultation.otherPayment[0].balance = req.body.balance1
+        if(!codes.check_id(patient.payment, consultation.prescription)) {
+          patient.payment.unshift(consultation.prescription)
+        }
+        else if (codes.check_id(patient.payment, consultation.prescription)) {
+          patient.payment.splice(indexOf(consultation.prescription), 1)
+          patient.payment.unshift(consultation.prescription)
+        }
+        else {
+          next()
+        }
       }
-      if(!codes.check_id(patient.payment, consultation.otherPayment[0])) {
-        patient.payment.unshift(consultation.otherPayment[0])
+      else {
+        next()
       }
-      if(codes.check_id(patient.payment, consultation.otherPayment[0])) {
-      	var payments = patient.payment
-      	var otherpay = consultation.otherPayment[0]
-      	payments.splice(payments.indexOf(otherpay, 1))
-      	payments.unshift(otherpay)
-      }
+      // if(!codes.check_id(patient.payment, consultation.prescription)) {
+      //   patient.payment.unshift(consultation.prescription)
+      // }
+      // if(!codes.check_id(patient.payment, consultation.otherPayment[0])) {
+      //   patient.payment.unshift(consultation.otherPayment[0])
+      // }
       // patient.payment.unshift(consultation.otherPayment[0])
       patient.save()
       res.render('pharmacy', {patient, consultation, user, title: 'Pharmacy Entries - HealthMax'})
@@ -342,18 +366,60 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
     var consultation = patient.consultations.id(req.params.consultation_id)
-    consultation.labInvestigation.cost = req.body.cost
-    consultation.labInvestigation.amountPaid = req.body.amountPaid
-    consultation.labInvestigation.balance = req.body.balance
-    consultation.otherPayment[1].cost = req.body.cost1
-    consultation.otherPayment[1].amountPaid = req.body.amountPaid1
-    consultation.otherPayment[1].balance = req.body.balance1
-    if(!codes.check_id(patient.payment, consultation.labInvestigation)) {
-        patient.payment.unshift(consultation.labInvestigation)
+    if(consultation.labInvestigation.description && consultation.otherPayment[1].description) {
+         consultation.labInvestigation.cost = req.body.cost
+        consultation.labInvestigation.amountPaid = req.body.amountPaid
+        consultation.labInvestigation.balance = req.body.balance
+        consultation.otherPayment[1].cost = req.body.cost1
+        consultation.otherPayment[1].amountPaid = req.body.amountPaid1
+        consultation.otherPayment[1].balance = req.body.balance1
+        if(!codes.check_id(patient.payment, consultation.labInvestigation) && !codes.check_id(patient.payment, consultation.otherPayment[1])) {
+          patient.payment.unshift(consultation.labInvestigation)
+          patient.payment.unshift(consultation.otherPayment[1])
+        }
+        else if (codes.check_id(patient.payment, consultation.labInvestigation) && codes.check_id(patient.payment, consultation.otherPayment[1])) {
+          patient.payment.splice(indexOf(consultation.labInvestigation), 1)
+          patient.payment.splice(indexOf(consultation.otherPayment[1]), 1)
+          patient.payment.unshift(consultation.labInvestigation)
+          patient.payment.unshift(consultation.otherPayment[1])
+        }
+        else {
+          next()
+        }
       }
-    if(!codes.check_id(patient.payment, consultation.otherPayment[1])) {
-        patient.payment.unshift(consultation.otherPayment[1])
+      else if (consultation.labInvestigation.description) {
+        consultation.labInvestigation.cost = req.body.cost
+        consultation.labInvestigation.amountPaid = req.body.amountPaid
+        consultation.labInvestigation.balance = req.body.balance
+        // consultation.otherPayment[0].cost = req.body.cost1
+        // consultation.otherPayment[0].amountPaid = req.body.amountPaid1
+        // consultation.otherPayment[0].balance = req.body.balance1
+        if(!codes.check_id(patient.payment, consultation.labInvestigation)) {
+          patient.payment.unshift(consultation.prescription)
+        }
+        else if (codes.check_id(patient.payment, consultation.labInvestigation)) {
+          patient.payment.splice(indexOf(consultation.labInvestigation), 1)
+          patient.payment.unshift(consultation.labInvestigation)
+        }
+        else {
+          next()
+        }
       }
+      else {
+        next()
+      }
+    // consultation.labInvestigation.cost = req.body.cost
+    // consultation.labInvestigation.amountPaid = req.body.amountPaid
+    // consultation.labInvestigation.balance = req.body.balance
+    // consultation.otherPayment[1].cost = req.body.cost1
+    // consultation.otherPayment[1].amountPaid = req.body.amountPaid1
+    // consultation.otherPayment[1].balance = req.body.balance1
+    // if(!codes.check_id(patient.payment, consultation.labInvestigation)) {
+    //     patient.payment.unshift(consultation.labInvestigation)
+    //   }
+    // if(!codes.check_id(patient.payment, consultation.otherPayment[1])) {
+    //     patient.payment.unshift(consultation.otherPayment[1])
+    //   }
     patient.save()
     // console.log(req.body)
     res.render('medlab', {patient, consultation, user, title: 'Laboratory Entries - HealthMax'})
