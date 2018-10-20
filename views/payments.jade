@@ -41,20 +41,6 @@ block content
 
 	script.
 		var use = '#{user.username}'.toString()
-	script.
-		var today = new Date()
-		var date =  '#{patient.payment[0].updatedAt.toString().substr(0, 16)}'
-
-		var update = document.getElementById('update')
-
-		if (date) {
-			console.log(date)
-			update.innerHTML = date
-		}
-		else {
-			conole.log(today)
-			update.innerHTML = today
-		}
 
 	script(src='/javascripts/login.js')
 	script(src='/javascripts/script2.js')

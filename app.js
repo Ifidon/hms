@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var bootstrap = require('express-bootstrap-service');
+// var bootstrap = require('express-bootstrap-service');
 var expressValidator = require('express-validator');
 var session = require('express-session');
 var FileStore = require('session-file-store');
@@ -27,7 +27,7 @@ var Patients = require('./models/patients')
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 
-// var url = 'mongodb://localhost:27017/hms'
+var url = 'mongodb://localhost:27017/hms'
 
 var app = express();
 
@@ -36,12 +36,7 @@ app.use(helmet());
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 
-// var url = process.env.MONGO_URI || 'mongodb://e_fidon:truand11ape@cluster0-shard-00-00-3rkmw.mongodb.net:27017,cluster0-shard-00-01-3rkmw.mongodb.net:27017,cluster0-shard-00-02-3rkmw.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true'
-
-var url = process.env.MONGO_URI || config.config()
-
-// console.log(MONGO_URI)
-log.info(config.config())
+// log.info(config.config())
 
 var connect = mongoose.connect(url, {
 

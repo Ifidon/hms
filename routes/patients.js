@@ -301,19 +301,19 @@ patientRouter.route('/:patient_id/consultations')
         patient.payment.unshift(consultation.prescription)
       }
       if(codes.check_id(patient.payment, consultation.prescription)) {
-        var payment = patient.payment.id(consultation.prescription._id)
-        payment.cost = req.body.cost
-        payment.amountPaid = req.body.amountPaid
-        payment.balance = req.body.balance
+        var payments = patient.payment
+      	var prescr = consultation.prescription
+      	payments.splice(payments.indexOf(prescr, 1))
+      	payments.unshift(prescr)
       }
       if(!codes.check_id(patient.payment, consultation.otherPayment[0])) {
         patient.payment.unshift(consultation.otherPayment[0])
       }
       if(codes.check_id(patient.payment, consultation.otherPayment[0])) {
-        var payment = patient.payment.id(consultation.prescription._id)
-        payment.cost = req.body.cost1
-        payment.amountPaid = req.body.amountPaid1
-        payment.balance = req.body.balance1
+      	var payments = patient.payment
+      	var otherpay = consultation.otherPayment[0]
+      	payments.splice(payments.indexOf(otherpay, 1))
+      	payments.unshift(otherpay)
       }
       // patient.payment.unshift(consultation.otherPayment[0])
       patient.save()
