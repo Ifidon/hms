@@ -23,7 +23,7 @@ block content
 						tr
 							form()
 								td
-									textarea(rows=7 cols=50 disabled)= consultation.labInvestigation.tests
+									textarea(rows=7 cols=50 disabled)= consultation.labInvestigation.description
 									textarea(rows=7 cols=50 disabled)= consultation.otherPayment[1].description
 								td
 									input.m-auto.form-control#cost(type='number' name="cost" value="#{consultation.labInvestigation.cost}")
