@@ -23,7 +23,7 @@ block content
 					br
 					
 					p Last updated:  
-						span= date.toString().substr(0. 16)
+						span= datestring
 
 
 					form.m-2
@@ -41,6 +41,7 @@ block content
 
 	script.
 		var use = '#{user.username}'.toString()
+		console.log('#{datestring}')
 
 	script(src='/javascripts/login.js')
-	script(src='/javascripts/script2.js')
+	script(src='/javascripts/script.js')
