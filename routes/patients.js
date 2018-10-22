@@ -146,10 +146,11 @@ patientRouter.route('/:patient_id/update')
 patientRouter.route('/:patient_id/record_payment')
 .get((req, res, next) => { 
   var user = req.user
+  var date = new Date()
   Patients.findOne(req.params, {_id: 0})
   .then((patient) => {
-    var date = patient.payment[0].updatedAt
-    res.render('payments', {patient, user, title: "Payments Page", date})
+    var datestring = patient.payment[0].updatedAt.toString().substr(0, 16) || date.toString().substr(0, 16)
+    res.render('payments', {patient, user, title: "Payments Page", datestring})
   })
 })
 .post((req, res, next) => {
