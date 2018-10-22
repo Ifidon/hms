@@ -53,7 +53,7 @@ router.post('/new', function(req, res, next) {
 							from: 'neftilsngl@gmail.com',
 							to: req.user.email,
 							subject: 'Registration Successful - Egwu Oluwa Memorial Hospital',
-							text: 'Hello ' + req.user.username + ' , your HeathMax Account has ben successfully created'
+							text: 'Hello ' + req.user.username + ' , your Egwu Oluwa Memorial Hospital Account has ben successfully created'
 						};
 
 						transport.sendMail(mailOptions);
