@@ -18,6 +18,6 @@ block content
 
 
 	script.
-		var use = '#{user.username}'.toString()
+		var use = '#{user.username}'.toString() || 'Guest'
 	script(src='/javascripts/login.js')
 	script(src='/javascripts/unauthorized.js')
