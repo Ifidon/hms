@@ -145,11 +145,12 @@ patientRouter.route('/:patient_id/update')
 
 patientRouter.route('/:patient_id/record_payment')
 .get((req, res, next) => { 
-var user = req.user 
-    Patients.findOne(req.params, {_id: 0})
-    .then((patient) => {
-      res.render('payments', {patient, user, title: "Payments Page"})
-    })
+  var user = req.user
+  Patients.findOne(req.params, {_id: 0})
+  .then((patient) => {
+    var date = patients.payment[0].updatedAt || new Date
+    res.render('payments', {patient, user, title: "Payments Page", date})
+  })
 })
 .post((req, res, next) => {
   Patients.findOne(req.params)
