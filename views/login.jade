@@ -4,12 +4,12 @@ block content
 
     div.container
         div.row.m-auto.border.col-7
-          span.alert.alert-primary.col-12.text-center Please login to proceed.
+          span.alert.alert-primary.col-12.text-center Login to proceed.
             br
             br
-            |Don't have an account? Click 
-            a(href='/register') here 
-            |to register 
+            |Don't have an account? 
+            .line Please contact your system administrator.
+
           form.form-signin.col-12(method='post' action='/users/login')
             h1.h3.mb-3.font-weight-normal
             label.sr-only(for='username') Username

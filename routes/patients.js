@@ -62,7 +62,7 @@ patientRouter.route('/')
   var user = req.user
   Patients.find()
   .then((patients) => {
-    res.render('patientslist', {patientlist: patients.reverse(), user, title: 'All Patients - HealthMax'})
+    res.render('patientslist', {patientlist: patients.reverse(), user, title: 'All Patients - Egwu Oluwa Memorial Hospital'})
   })
   .catch((error) => {
     next(error)
@@ -74,7 +74,7 @@ patientRouter.route('/registration')
   var user = req.user
   Patients.find({}, {patient_id: 1, _id: 0})
   .then((ids) => {
-    res.render('regpatient', {ids, user, title: 'Patient Registration - HealthMax'});
+    res.render('regpatient', {ids, user, title: 'Patient Registration - Egwu Oluwa Memorial Hospital'});
     console.log(Object.values(ids))
   })
   .catch((error) => {
@@ -111,7 +111,7 @@ patientRouter.route('/:patient_id')
   var user = req.user
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    res.render('patientview', {patient, user, message: " ", title: patient.firstname + " " + patient.lastname + ' - HealthMax'})
+    res.render('patientview', {patient, user, message: " ", title: patient.firstname + " " + patient.lastname + ' - Egwu Oluwa Memorial Hospital'})
   })
   .catch((error) => {
     next(error)
@@ -123,7 +123,7 @@ patientRouter.route('/:patient_id/update')
   var user = req.user
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
-    res.render('update', {patient, user, title: 'Update Patient Details - HealthMax'})
+    res.render('update', {patient, user, title: 'Update Patient Details - Egwu Oluwa Memorial Hospital'})
     log.info("New Patient Registration. ID: " + patient.patient_id)
   })
   .catch((error) => {
@@ -200,7 +200,7 @@ patientRouter.route('/:patient_id/recordvitals')
   Patients.findOne(req.params)
   .then((patient) => {
     // console.log(req.params)
-    res.render('recordVitals', {patient, user, title: 'Record Vitals - HealthMax'})
+    res.render('recordVitals', {patient, user, title: 'Record Vitals - Egwu Oluwa Memorial Hospital'})
   })
   .catch((error) => {
     next(error)
@@ -213,7 +213,7 @@ patientRouter.route('/:patient_id/consultations')
     var user = req.user
     Patients.findOne(req.params)
     .then((patient) => {
-      res.render('consultations', {patient, user, title: 'View/Edit Consultations - HealthMax'})
+      res.render('consultations', {patient, user, title: 'View/Edit Consultations - Egwu Oluwa Memorial Hospital'})
       // console.log(res.header)
     })
     .catch((error) => {
@@ -246,7 +246,7 @@ patientRouter.route('/:patient_id/consultations')
         consultation.prescription = Object;
         consultation.labInvestigation = Object;
       }
-        res.render('consultation', {patient, consultation, user, title: 'Consultation - HealthMax'})
+        res.render('consultation', {patient, consultation, user, title: 'Consultation - Egwu Oluwa Memorial Hospital'})
     })
     .catch((error) => {
        next(error)
@@ -279,7 +279,7 @@ patientRouter.route('/:patient_id/consultations')
     .then((patient) => {
       var consultation = patient.consultations.id(req.params.consultation_id)
       // console.log(consultation.prescription)
-      res.render('pharmacy', {patient, consultation, user, title: 'Pharmacy Entries - HealthMax'})
+      res.render('pharmacy', {patient, consultation, user, title: 'Pharmacy Entries - Egwu Oluwa Memorial Hospital'})
     })
     .catch((error) => {
       next(error)
@@ -341,7 +341,7 @@ patientRouter.route('/:patient_id/consultations')
       // }
       // patient.payment.unshift(consultation.otherPayment[0])
       patient.save()
-      res.render('pharmacy', {patient, consultation, user, title: 'Pharmacy Entries - HealthMax'})
+      res.render('pharmacy', {patient, consultation, user, title: 'Pharmacy Entries - Egwu Oluwa Memorial Hospital'})
     })
     .catch((error) => {
       next(error)
@@ -355,7 +355,7 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
     .then((patient) => {
       var consultation = patient.consultations.id(req.params.consultation_id)
       // console.log(consultation.prescription)
-      res.render('medlab', {patient, consultation, user, title: 'Laboratory Entries - HealthMax'})
+      res.render('medlab', {patient, consultation, user, title: 'Laboratory Entries - Egwu Oluwa Memorial Hospital'})
     })
     .catch((error) => {
       next(error)
@@ -422,7 +422,7 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
     //   }
     patient.save()
     // console.log(req.body)
-    res.render('medlab', {patient, consultation, user, title: 'Laboratory Entries - HealthMax'})
+    res.render('medlab', {patient, consultation, user, title: 'Laboratory Entries - Egwu Oluwa Memorial Hospital'})
     // console.log(consultation.labInvestigation)
   })
   .catch((error) => {
@@ -436,7 +436,7 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/find
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
     var consultation = patient.consultations.id(req.params.consultation_id)
-    res.render('findings', {patient, consultation, user, title: 'Enter Lab Results - HealthMax'})
+    res.render('findings', {patient, consultation, user, title: 'Enter Lab Results - Egwu Oluwa Memorial Hospital'})
   })
   .catch((error) => {
     next(error)
@@ -452,14 +452,14 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/find
       consultation.labInvestigation.attachment = "No file uploaded"
       consultation.labInvestigation.findings = req.body.findings
       patient.save()
-      res.render('findings', {patient, consultation, user, title: 'Enter Lab Results - HealthMax'})
+      res.render('findings', {patient, consultation, user, title: 'Enter Lab Results - Egwu Oluwa Memorial Hospital'})
     }
     else {
       var consultation = patient.consultations.id(req.params.consultation_id)
       consultation.labInvestigation.attachment = req.file.path
       consultation.labInvestigation.findings = req.body.findings
       patient.save()
-      res.render('findings', {patient, consultation, user, title: 'Enter Lab Results - HealthMax'})
+      res.render('findings', {patient, consultation, user, title: 'Enter Lab Results - Egwu Oluwa Memorial Hospital'})
     }
     
     // console.log(consultation.labInvestigation)
@@ -475,7 +475,7 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/find
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
     var consultation = patient.consultations.id(req.params.consultation_id)
-    res.render('labreview', {user, patient, consultation, title: 'Lab Results - HealthMax'})
+    res.render('labreview', {user, patient, consultation, title: 'Lab Results - Egwu Oluwa Memorial Hospital'})
   })
   .catch((error) => {
     next(error)
@@ -490,7 +490,7 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory/find
     consultation.otherPayment.unshift({description: req.body.prescription})
     consultation.otherPayment.splice(2, 2)
     patient.save()
-    res.render('labreview', {user, patient, consultation, title: 'Lab Results - HealthMax'})
+    res.render('labreview', {user, patient, consultation, title: 'Lab Results - Egwu Oluwa Memorial Hospital'})
   })
   .catch((error) => {
     next(error)

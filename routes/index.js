@@ -20,7 +20,7 @@ var codes = require('../codes');
 
 router.get('/', function(req, res, next) {
   var user = " "
-  res.render('homepage', {user, title: 'Welcome - HealthMax'})
+  res.render('homepage', {user, title: 'Welcome - Egwu Oluwa Memorial Hospital'})
 })
 
 
@@ -52,32 +52,32 @@ router.post('/', (req, res, next) => {
 
 router.get('/login', function(req, res, next) {
   var user = ""
-  res.render('login', {user, title: 'Login - HealthMax' });
+  res.render('login', {user, title: 'Login - Egwu Oluwa Memorial Hospital' });
 });
 
 router.route('/unauthorized')
 .get((req, res, next) => {
   var user = req.user;
-  res.render('unauthorized', {user, title: 'Access Denied - HealthMax'})
+  res.render('unauthorized', {user, title: 'Access Denied - Egwu Oluwa Memorial Hospital'})
 })
 
 router.get('/authentication_failed', (req, res, next) => {
-  res.render('authfail', {title: 'Authentication Failed - HealthMax'})
+  res.render('authfail', {title: 'Authentication Failed - Egwu Oluwa Memorial Hospital'})
 });
 
 router.get('/front_desk', authorize.fdaccess, function(req, res) {
   var user = req.user
-  res.render('front_desk', {title: 'Front Desk - HealthMax', user})
+  res.render('front_desk', {title: 'Front Desk - Egwu Oluwa Memorial Hospital', user})
 });
 
 router.get('/front_desk/patientadmin', authorize.fdaccess, function(req, res, next) {
   var user = req.user
-  res.render('patientadmin', {patientlist: front_office, user, title: 'Patient Administration - HealthMax', user})
+  res.render('patientadmin', {patientlist: front_office, user, title: 'Patient Administration - Egwu Oluwa Memorial Hospital', user})
 });
 
 router.get('/front_desk/useradmin', authorize.fdaccess, function(req, res, next) {
   var user = req.user
-  res.render('newuser', {patientlist: front_office, user, title: 'Patient Administration - HealthMax', user})
+  res.render('newuser', {patientlist: front_office, user, title: 'Patient Administration - Egwu Oluwa Memorial Hospital', user})
 });
 
 router.post('/front_desk/send/:patient_id', function(req, res, next) {
@@ -107,7 +107,7 @@ router.route('/nurses_station')
 .get(authorize.nurseaccess, (req, res) => {
   var user = req.user
   var message = ""
-  res.render('consultationList', {patientlist: nurses_station, user, title: 'Nurses Station - HealthMax', message: req.message})
+  res.render('consultationList', {patientlist: nurses_station, user, title: 'Nurses Station - Egwu Oluwa Memorial Hospital', message: req.message})
 });
 
 router.route('/nurses_station/:patient_id')
@@ -157,7 +157,7 @@ router.route('/nurses_station/send/:patient_id')
     if(codes.check(doctors_office, patient)) {
       nurses_station.splice(nurses_station.indexOf(patient), 1)
       var message = ""
-      res.render('consultationList', {patientlist: nurses_station, user, title: 'Nurses Station - HealthMax', message: "Entry already sent to the doctor's office"})
+      res.render('consultationList', {patientlist: nurses_station, user, title: 'Nurses Station - Egwu Oluwa Memorial Hospital', message: "Entry already sent to the doctor's office"})
     }
     else {
       doctors_office.push(patient)
@@ -174,7 +174,7 @@ router.route('/nurses_station/send/:patient_id')
 router.route('/doctors_office')
 .get(authorize.draccess, (req, res) => {
   var user = req.user
-  res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax"})
+  res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - Egwu Oluwa Memorial Hospital"})
 });
 
 router.route('/doctors_office/:patient_id/:consultation_id')
@@ -190,27 +190,27 @@ router.route('/doctors_office/:patient_id/:consultation_id')
       laboratory_list.push(patient);
       doctors_office.splice(pharmacy_list.indexOf(patient), 1)
       console.log(patient)
-      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry Sent."})
+      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - Egwu Oluwa Memorial Hospital", message: "Entry Sent."})
     }
 
     // if (codes.checkdate(laboratory_list, consultation) && codes.checkdate(pharmacy_list, consultation)) {
     //   doctors_office.splice(pharmacy_list.indexOf(patient), 1)
-    //   res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry already exists."})
+    //   res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - Egwu Oluwa Memorial Hospital", message: "Entry already exists."})
     // }
 
     if (codes.check(pharmacy_list, patient) && codes.check(laboratory_list, patient)) {
       doctors_office.splice(pharmacy_list.indexOf(patient), 1)
-      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry already exists."})
+      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - Egwu Oluwa Memorial Hospital", message: "Entry already exists."})
     }
 
     if (codes.check(pharmacy_list, patient) && !codes.check(laboratory_list, patient)) {
       laboratory_list.push(patient)
-      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Sent to lab. Entry already exists in pharmacy."})
+      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - Egwu Oluwa Memorial Hospital", message: "Sent to lab. Entry already exists in pharmacy."})
     }
 
     if (!codes.check(pharmacy_list, patient) && codes.check(laboratory_list, patient)) {
       pharmacy_list.push(patient)
-      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Sent to pharmacy. Entry already exists in lab."})
+      res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - Egwu Oluwa Memorial Hospital", message: "Sent to pharmacy. Entry already exists in lab."})
     }  
   })
   .catch((error) => {
@@ -225,7 +225,7 @@ router.route('/doctors_office/:patient_id/:consultation_id/findings')
     pharmacy_list.push(patient);
     laboratory_list.push(patient);
     doctors_office.splice(doctors_office.indexOf(patient), 1)
-    res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - HealthMax", message: "Entry sent."})
+    res.render('doctorslist', {patientlist: doctors_office, user, title: "Doctor's Office - Egwu Oluwa Memorial Hospital", message: "Entry sent."})
   })
   .catch((error) => {
     next(error)
@@ -235,7 +235,7 @@ router.route('/doctors_office/:patient_id/:consultation_id/findings')
 router.route('/pharmacy')
 .get(authorize.pharmacyaccess, (req, res, next) => {
   var user = req.user
-  res.render('pharmacylist', {patients: pharmacy_list, user, title: 'Pharmacy - HealthMax', user: req.user})
+  res.render('pharmacylist', {patients: pharmacy_list, user, title: 'Pharmacy - Egwu Oluwa Memorial Hospital', user: req.user})
 });
 
 router.route('/pharmacy/:patient_id')
@@ -254,7 +254,7 @@ router.route('/pharmacy/:patient_id')
 router.route('/Laboratory')
 .get(authorize.labaccess, (req, res, next) => {
   var user = req.user
-  res.render('lablist', {patients: laboratory_list, pending, user, title: 'Laboratory - HealthMax', user: req.user})
+  res.render('lablist', {patients: laboratory_list, pending, user, title: 'Laboratory - Egwu Oluwa Memorial Hospital', user: req.user})
 });
 
 router.route('/laboratory/:patient_id/:consultation_id')
