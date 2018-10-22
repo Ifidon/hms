@@ -291,31 +291,23 @@ patientRouter.route('/:patient_id/consultations')
     Patients.findOne({patient_id: req.params.patient_id})
     .then((patient) => {
       var consultation = patient.consultations.id(req.params.consultation_id)
-      consultation.prescription.cost = req.body.cost
-      consultation.prescription.amountPaid = req.body.amountPaid
-      consultation.prescription.balance = req.body.balance
-      consultation.otherPayment[0].cost = req.body.cost1
-      consultation.otherPayment[0].amountPaid = req.body.amountPaid1
-      consultation.otherPayment[0].balance = req.body.balance1
-      if(!codes.check_id(patient.payment, consultation.prescription)) {
-        patient.payment.unshift(consultation.prescription)
+      var prescription = consultation.prescription
+      var otherpay = consultation.otherPayment[0]
+      var pay = patient.payment
+      prescription.cost = req.body.cost
+      prescription.amountPaid = req.body.amountPaid
+      prescription.balance = req.body.balance
+      otherpay.cost = req.body.cost1
+      otherpay.amountPaid = req.body.amountPaid1
+      otherpay.balance = req.body.balance1
+      if(codes.check_id(pay, prescription)) {
+         pay.splice(pay.indexOf(prescription), 1)
       }
-      if(codes.check_id(patient.payment, consultation.prescription)) {
-        var payment = patient.payment.id(consultation.prescription._id)
-        payment.cost = req.body.cost
-        payment.amountPaid = req.body.amountPaid
-        payment.balance = req.body.balance
-      }
-      if(!codes.check_id(patient.payment, consultation.otherPayment[0])) {
-        patient.payment.unshift(consultation.otherPayment[0])
-      }
-      if(codes.check_id(patient.payment, consultation.otherPayment[0])) {
-        var payment = patient.payment.id(consultation.prescription._id)
-        payment.cost = req.body.cost1
-        payment.amountPaid = req.body.amountPaid1
-        payment.balance = req.body.balance1
-      }
-      // patient.payment.unshift(consultation.otherPayment[0])
+      if(codes.check_id(pay, otherpay)) {
+        pay.splice(pay.indexOf(otherpay), 1)
+      }      
+      pay.unshift(prescription)
+      pay.unshift(otherpay)
       patient.save()
       res.render('pharmacy', {patient, consultation, user, title: 'Pharmacy Entries - HealthMax'})
     })
@@ -342,20 +334,24 @@ patientRouter.route('/:patient_id/consultations/:consultation_id/laboratory')
   Patients.findOne({patient_id: req.params.patient_id})
   .then((patient) => {
     var consultation = patient.consultations.id(req.params.consultation_id)
-    consultation.labInvestigation.cost = req.body.cost
-    consultation.labInvestigation.amountPaid = req.body.amountPaid
-    consultation.labInvestigation.balance = req.body.balance
-    consultation.otherPayment[1].cost = req.body.cost1
-    consultation.otherPayment[1].amountPaid = req.body.amountPaid1
-    consultation.otherPayment[1].balance = req.body.balance1
-    if(!codes.check_id(patient.payment, consultation.labInvestigation)) {
-        patient.payment.unshift(consultation.labInvestigation)
-      }
-    if(!codes.check_id(patient.payment, consultation.otherPayment[1])) {
-        patient.payment.unshift(consultation.otherPayment[1])
-      }
+    var labinv = consultation.labInvestigation
+    var otherpay = consultation.otherPayment[1]
+    var pay = patient.payment
+    labinv.cost = req.body.cost
+    labinv.amountPaid = req.body.amountPaid
+    labinv.balance = req.body.balance
+    otherpay.cost = req.body.cost1
+    otherpay.amountPaid = req.body.amountPaid1
+    otherpay.balance = req.body.balance1
+    if(codes.check_id(pay, labinv)) {
+      pay.splice(pay.indexOf(labinv), 1)
+    }
+    if (codes.check_id(pay, otherpay)) {
+      pay.splice(pay.indexOf(otherpay), 1)
+    }
+    pay.unshift(labinv)
+    pay.unshift(otherpay)
     patient.save()
-    // console.log(req.body)
     res.render('medlab', {patient, consultation, user, title: 'Laboratory Entries - HealthMax'})
     // console.log(consultation.labInvestigation)
   })
