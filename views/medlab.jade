@@ -21,19 +21,23 @@ block content
 						th Balance (Naira)
 					tbody
 						tr
-							form()
-								td
-									textarea(rows=7 cols=50 disabled)= consultation.labInvestigation.tests
-									textarea(rows=7 cols=50 disabled)= consultation.otherPayment[1].description
-								td
-									input.m-auto.form-control#cost(type='number' name="cost" value="#{consultation.labInvestigation.cost}")
-									input.m-auto.form-control#cost1(type='number' name="cost1" value="#{consultation.otherPayment[1].cost}")  
-								td
-									input.m-auto.form-control#amtpaid(type='number' name='amountPaid' value="#{consultation.labInvestigation.amountPaid}")
-									input.m-auto.form-control#amtpaid1(type='number' name='amountPaid1' value='#{consultation.otherPayment[1].amountPaid}')
-								td
-									input.m-auto.form-control#balance(type='number' name='balance' onfocus="getBalance()" value="#{consultation.labInvestigation.balance}")
-									input.m-auto.form-control#balance1(type='number' name='balance1' onfocus="getBalance1()" value='#{consultation.otherPayment[1].balance}')
+							td
+								textarea(rows=7 cols=50 disabled)= consultation.labInvestigation.description
+							td
+								input.m-auto.form-control#cost(type='number' name="cost" value="#{consultation.labInvestigation.cost}")
+							td
+								input.m-auto.form-control#amtpaid(type='number' name='amountPaid' value="#{consultation.labInvestigation.amountPaid}")
+							td
+								input.m-auto.form-control#balance(type='number' name='balance' onfocus="getBalance()" value="#{consultation.labInvestigation.balance}")
+						tr
+							td
+								textarea(rows=7 cols=50 disabled)= consultation.otherPayment[1].description
+							td
+								input.m-auto.form-control#cost1(type='number' name="cost1" value="#{consultation.otherPayment[1].cost}")  
+							td
+								input.m-auto.form-control#amtpaid1(type='number' name='amountPaid1' value='#{consultation.otherPayment[1].amountPaid}')
+							td
+								input.m-auto.form-control#balance1(type='number' name='balance1' onfocus="getBalance1()" value='#{consultation.otherPayment[1].balance}')
 				br
 				br
 
