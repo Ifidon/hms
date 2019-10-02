@@ -25,7 +25,7 @@ router.get('/', authorize.admaccess, function(req, res, next) {
 });
 
 router.get('/new', function(req, res, next) {
-	var user = req.user
+	var user = req.user || "Guest"
 	if(err) {
 		var err = err;
 		next(err)
